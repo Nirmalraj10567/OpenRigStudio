@@ -1,6 +1,6 @@
 # Character Studio MCP plugin
 
-Character Studio includes a Model Context Protocol server for AI agents. It uses MCP JSON-RPC over stdio and works with Claude Desktop, Cursor, VS Code, or another MCP-compatible host. The host and authoring tools use Node built-ins. Optional render tools launch the existing Vite application and installed Chrome to run the project's native Canvas/SVG/WebCodecs exports.
+Character Studio includes a full Model Context Protocol server for AI agents. It supports MCP JSON-RPC over stdio and Streamable HTTP/HTTPS, works with Claude Desktop, Cursor, VS Code, or another MCP-compatible host, and exposes the project, design, animation, scene, physics, and native render tools. The host and authoring tools use Node built-ins. Optional render tools launch the existing Vite application and installed Chrome to run the project's native Canvas/SVG/WebCodecs exports.
 
 ## Start it
 
@@ -11,6 +11,37 @@ CHARACTER_STUDIO_WORKSPACE=/absolute/path/to/project npm run mcp
 ```
 
 The server writes protocol responses to stdout and diagnostics to stderr. Project paths supplied to tools are restricted to `CHARACTER_STUDIO_WORKSPACE`.
+
+## HTTP and HTTPS transport
+
+Start the full server locally:
+
+```bash
+CHARACTER_STUDIO_WORKSPACE=/absolute/path/to/project npm run mcp:http
+```
+
+It listens on `http://127.0.0.1:8787/mcp` by default. The transport implements MCP Streamable HTTP (`POST /mcp`, `GET /mcp` for an event stream, and `DELETE /mcp` for session cleanup) and retains legacy SSE compatibility at `/sse` and `/message?sessionId=...`.
+
+For a remote or non-loopback endpoint, set a bearer token:
+
+```bash
+CHARACTER_STUDIO_MCP_HOST=0.0.0.0 \
+CHARACTER_STUDIO_MCP_AUTH_TOKEN='use-a-long-random-secret' \
+CHARACTER_STUDIO_WORKSPACE=/absolute/path/to/project \
+npm run mcp:http
+```
+
+Native HTTPS is enabled by setting both certificate paths. The certificate and private key are read at startup and are never stored in the project:
+
+```bash
+CHARACTER_STUDIO_MCP_TLS_CERT=/etc/ssl/fullchain.pem \
+CHARACTER_STUDIO_MCP_TLS_KEY=/etc/ssl/private/character-studio.key \
+CHARACTER_STUDIO_MCP_AUTH_TOKEN='use-a-long-random-secret' \
+CHARACTER_STUDIO_MCP_HOST=0.0.0.0 \
+npm run mcp:https
+```
+
+The resulting endpoint is `https://<host>:8787/mcp`. Optional browser clients can set `CHARACTER_STUDIO_MCP_CORS_ORIGIN` to a comma-separated allowlist; origins not on that list are rejected. `GET /healthz` returns transport and tool-count readiness metadata.
 
 ## MCP client configuration
 
@@ -28,10 +59,37 @@ The server writes protocol responses to stdout and diagnostics to stderr. Projec
 }
 ```
 
+HTTP/HTTPS clients can use the same tool registry:
+
+```json
+{
+  "mcpServers": {
+    "character-studio-remote": {
+      "url": "https://studio.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CHARACTER_STUDIO_MCP_AUTH_TOKEN}"
+      }
+    }
+  }
+}
+```
+
+The project CLI can exercise a remote endpoint without changing tool calls:
+
+```bash
+CHARACTER_STUDIO_MCP_URL=https://studio.example.com/mcp \
+CHARACTER_STUDIO_MCP_TOKEN="$CHARACTER_STUDIO_MCP_AUTH_TOKEN" \
+node mcp/call.mjs list
+```
+
 ## Built-in agent tools
 
 - `inspect_project` — summarize layers, bones, timeline, dynamics, and bodies.
 - `read_project` — return complete editable project JSON.
+- `feature_catalog` — list the complete project, design, animation, scene, physics, and render MCP surface.
+- `inspect_project_full` — summarize all persisted feature families, including environment, stage, cameras, controllers, facial profiles, views, constraints, dynamics, audio, meshes, and paths.
+- `patch_project` — atomically set, merge, or remove JSON-pointer fields across the full project schema, with native-engine validation before saving.
+- `validate_project` — load, normalize, SVG-check, and round-trip a project without modifying its source.
 - `create_character_scene` — generate nine vector layers with a six-bone rig and seven artwork bindings; each arm and leg is independently poseable.
 - `create_physics_ball_scene` — create a gravity/bounce project with optional gravity, restitution, friction, FPS, and duration overrides.
 - `update_physics_settings` — change gravity, timing, mass, restitution, or friction and preserve the JSON project.
@@ -49,6 +107,8 @@ The server writes protocol responses to stdout and diagnostics to stderr. Projec
 - `create_tom_jerry_car_race` — create an editable five-second cartoon two-car race with Tom, Jerry, spinning wheels, dust, speed lines, stadium lanes, and a finish flag.
 - `recreate_furniture_showroom_animation` — recreate the supplied pastel furniture-showroom reference as an editable five-second vector scene with beds, purple sofa, visitor rig, walk, fall, and camera zoom.
 - `animate_exact_reference_plate` — preserve a supplied PNG screenshot pixel-for-pixel and animate it with a native five-second timeline camera move.
+
+The aggregate server also includes the compact design tools. When a name overlaps an existing general tool, the compact version is available with a `design_` prefix, for example `design_inspect_project`; the standalone `mcp/design-mcp.mjs` entry remains available for clients that want only the low-token design registry.
 
 The resulting JSON opens through the editor’s normal **Open** action. The MCP render commands and the Video dialog share the same engine; the MCP tool starts an isolated browser for rendering and leaves the saved source project intact.
 

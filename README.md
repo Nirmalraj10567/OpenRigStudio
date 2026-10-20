@@ -77,6 +77,30 @@ The focused environment test can be run with:
 node --test tests/environment.test.mjs
 ```
 
+## MCP over HTTP/HTTPS
+
+The full Character Studio MCP server is available over stdio and Streamable HTTP. The HTTP transport exposes the same project, design, animation, scene, physics, asset, and native-render tools, including the compact design tools under `design_*` aliases where names overlap.
+
+Start a local HTTP endpoint:
+
+```bash
+CHARACTER_STUDIO_WORKSPACE=. npm run mcp:http
+```
+
+The endpoint is `http://127.0.0.1:8787/mcp`. Set `CHARACTER_STUDIO_MCP_AUTH_TOKEN` when the endpoint must be accessed by another process or host. Non-loopback binds require a bearer token unless `CHARACTER_STUDIO_MCP_ALLOW_ANONYMOUS=true` is explicitly set.
+
+Enable native HTTPS with a certificate and private key kept outside Git:
+
+```bash
+CHARACTER_STUDIO_MCP_HOST=0.0.0.0 \
+CHARACTER_STUDIO_MCP_AUTH_TOKEN='replace-me' \
+CHARACTER_STUDIO_MCP_TLS_CERT=/path/to/fullchain.pem \
+CHARACTER_STUDIO_MCP_TLS_KEY=/path/to/private-key.pem \
+npm run mcp:https
+```
+
+Remote MCP clients should connect to `https://<host>:8787/mcp` and send `Authorization: Bearer <token>`. `/healthz` is a lightweight readiness endpoint. The legacy `/sse` and `/message?sessionId=...` compatibility endpoints are also available for clients that have not migrated to Streamable HTTP. See [`mcp/README.md`](mcp/README.md) for tool discovery, client configuration, TLS, CORS, and curl examples.
+
 ## Build
 
 ```bash
