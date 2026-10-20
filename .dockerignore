@@ -1,0 +1,15 @@
+node_modules
+.opencode
+.git
+.gitignore
+dist
+evidence
+__MACOSX
+.mcp-browser-*
+.vite
+coverage
+*.mp4
+*.webm
+*.png
+*.jpg
+*.jpeg

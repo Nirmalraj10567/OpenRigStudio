@@ -1,0 +1,1434 @@
+{
+  "schemaVersion": 1,
+  "id": "project-anime-scarf-girl",
+  "name": "Anime Scarf Girl - Slim v2",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#f2e9e6"
+  },
+  "layers": [
+    {
+      "id": "character-ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ground",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 82,
+          "fill": "#d9cfcb"
+        },
+        {
+          "id": "ground-edge",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 4,
+          "fill": "#b89f99"
+        }
+      ]
+    },
+    {
+      "id": "character-shadow",
+      "name": "Character shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "shadow",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 438,
+          "radiusX": 110,
+          "radiusY": 14,
+          "fill": "#000000",
+          "opacity": 0.18
+        }
+      ]
+    },
+    {
+      "id": "hair-back",
+      "name": "Long back hair",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "head-bone",
+      "zIndex": 2,
+      "shapes": [
+        {
+          "id": "back-top",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -100,
+          "radiusX": 72,
+          "radiusY": 50,
+          "fill": "#241610"
+        },
+        {
+          "id": "mass-l",
+          "kind": "path",
+          "d": "M -68 -96 Q -80 -10 -66 110 Q -60 132 -46 136 Q -56 60 -48 -40 Z",
+          "fill": "#241610",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "mass-r",
+          "kind": "path",
+          "d": "M 68 -96 Q 80 -10 66 110 Q 60 132 46 136 Q 56 60 48 -40 Z",
+          "fill": "#241610",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shine",
+          "kind": "ellipse",
+          "x": -24,
+          "y": -110,
+          "radiusX": 22,
+          "radiusY": 8,
+          "fill": "#5a3a28",
+          "opacity": 0.6
+        },
+        {
+          "id": "tail-l",
+          "kind": "ellipse",
+          "x": -60,
+          "y": 70,
+          "radiusX": 15,
+          "radiusY": 62,
+          "fill": "#241610"
+        },
+        {
+          "id": "tail-r",
+          "kind": "ellipse",
+          "x": 60,
+          "y": 70,
+          "radiusX": 15,
+          "radiusY": 62,
+          "fill": "#241610"
+        }
+      ]
+    },
+    {
+      "id": "character-left-leg",
+      "name": "Left leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "left-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-thigh",
+          "kind": "rect",
+          "x": -11,
+          "y": 0,
+          "width": 22,
+          "height": 150,
+          "fill": "#ffd9b3",
+          "stroke": "#e8a87c",
+          "strokeWidth": 2
+        },
+        {
+          "id": "left-knee",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 150,
+          "radiusX": 11,
+          "radiusY": 9,
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "left-shade",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 158,
+          "radiusX": 12,
+          "radiusY": 5,
+          "fill": "#f4a7b9",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "id": "character-right-leg",
+      "name": "Right leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "right-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-thigh",
+          "kind": "rect",
+          "x": -11,
+          "y": 0,
+          "width": 22,
+          "height": 150,
+          "fill": "#ffd9b3",
+          "stroke": "#e8a87c",
+          "strokeWidth": 2
+        },
+        {
+          "id": "right-knee",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 150,
+          "radiusX": 11,
+          "radiusY": 9,
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "right-shade",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 158,
+          "radiusX": 12,
+          "radiusY": 5,
+          "fill": "#f4a7b9",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "id": "skirt",
+      "name": "Pleated skirt",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "root",
+      "zIndex": 5,
+      "shapes": [
+        {
+          "id": "skirt-main",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": -44,
+              "y": 68
+            },
+            {
+              "x": 44,
+              "y": 68
+            },
+            {
+              "x": 82,
+              "y": 158
+            },
+            {
+              "x": -82,
+              "y": 158
+            }
+          ],
+          "fill": "#1e1e24",
+          "stroke": "#101014",
+          "strokeWidth": 3
+        },
+        {
+          "id": "pleat1",
+          "kind": "path",
+          "d": "M -22 70 L -36 156",
+          "fill": "none",
+          "stroke": "#101014",
+          "strokeWidth": 3
+        },
+        {
+          "id": "pleat2",
+          "kind": "path",
+          "d": "M 0 70 L 0 158",
+          "fill": "none",
+          "stroke": "#101014",
+          "strokeWidth": 3
+        },
+        {
+          "id": "pleat3",
+          "kind": "path",
+          "d": "M 22 70 L 36 156",
+          "fill": "none",
+          "stroke": "#101014",
+          "strokeWidth": 3
+        },
+        {
+          "id": "hem",
+          "kind": "path",
+          "d": "M -82 158 L 82 158",
+          "fill": "none",
+          "stroke": "#101014",
+          "strokeWidth": 4
+        }
+      ]
+    },
+    {
+      "id": "character-body",
+      "name": "Body",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "root",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "neck",
+          "kind": "rect",
+          "x": -14,
+          "y": -68,
+          "width": 28,
+          "height": 22,
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "bodice",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 10,
+          "radiusX": 48,
+          "radiusY": 66,
+          "fill": "#1e1e24",
+          "stroke": "#101014",
+          "strokeWidth": 3
+        },
+        {
+          "id": "bust",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 2,
+          "radiusX": 34,
+          "radiusY": 26,
+          "fill": "#2a2a32",
+          "opacity": 0.9
+        },
+        {
+          "id": "collar-l",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": -22,
+              "y": -52
+            },
+            {
+              "x": -4,
+              "y": -38
+            },
+            {
+              "x": -24,
+              "y": -32
+            }
+          ],
+          "fill": "#3a3a44"
+        },
+        {
+          "id": "collar-r",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 22,
+              "y": -52
+            },
+            {
+              "x": 4,
+              "y": -38
+            },
+            {
+              "x": 24,
+              "y": -32
+            }
+          ],
+          "fill": "#3a3a44"
+        },
+        {
+          "id": "belt",
+          "kind": "rect",
+          "x": -42,
+          "y": 60,
+          "width": 84,
+          "height": 12,
+          "fill": "#101014"
+        },
+        {
+          "id": "buckle",
+          "kind": "rect",
+          "x": -8,
+          "y": 62,
+          "width": 16,
+          "height": 8,
+          "fill": "#6a6a75"
+        }
+      ]
+    },
+    {
+      "id": "character-left-arm",
+      "name": "Left arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "left-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-sleeve",
+          "kind": "rect",
+          "x": -11,
+          "y": 0,
+          "width": 22,
+          "height": 80,
+          "fill": "#1e1e24",
+          "stroke": "#101014",
+          "strokeWidth": 2
+        },
+        {
+          "id": "left-cuff",
+          "kind": "rect",
+          "x": -13,
+          "y": 68,
+          "width": 26,
+          "height": 14,
+          "fill": "#9a9aa3",
+          "stroke": "#5a5a62",
+          "strokeWidth": 2
+        },
+        {
+          "id": "left-glove",
+          "kind": "rect",
+          "x": -11,
+          "y": 82,
+          "width": 22,
+          "height": 32,
+          "fill": "#b71c1c",
+          "stroke": "#7f0000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "left-fingers",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 116,
+          "radiusX": 9,
+          "radiusY": 8,
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "watch-strap",
+          "kind": "rect",
+          "x": -13,
+          "y": 64,
+          "width": 26,
+          "height": 8,
+          "fill": "#111"
+        },
+        {
+          "id": "watch-face",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 68,
+          "radiusX": 9,
+          "radiusY": 7,
+          "fill": "#fff",
+          "stroke": "#111",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "scarf",
+      "name": "Red scarf",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "root",
+      "zIndex": 9,
+      "shapes": [
+        {
+          "id": "wrap",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -48,
+          "radiusX": 38,
+          "radiusY": 20,
+          "fill": "#b71c1c",
+          "stroke": "#7f0000",
+          "strokeWidth": 3
+        },
+        {
+          "id": "wrap-fold",
+          "kind": "path",
+          "d": "M -36 -52 Q 0 -34 36 -52",
+          "fill": "none",
+          "stroke": "#7f0000",
+          "strokeWidth": 3
+        },
+        {
+          "id": "end-l",
+          "kind": "path",
+          "d": "M -24 -32 L -36 36 L -12 36 L -4 -30 Z",
+          "fill": "#b71c1c",
+          "stroke": "#7f0000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "end-r",
+          "kind": "path",
+          "d": "M 6 -30 L 2 24 L 24 24 L 28 -32 Z",
+          "fill": "#7f0000",
+          "stroke": "#7f0000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "fringe-l",
+          "kind": "path",
+          "d": "M -36 36 L -36 44 M -28 36 L -28 44 M -20 36 L -20 44",
+          "fill": "none",
+          "stroke": "#7f0000",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "character-head",
+      "name": "Head",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 11,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "head",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -56,
+          "radiusX": 60,
+          "radiusY": 58,
+          "fill": "#ffd9b3",
+          "stroke": "#e8a87c",
+          "strokeWidth": 2
+        },
+        {
+          "id": "jaw",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": -38,
+              "y": -24
+            },
+            {
+              "x": 38,
+              "y": -24
+            },
+            {
+              "x": 14,
+              "y": -2
+            },
+            {
+              "x": -14,
+              "y": -2
+            }
+          ],
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "ear-l",
+          "kind": "ellipse",
+          "x": -58,
+          "y": -50,
+          "radiusX": 8,
+          "radiusY": 12,
+          "fill": "#ffd9b3"
+        },
+        {
+          "id": "ear-r",
+          "kind": "ellipse",
+          "x": 58,
+          "y": -50,
+          "radiusX": 8,
+          "radiusY": 12,
+          "fill": "#ffd9b3"
+        }
+      ]
+    },
+    {
+      "id": "character-face",
+      "name": "Face",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 12,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "eye-w-l",
+          "kind": "ellipse",
+          "x": -24,
+          "y": -56,
+          "radiusX": 14,
+          "radiusY": 20,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "eye-w-r",
+          "kind": "ellipse",
+          "x": 24,
+          "y": -56,
+          "radiusX": 14,
+          "radiusY": 20,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "iris-l",
+          "kind": "ellipse",
+          "x": -24,
+          "y": -52,
+          "radiusX": 9,
+          "radiusY": 14,
+          "fill": "#4e2312"
+        },
+        {
+          "id": "iris-r",
+          "kind": "ellipse",
+          "x": 24,
+          "y": -52,
+          "radiusX": 9,
+          "radiusY": 14,
+          "fill": "#4e2312"
+        },
+        {
+          "id": "pupil-l",
+          "kind": "ellipse",
+          "x": -24,
+          "y": -50,
+          "radiusX": 5,
+          "radiusY": 8,
+          "fill": "#140905"
+        },
+        {
+          "id": "pupil-r",
+          "kind": "ellipse",
+          "x": 24,
+          "y": -50,
+          "radiusX": 5,
+          "radiusY": 8,
+          "fill": "#140905"
+        },
+        {
+          "id": "hl-l",
+          "kind": "ellipse",
+          "x": -26,
+          "y": -57,
+          "radiusX": 3,
+          "radiusY": 4,
+          "fill": "#fff"
+        },
+        {
+          "id": "hl-r",
+          "kind": "ellipse",
+          "x": 22,
+          "y": -57,
+          "radiusX": 3,
+          "radiusY": 4,
+          "fill": "#fff"
+        },
+        {
+          "id": "lash-l",
+          "kind": "path",
+          "d": "M -38 -68 Q -24 -74 -10 -66",
+          "fill": "none",
+          "stroke": "#1a0d08",
+          "strokeWidth": 5
+        },
+        {
+          "id": "lash-r",
+          "kind": "path",
+          "d": "M 10 -66 Q 24 -74 38 -68",
+          "fill": "none",
+          "stroke": "#1a0d08",
+          "strokeWidth": 5
+        },
+        {
+          "id": "brow-l",
+          "kind": "path",
+          "d": "M -38 -80 Q -24 -83 -10 -79",
+          "fill": "none",
+          "stroke": "#241610",
+          "strokeWidth": 3
+        },
+        {
+          "id": "brow-r",
+          "kind": "path",
+          "d": "M 10 -79 Q 24 -83 38 -80",
+          "fill": "none",
+          "stroke": "#241610",
+          "strokeWidth": 3
+        },
+        {
+          "id": "blush-l",
+          "kind": "ellipse",
+          "x": -40,
+          "y": -34,
+          "radiusX": 10,
+          "radiusY": 6,
+          "fill": "#ff9e9e",
+          "opacity": 0.8
+        },
+        {
+          "id": "blush-r",
+          "kind": "ellipse",
+          "x": 40,
+          "y": -34,
+          "radiusX": 10,
+          "radiusY": 6,
+          "fill": "#ff9e9e",
+          "opacity": 0.8
+        },
+        {
+          "id": "mouth",
+          "kind": "path",
+          "d": "M -6 -16 Q 0 -13 6 -16",
+          "fill": "none",
+          "stroke": "#7a2a2a",
+          "strokeWidth": 3
+        }
+      ]
+    },
+    {
+      "id": "hair-front",
+      "name": "Bangs",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "head-bone",
+      "zIndex": 13,
+      "shapes": [
+        {
+          "id": "bangs",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": -60,
+              "y": -104
+            },
+            {
+              "x": 60,
+              "y": -104
+            },
+            {
+              "x": 52,
+              "y": -62
+            },
+            {
+              "x": 36,
+              "y": -82
+            },
+            {
+              "x": 22,
+              "y": -60
+            },
+            {
+              "x": 6,
+              "y": -82
+            },
+            {
+              "x": -10,
+              "y": -60
+            },
+            {
+              "x": -26,
+              "y": -82
+            },
+            {
+              "x": -40,
+              "y": -62
+            },
+            {
+              "x": -52,
+              "y": -82
+            }
+          ],
+          "fill": "#241610"
+        },
+        {
+          "id": "strand-l",
+          "kind": "path",
+          "d": "M -58 -90 Q -66 -30 -52 44",
+          "fill": "none",
+          "stroke": "#241610",
+          "strokeWidth": 12
+        },
+        {
+          "id": "strand-r",
+          "kind": "path",
+          "d": "M 58 -90 Q 66 -30 52 48",
+          "fill": "none",
+          "stroke": "#241610",
+          "strokeWidth": 12
+        },
+        {
+          "id": "shine-f",
+          "kind": "ellipse",
+          "x": -18,
+          "y": -96,
+          "radiusX": 18,
+          "radiusY": 6,
+          "fill": "#5a3a28",
+          "opacity": 0.55
+        }
+      ]
+    },
+    {
+      "id": "character-right-arm",
+      "name": "Right arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 14,
+      "boundBoneId": "right-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-sleeve",
+          "kind": "rect",
+          "x": -11,
+          "y": 0,
+          "width": 22,
+          "height": 80,
+          "fill": "#1e1e24",
+          "stroke": "#101014",
+          "strokeWidth": 2
+        },
+        {
+          "id": "right-cuff",
+          "kind": "rect",
+          "x": -13,
+          "y": 68,
+          "width": 26,
+          "height": 14,
+          "fill": "#9a9aa3",
+          "stroke": "#5a5a62",
+          "strokeWidth": 2
+        },
+        {
+          "id": "right-glove",
+          "kind": "rect",
+          "x": -11,
+          "y": 82,
+          "width": 22,
+          "height": 32,
+          "fill": "#b71c1c",
+          "stroke": "#7f0000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "right-fingers",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 116,
+          "radiusX": 9,
+          "radiusY": 8,
+          "fill": "#ffd9b3"
+        }
+      ]
+    }
+  ],
+  "bones": [
+    {
+      "id": "root",
+      "name": "Root",
+      "length": 84,
+      "parentId": null,
+      "local": {
+        "x": 400,
+        "y": 318,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "head-bone",
+      "name": "Head",
+      "length": 72,
+      "parentId": "root",
+      "local": {
+        "x": 94,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-arm-bone",
+      "name": "Left Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": -103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-arm-bone",
+      "name": "Right Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": 103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-leg-bone",
+      "name": "Left Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": -38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-leg-bone",
+      "name": "Right Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": 38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-character-left-leg",
+      "layerId": "character-left-leg",
+      "imageId": "character-left-leg",
+      "boneId": "left-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-leg",
+      "layerId": "character-right-leg",
+      "imageId": "character-right-leg",
+      "boneId": "right-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-body",
+      "layerId": "character-body",
+      "imageId": "character-body",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-left-arm",
+      "layerId": "character-left-arm",
+      "imageId": "character-left-arm",
+      "boneId": "left-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-arm",
+      "layerId": "character-right-arm",
+      "imageId": "character-right-arm",
+      "boneId": "right-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-head",
+      "layerId": "character-head",
+      "imageId": "character-head",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-face",
+      "layerId": "character-face",
+      "imageId": "character-face",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-hair-back",
+      "layerId": "hair-back",
+      "imageId": "hair-back",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-skirt",
+      "layerId": "skirt",
+      "imageId": "skirt",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-scarf",
+      "layerId": "scarf",
+      "imageId": "scarf",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-hair-front",
+      "layerId": "hair-front",
+      "imageId": "hair-front",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [
+    {
+      "id": "shy-idle",
+      "name": "Shy idle",
+      "startFrame": 0,
+      "endFrame": 72,
+      "tracks": [
+        {
+          "id": "t-root",
+          "targetId": "root",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "r0",
+              "frame": 0,
+              "value": {
+                "x": 400,
+                "y": 318,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "r1",
+              "frame": 36,
+              "value": {
+                "x": 400,
+                "y": 322,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "r2",
+              "frame": 72,
+              "value": {
+                "x": 400,
+                "y": 318,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "t-head",
+          "targetId": "head-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "h0",
+              "frame": 0,
+              "value": {
+                "x": 94,
+                "y": 0,
+                "rotation": 0.06,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "h1",
+              "frame": 36,
+              "value": {
+                "x": 94,
+                "y": 0,
+                "rotation": -0.04,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "h2",
+              "frame": 72,
+              "value": {
+                "x": 94,
+                "y": 0,
+                "rotation": 0.06,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "t-armL",
+          "targetId": "left-arm-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "l0",
+              "frame": 0,
+              "value": {
+                "x": 48,
+                "y": -103,
+                "rotation": 3.021592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "l1",
+              "frame": 72,
+              "value": {
+                "x": 48,
+                "y": -103,
+                "rotation": 3.041592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "t-legL",
+          "targetId": "left-leg-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "ll0",
+              "frame": 0,
+              "value": {
+                "x": -30,
+                "y": -38,
+                "rotation": 3.191592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "t-legR",
+          "targetId": "right-leg-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "lr0",
+              "frame": 0,
+              "value": {
+                "x": -30,
+                "y": 38,
+                "rotation": 3.0915926535897933,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "mcp-right-arm-bone-transform",
+          "targetId": "right-arm-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 48,
+                "y": 76,
+                "rotation": -0.72,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-0"
+            },
+            {
+              "frame": 36,
+              "value": {
+                "x": 48,
+                "y": 76,
+                "rotation": -0.65,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-1"
+            },
+            {
+              "frame": 72,
+              "value": {
+                "x": 48,
+                "y": 76,
+                "rotation": -0.72,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-2"
+            }
+          ]
+        }
+      ],
+      "setupPose": {
+        "right-arm-bone": {
+          "local": {
+            "x": 48,
+            "y": 103,
+            "rotation": 3.141592653589793,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        }
+      }
+    }
+  ],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 72,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 72,
+    "activeAnimationId": "shy-idle"
+  },
+  "metadata": {
+    "createdBy": "character-studio-mcp",
+    "characterType": "rigid-bound vector character"
+  }
+}

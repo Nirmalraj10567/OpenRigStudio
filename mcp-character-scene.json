@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "id": "project-mcp-character",
+  "name": "MCP Character",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#111d28"
+  },
+  "layers": [
+    {
+      "id": "character-ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ground",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 82,
+          "fill": "#1d3441"
+        },
+        {
+          "id": "ground-edge",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 4,
+          "fill": "#8ae6d0"
+        }
+      ]
+    },
+    {
+      "id": "character-shadow",
+      "name": "Character shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "shadow",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 438,
+          "radiusX": 96,
+          "radiusY": 12,
+          "fill": "#000000",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "id": "character-left-leg",
+      "name": "Left leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 2,
+      "boundBoneId": "left-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-leg",
+          "kind": "rect",
+          "x": -14,
+          "y": 0,
+          "width": 28,
+          "height": 80,
+          "fill": "#426a82"
+        },
+        {
+          "id": "left-shoe",
+          "kind": "ellipse",
+          "x": -10,
+          "y": 77,
+          "radiusX": 38,
+          "radiusY": 13,
+          "fill": "#f0b45a"
+        }
+      ]
+    },
+    {
+      "id": "character-right-leg",
+      "name": "Right leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "right-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-leg",
+          "kind": "rect",
+          "x": -14,
+          "y": 0,
+          "width": 28,
+          "height": 80,
+          "fill": "#426a82"
+        },
+        {
+          "id": "right-shoe",
+          "kind": "ellipse",
+          "x": 10,
+          "y": 77,
+          "radiusX": 38,
+          "radiusY": 13,
+          "fill": "#f0b45a"
+        }
+      ]
+    },
+    {
+      "id": "character-body",
+      "name": "Body",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "root",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "torso",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 0,
+          "radiusX": 104,
+          "radiusY": 112,
+          "fill": "#4aa3df",
+          "stroke": "#d5fff0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "chest",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 12,
+          "radiusX": 52,
+          "radiusY": 40,
+          "fill": "#f0b45a",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "id": "character-left-arm",
+      "name": "Left arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 5,
+      "boundBoneId": "left-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-arm",
+          "kind": "rect",
+          "x": -15,
+          "y": 0,
+          "width": 30,
+          "height": 118,
+          "fill": "#4aa3df",
+          "stroke": "#d5fff0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "left-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 22,
+          "radiusY": 17,
+          "fill": "#f0b45a"
+        }
+      ]
+    },
+    {
+      "id": "character-right-arm",
+      "name": "Right arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "right-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-arm",
+          "kind": "rect",
+          "x": -15,
+          "y": 0,
+          "width": 30,
+          "height": 118,
+          "fill": "#4aa3df",
+          "stroke": "#d5fff0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "right-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 22,
+          "radiusY": 17,
+          "fill": "#f0b45a"
+        }
+      ]
+    },
+    {
+      "id": "character-head",
+      "name": "Head",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "head",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -56,
+          "radiusX": 96,
+          "radiusY": 82,
+          "fill": "#4aa3df",
+          "stroke": "#d5fff0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "ear-left",
+          "kind": "ellipse",
+          "x": -96,
+          "y": -56,
+          "radiusX": 20,
+          "radiusY": 30,
+          "fill": "#f0b45a"
+        },
+        {
+          "id": "ear-right",
+          "kind": "ellipse",
+          "x": 96,
+          "y": -56,
+          "radiusX": 20,
+          "radiusY": 30,
+          "fill": "#f0b45a"
+        }
+      ]
+    },
+    {
+      "id": "character-face",
+      "name": "Face",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 8,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-eye",
+          "kind": "ellipse",
+          "x": -35,
+          "y": -66,
+          "radiusX": 16,
+          "radiusY": 22,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "right-eye",
+          "kind": "ellipse",
+          "x": 35,
+          "y": -66,
+          "radiusX": 16,
+          "radiusY": 22,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "left-pupil",
+          "kind": "ellipse",
+          "x": -32,
+          "y": -62,
+          "radiusX": 7,
+          "radiusY": 11,
+          "fill": "#162431"
+        },
+        {
+          "id": "right-pupil",
+          "kind": "ellipse",
+          "x": 38,
+          "y": -62,
+          "radiusX": 7,
+          "radiusY": 11,
+          "fill": "#162431"
+        },
+        {
+          "id": "smile",
+          "kind": "path",
+          "d": "M -35 -19 Q 0 11 35 -19",
+          "fill": "none",
+          "stroke": "#162431",
+          "strokeWidth": 7
+        }
+      ]
+    }
+  ],
+  "bones": [
+    {
+      "id": "root",
+      "name": "Root",
+      "length": 84,
+      "parentId": null,
+      "local": {
+        "x": 400,
+        "y": 318,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "head-bone",
+      "name": "Head",
+      "length": 72,
+      "parentId": "root",
+      "local": {
+        "x": 94,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-arm-bone",
+      "name": "Left Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": -103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-arm-bone",
+      "name": "Right Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": 103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-leg-bone",
+      "name": "Left Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": -38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-leg-bone",
+      "name": "Right Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": 38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-character-left-leg",
+      "layerId": "character-left-leg",
+      "imageId": "character-left-leg",
+      "boneId": "left-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-leg",
+      "layerId": "character-right-leg",
+      "imageId": "character-right-leg",
+      "boneId": "right-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-body",
+      "layerId": "character-body",
+      "imageId": "character-body",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-left-arm",
+      "layerId": "character-left-arm",
+      "imageId": "character-left-arm",
+      "boneId": "left-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-arm",
+      "layerId": "character-right-arm",
+      "imageId": "character-right-arm",
+      "boneId": "right-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-head",
+      "layerId": "character-head",
+      "imageId": "character-head",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-face",
+      "layerId": "character-face",
+      "imageId": "character-face",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "createdBy": "character-studio-mcp",
+    "characterType": "rigid-bound vector character"
+  }
+}

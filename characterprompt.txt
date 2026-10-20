@@ -1,0 +1,1 @@
+The reference is a single full-body anime-style girl: dark bob hair, sunglasses on her head, blue cropped jacket, coral wrap skirt, red heels, and a small shoulder bag. I’m using it as the visual target and building clean editable vector parts plus a real skeleton, rather than importing the screenshot as the character artwork.

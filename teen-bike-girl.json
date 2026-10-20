@@ -1,0 +1,1778 @@
+{
+  "schemaVersion": 1,
+  "id": "project-teen-bike-girl",
+  "name": "Teen Girl Bike Ride - City",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#111d28"
+  },
+  "layers": [
+    {
+      "id": "city-bg",
+      "name": "City",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": true,
+      "boundBoneId": null,
+      "zIndex": -2,
+      "shapes": [
+        {
+          "id": "sky",
+          "kind": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 800,
+          "height": 520,
+          "fill": "#87CEEB"
+        },
+        {
+          "id": "sun",
+          "kind": "ellipse",
+          "x": 680,
+          "y": 70,
+          "radiusX": 42,
+          "radiusY": 42,
+          "fill": "#FFF176",
+          "stroke": "#FFB300",
+          "strokeWidth": 4
+        },
+        {
+          "id": "cloud1",
+          "kind": "ellipse",
+          "x": 150,
+          "y": 70,
+          "radiusX": 60,
+          "radiusY": 22,
+          "fill": "#ffffff",
+          "opacity": 0.9
+        },
+        {
+          "id": "cloud1b",
+          "kind": "ellipse",
+          "x": 190,
+          "y": 60,
+          "radiusX": 40,
+          "radiusY": 20,
+          "fill": "#ffffff",
+          "opacity": 0.9
+        },
+        {
+          "id": "cloud2",
+          "kind": "ellipse",
+          "x": 450,
+          "y": 50,
+          "radiusX": 50,
+          "radiusY": 18,
+          "fill": "#ffffff",
+          "opacity": 0.85
+        },
+        {
+          "id": "b1",
+          "kind": "rect",
+          "x": 20,
+          "y": 120,
+          "width": 90,
+          "height": 280,
+          "fill": "#37474F"
+        },
+        {
+          "id": "b1-win1",
+          "kind": "rect",
+          "x": 32,
+          "y": 140,
+          "width": 66,
+          "height": 200,
+          "fill": "#B0BEC5",
+          "opacity": 0.5
+        },
+        {
+          "id": "b2",
+          "kind": "rect",
+          "x": 125,
+          "y": 80,
+          "width": 110,
+          "height": 320,
+          "fill": "#546E7A"
+        },
+        {
+          "id": "b2-win",
+          "kind": "rect",
+          "x": 137,
+          "y": 100,
+          "width": 86,
+          "height": 220,
+          "fill": "#CFD8DC",
+          "opacity": 0.55
+        },
+        {
+          "id": "b3",
+          "kind": "rect",
+          "x": 250,
+          "y": 150,
+          "width": 80,
+          "height": 250,
+          "fill": "#607D8B"
+        },
+        {
+          "id": "b4",
+          "kind": "rect",
+          "x": 345,
+          "y": 100,
+          "width": 100,
+          "height": 300,
+          "fill": "#455A64"
+        },
+        {
+          "id": "b4-win",
+          "kind": "rect",
+          "x": 357,
+          "y": 120,
+          "width": 76,
+          "height": 200,
+          "fill": "#ECEFF1",
+          "opacity": 0.4
+        },
+        {
+          "id": "b5",
+          "kind": "rect",
+          "x": 460,
+          "y": 160,
+          "width": 70,
+          "height": 240,
+          "fill": "#78909C"
+        },
+        {
+          "id": "shop-awning",
+          "kind": "rect",
+          "x": 250,
+          "y": 330,
+          "width": 80,
+          "height": 22,
+          "fill": "#e53935"
+        },
+        {
+          "id": "shop-door",
+          "kind": "rect",
+          "x": 270,
+          "y": 352,
+          "width": 40,
+          "height": 48,
+          "fill": "#3E2723"
+        },
+        {
+          "id": "sidewalk",
+          "kind": "rect",
+          "x": 0,
+          "y": 392,
+          "width": 800,
+          "height": 22,
+          "fill": "#B0BEC5"
+        },
+        {
+          "id": "road",
+          "kind": "rect",
+          "x": 0,
+          "y": 414,
+          "width": 800,
+          "height": 106,
+          "fill": "#424242"
+        },
+        {
+          "id": "lane1",
+          "kind": "rect",
+          "x": 0,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "lane2",
+          "kind": "rect",
+          "x": 130,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "lane3",
+          "kind": "rect",
+          "x": 260,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "lane4",
+          "kind": "rect",
+          "x": 390,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "lane5",
+          "kind": "rect",
+          "x": 520,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "lane6",
+          "kind": "rect",
+          "x": 650,
+          "y": 462,
+          "width": 90,
+          "height": 8,
+          "fill": "#FFEB3B"
+        },
+        {
+          "id": "tree-trunk",
+          "kind": "rect",
+          "x": 540,
+          "y": 340,
+          "width": 14,
+          "height": 55,
+          "fill": "#5D4037"
+        },
+        {
+          "id": "tree-top",
+          "kind": "ellipse",
+          "x": 547,
+          "y": 320,
+          "radiusX": 36,
+          "radiusY": 30,
+          "fill": "#2E7D32"
+        },
+        {
+          "id": "lamp-post",
+          "kind": "rect",
+          "x": 60,
+          "y": 280,
+          "width": 10,
+          "height": 115,
+          "fill": "#263238"
+        },
+        {
+          "id": "lamp-head",
+          "kind": "ellipse",
+          "x": 65,
+          "y": 272,
+          "radiusX": 16,
+          "radiusY": 10,
+          "fill": "#FFEB3B",
+          "stroke": "#263238",
+          "strokeWidth": 3
+        }
+      ]
+    },
+    {
+      "id": "luxury-hotel",
+      "name": "Hotel",
+      "type": "vector",
+      "local": {
+        "x": 600,
+        "y": 50,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": null,
+      "zIndex": -1,
+      "shapes": [
+        {
+          "id": "hotel-base",
+          "kind": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 150,
+          "height": 350,
+          "fill": "#FFD700"
+        },
+        {
+          "id": "hotel-door",
+          "kind": "rect",
+          "x": 50,
+          "y": 250,
+          "width": 50,
+          "height": 100,
+          "fill": "#8B4513"
+        },
+        {
+          "id": "hotel-sign",
+          "kind": "rect",
+          "x": 10,
+          "y": 20,
+          "width": 130,
+          "height": 40,
+          "fill": "#000"
+        }
+      ]
+    },
+    {
+      "id": "character-ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ground",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 82,
+          "fill": "#1d3441"
+        },
+        {
+          "id": "ground-edge",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 4,
+          "fill": "#8ae6d0"
+        }
+      ]
+    },
+    {
+      "id": "character-shadow",
+      "name": "Character shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "shadow",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 438,
+          "radiusX": 96,
+          "radiusY": 12,
+          "fill": "#000000",
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "id": "scooter",
+      "name": "Bicycle",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "root",
+      "zIndex": 2,
+      "shapes": [
+        {
+          "id": "wheel-rear-tire",
+          "kind": "ellipse",
+          "x": -95,
+          "y": 95,
+          "radiusX": 34,
+          "radiusY": 34,
+          "fill": "#212121",
+          "stroke": "#000000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "wheel-rear-rim",
+          "kind": "ellipse",
+          "x": -95,
+          "y": 95,
+          "radiusX": 22,
+          "radiusY": 22,
+          "fill": "#ECEFF1",
+          "stroke": "#90A4AE",
+          "strokeWidth": 3
+        },
+        {
+          "id": "spoke-r1",
+          "kind": "path",
+          "d": "M -117 95 L -73 95 M -95 73 L -95 117",
+          "fill": "none",
+          "stroke": "#78909C",
+          "strokeWidth": 3
+        },
+        {
+          "id": "hub-r",
+          "kind": "ellipse",
+          "x": -95,
+          "y": 95,
+          "radiusX": 6,
+          "radiusY": 6,
+          "fill": "#37474F"
+        },
+        {
+          "id": "wheel-front-tire",
+          "kind": "ellipse",
+          "x": 95,
+          "y": 95,
+          "radiusX": 34,
+          "radiusY": 34,
+          "fill": "#212121",
+          "stroke": "#000000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "wheel-front-rim",
+          "kind": "ellipse",
+          "x": 95,
+          "y": 95,
+          "radiusX": 22,
+          "radiusY": 22,
+          "fill": "#ECEFF1",
+          "stroke": "#90A4AE",
+          "strokeWidth": 3
+        },
+        {
+          "id": "spoke-f1",
+          "kind": "path",
+          "d": "M 73 95 L 117 95 M 95 73 L 95 117",
+          "fill": "none",
+          "stroke": "#78909C",
+          "strokeWidth": 3
+        },
+        {
+          "id": "hub-f",
+          "kind": "ellipse",
+          "x": 95,
+          "y": 95,
+          "radiusX": 6,
+          "radiusY": 6,
+          "fill": "#37474F"
+        },
+        {
+          "id": "frame-low",
+          "kind": "path",
+          "d": "M -95 95 L 10 95 L 88 30",
+          "fill": "none",
+          "stroke": "#d7263d",
+          "strokeWidth": 8
+        },
+        {
+          "id": "frame-top",
+          "kind": "path",
+          "d": "M -95 95 L 0 30 L 88 30",
+          "fill": "none",
+          "stroke": "#e53935",
+          "strokeWidth": 8
+        },
+        {
+          "id": "frame-seatstay",
+          "kind": "path",
+          "d": "M -95 95 L 0 30",
+          "fill": "none",
+          "stroke": "#b71c1c",
+          "strokeWidth": 5
+        },
+        {
+          "id": "seat-post",
+          "kind": "path",
+          "d": "M 0 30 L -4 12",
+          "fill": "none",
+          "stroke": "#37474F",
+          "strokeWidth": 5
+        },
+        {
+          "id": "saddle",
+          "kind": "rect",
+          "x": -24,
+          "y": 0,
+          "width": 40,
+          "height": 13,
+          "fill": "#263238"
+        },
+        {
+          "id": "handle-stem",
+          "kind": "path",
+          "d": "M 88 30 L 98 -6",
+          "fill": "none",
+          "stroke": "#90A4AE",
+          "strokeWidth": 6
+        },
+        {
+          "id": "handlebar",
+          "kind": "rect",
+          "x": 82,
+          "y": -14,
+          "width": 32,
+          "height": 9,
+          "fill": "#263238"
+        },
+        {
+          "id": "grip",
+          "kind": "ellipse",
+          "x": 86,
+          "y": -9,
+          "radiusX": 7,
+          "radiusY": 7,
+          "fill": "#000000"
+        },
+        {
+          "id": "crank",
+          "kind": "ellipse",
+          "x": 10,
+          "y": 95,
+          "radiusX": 10,
+          "radiusY": 10,
+          "fill": "#37474F",
+          "stroke": "#B0BEC5",
+          "strokeWidth": 2
+        },
+        {
+          "id": "pedal-r",
+          "kind": "rect",
+          "x": 10,
+          "y": 103,
+          "width": 24,
+          "height": 7,
+          "fill": "#000000"
+        },
+        {
+          "id": "pedal-l",
+          "kind": "rect",
+          "x": -16,
+          "y": 85,
+          "width": 24,
+          "height": 7,
+          "fill": "#000000"
+        },
+        {
+          "id": "basket",
+          "kind": "rect",
+          "x": 100,
+          "y": 4,
+          "width": 30,
+          "height": 22,
+          "fill": "#8D6E63",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "id": "character-left-leg",
+      "name": "Left leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "left-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-jeans",
+          "kind": "rect",
+          "x": -18,
+          "y": 0,
+          "width": 30,
+          "height": 78,
+          "fill": "#2e4a7f",
+          "stroke": "#1e3560",
+          "strokeWidth": 3
+        },
+        {
+          "id": "left-cuff",
+          "kind": "rect",
+          "x": -15,
+          "y": 62,
+          "width": 30,
+          "height": 12,
+          "fill": "#1e3560"
+        },
+        {
+          "id": "left-shoe",
+          "kind": "ellipse",
+          "x": -28,
+          "y": 80,
+          "radiusX": 34,
+          "radiusY": 13,
+          "fill": "#ff7aa2",
+          "stroke": "#ffffff",
+          "strokeWidth": 3
+        },
+        {
+          "id": "left-sole",
+          "kind": "rect",
+          "x": -60,
+          "y": 86,
+          "width": 64,
+          "height": 6,
+          "fill": "#ffffff"
+        }
+      ]
+    },
+    {
+      "id": "character-right-leg",
+      "name": "Right leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "right-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-jeans",
+          "kind": "rect",
+          "x": -12,
+          "y": 0,
+          "width": 30,
+          "height": 78,
+          "fill": "#2e4a7f",
+          "stroke": "#1e3560",
+          "strokeWidth": 3
+        },
+        {
+          "id": "right-cuff",
+          "kind": "rect",
+          "x": -15,
+          "y": 62,
+          "width": 30,
+          "height": 12,
+          "fill": "#1e3560"
+        },
+        {
+          "id": "right-shoe",
+          "kind": "ellipse",
+          "x": 28,
+          "y": 80,
+          "radiusX": 34,
+          "radiusY": 13,
+          "fill": "#ff7aa2",
+          "stroke": "#ffffff",
+          "strokeWidth": 3
+        },
+        {
+          "id": "right-sole",
+          "kind": "rect",
+          "x": -4,
+          "y": 86,
+          "width": 64,
+          "height": 6,
+          "fill": "#ffffff"
+        }
+      ]
+    },
+    {
+      "id": "teen-hair",
+      "name": "Teen hair",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": "head-bone",
+      "zIndex": 5,
+      "shapes": [
+        {
+          "id": "hair-back",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -96,
+          "radiusX": 96,
+          "radiusY": 62,
+          "fill": "#4a2410"
+        },
+        {
+          "id": "hair-fringe",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -108,
+          "radiusX": 78,
+          "radiusY": 34,
+          "fill": "#4a2410"
+        },
+        {
+          "id": "hair-shine",
+          "kind": "ellipse",
+          "x": -30,
+          "y": -110,
+          "radiusX": 28,
+          "radiusY": 10,
+          "fill": "#6d3a1f",
+          "opacity": 0.8
+        },
+        {
+          "id": "ponytail",
+          "kind": "ellipse",
+          "x": 88,
+          "y": -30,
+          "radiusX": 26,
+          "radiusY": 52,
+          "fill": "#4a2410"
+        },
+        {
+          "id": "ponytail-tip",
+          "kind": "ellipse",
+          "x": 92,
+          "y": 8,
+          "radiusX": 16,
+          "radiusY": 22,
+          "fill": "#6d3a1f"
+        },
+        {
+          "id": "hair-tie",
+          "kind": "ellipse",
+          "x": 78,
+          "y": -62,
+          "radiusX": 12,
+          "radiusY": 10,
+          "fill": "#e53935"
+        },
+        {
+          "id": "strand-l",
+          "kind": "path",
+          "d": "M -88 -60 Q -96 -10 -78 22",
+          "fill": "none",
+          "stroke": "#4a2410",
+          "strokeWidth": 14
+        },
+        {
+          "id": "strand-r",
+          "kind": "path",
+          "d": "M 70 -90 Q 92 -60 88 -30",
+          "fill": "none",
+          "stroke": "#4a2410",
+          "strokeWidth": 10
+        }
+      ]
+    },
+    {
+      "id": "character-body",
+      "name": "Body",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "root",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "torso",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 0,
+          "radiusX": 82,
+          "radiusY": 95,
+          "fill": "#e53935",
+          "stroke": "#7f1d1d",
+          "strokeWidth": 4
+        },
+        {
+          "id": "tee-logo",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 18,
+          "radiusX": 36,
+          "radiusY": 26,
+          "fill": "#ffffff",
+          "opacity": 0.95
+        },
+        {
+          "id": "tee-heart",
+          "kind": "path",
+          "d": "M -12 14 C -22 4 -8 -8 0 2 C 8 -8 22 4 12 14 L 0 24 Z",
+          "fill": "#e53935",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "collar",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -78,
+          "radiusX": 30,
+          "radiusY": 14,
+          "fill": "#b71c1c"
+        }
+      ]
+    },
+    {
+      "id": "character-left-arm",
+      "name": "Left arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "left-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-sleeve",
+          "kind": "rect",
+          "x": -17,
+          "y": 0,
+          "width": 34,
+          "height": 38,
+          "fill": "#e53935",
+          "stroke": "#7f1d1d",
+          "strokeWidth": 3
+        },
+        {
+          "id": "left-arm",
+          "kind": "rect",
+          "x": -12,
+          "y": 34,
+          "width": 24,
+          "height": 82,
+          "fill": "#ffcf9f"
+        },
+        {
+          "id": "left-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 20,
+          "radiusY": 16,
+          "fill": "#ffcf9f",
+          "stroke": "#eab086",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "character-right-arm",
+      "name": "Right arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 8,
+      "boundBoneId": "right-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-sleeve",
+          "kind": "rect",
+          "x": -17,
+          "y": 0,
+          "width": 34,
+          "height": 38,
+          "fill": "#e53935",
+          "stroke": "#7f1d1d",
+          "strokeWidth": 3
+        },
+        {
+          "id": "right-arm",
+          "kind": "rect",
+          "x": -12,
+          "y": 34,
+          "width": 24,
+          "height": 82,
+          "fill": "#ffcf9f"
+        },
+        {
+          "id": "right-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 20,
+          "radiusY": 16,
+          "fill": "#ffcf9f",
+          "stroke": "#eab086",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "character-head",
+      "name": "Head",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 9,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "head",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -56,
+          "radiusX": 88,
+          "radiusY": 76,
+          "fill": "#ffcf9f",
+          "stroke": "#eab086",
+          "strokeWidth": 3
+        },
+        {
+          "id": "ear-left",
+          "kind": "ellipse",
+          "x": -86,
+          "y": -52,
+          "radiusX": 14,
+          "radiusY": 20,
+          "fill": "#ffcf9f"
+        },
+        {
+          "id": "ear-right",
+          "kind": "ellipse",
+          "x": 86,
+          "y": -52,
+          "radiusX": 14,
+          "radiusY": 20,
+          "fill": "#ffcf9f"
+        },
+        {
+          "id": "blush-l",
+          "kind": "ellipse",
+          "x": -48,
+          "y": -34,
+          "radiusX": 12,
+          "radiusY": 7,
+          "fill": "#ff9e9e",
+          "opacity": 0.7
+        },
+        {
+          "id": "blush-r",
+          "kind": "ellipse",
+          "x": 48,
+          "y": -34,
+          "radiusX": 12,
+          "radiusY": 7,
+          "fill": "#ff9e9e",
+          "opacity": 0.7
+        }
+      ]
+    },
+    {
+      "id": "character-face",
+      "name": "Face",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 10,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-eye",
+          "kind": "ellipse",
+          "x": -35,
+          "y": -66,
+          "radiusX": 16,
+          "radiusY": 22,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "right-eye",
+          "kind": "ellipse",
+          "x": 35,
+          "y": -66,
+          "radiusX": 16,
+          "radiusY": 22,
+          "fill": "#ffffff"
+        },
+        {
+          "id": "left-pupil",
+          "kind": "ellipse",
+          "x": -32,
+          "y": -62,
+          "radiusX": 7,
+          "radiusY": 11,
+          "fill": "#162431"
+        },
+        {
+          "id": "right-pupil",
+          "kind": "ellipse",
+          "x": 38,
+          "y": -62,
+          "radiusX": 7,
+          "radiusY": 11,
+          "fill": "#162431"
+        },
+        {
+          "id": "smile",
+          "kind": "path",
+          "d": "M -35 -19 Q 0 11 35 -19",
+          "fill": "none",
+          "stroke": "#162431",
+          "strokeWidth": 7
+        }
+      ]
+    }
+  ],
+  "bones": [
+    {
+      "id": "root",
+      "name": "Root",
+      "length": 84,
+      "parentId": null,
+      "local": {
+        "x": 400,
+        "y": 318,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "head-bone",
+      "name": "Head",
+      "length": 72,
+      "parentId": "root",
+      "local": {
+        "x": 94,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-arm-bone",
+      "name": "Left Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": -103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-arm-bone",
+      "name": "Right Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": 103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-leg-bone",
+      "name": "Left Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": -38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-leg-bone",
+      "name": "Right Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": 38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-character-left-leg",
+      "layerId": "character-left-leg",
+      "imageId": "character-left-leg",
+      "boneId": "left-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-leg",
+      "layerId": "character-right-leg",
+      "imageId": "character-right-leg",
+      "boneId": "right-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-body",
+      "layerId": "character-body",
+      "imageId": "character-body",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-left-arm",
+      "layerId": "character-left-arm",
+      "imageId": "character-left-arm",
+      "boneId": "left-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-arm",
+      "layerId": "character-right-arm",
+      "imageId": "character-right-arm",
+      "boneId": "right-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-head",
+      "layerId": "character-head",
+      "imageId": "character-head",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-face",
+      "layerId": "character-face",
+      "imageId": "character-face",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "layerId": "scooter",
+      "imageId": "scooter",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "id": "binding-bike"
+    },
+    {
+      "id": "binding-teen-hair",
+      "layerId": "teen-hair",
+      "imageId": "teen-hair",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [
+    {
+      "id": "bike-ride",
+      "name": "City Bike Ride",
+      "startFrame": 0,
+      "endFrame": 120,
+      "tracks": [
+        {
+          "id": "track-legL",
+          "targetId": "left-leg-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "ll0",
+              "frame": 0,
+              "value": {
+                "x": -30,
+                "y": -38,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll1",
+              "frame": 15,
+              "value": {
+                "x": -30,
+                "y": -48,
+                "rotation": 3.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll2",
+              "frame": 30,
+              "value": {
+                "x": -30,
+                "y": -38,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll3",
+              "frame": 45,
+              "value": {
+                "x": -30,
+                "y": -48,
+                "rotation": 2.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll4",
+              "frame": 60,
+              "value": {
+                "x": -30,
+                "y": -38,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll5",
+              "frame": 75,
+              "value": {
+                "x": -30,
+                "y": -48,
+                "rotation": 3.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll6",
+              "frame": 90,
+              "value": {
+                "x": -30,
+                "y": -38.00000000000001,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll7",
+              "frame": 105,
+              "value": {
+                "x": -30,
+                "y": -48,
+                "rotation": 2.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "ll8",
+              "frame": 120,
+              "value": {
+                "x": -30,
+                "y": -38.00000000000001,
+                "rotation": 3.1415926535897927,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "track-legR",
+          "targetId": "right-leg-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "lr0",
+              "frame": 0,
+              "value": {
+                "x": -30,
+                "y": 38,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr1",
+              "frame": 15,
+              "value": {
+                "x": -30,
+                "y": 28,
+                "rotation": 2.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr2",
+              "frame": 30,
+              "value": {
+                "x": -30,
+                "y": 38,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr3",
+              "frame": 45,
+              "value": {
+                "x": -30,
+                "y": 28,
+                "rotation": 3.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr4",
+              "frame": 60,
+              "value": {
+                "x": -30,
+                "y": 37.99999999999999,
+                "rotation": 3.141592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr5",
+              "frame": 75,
+              "value": {
+                "x": -30,
+                "y": 28,
+                "rotation": 2.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr6",
+              "frame": 90,
+              "value": {
+                "x": -30,
+                "y": 37.99999999999999,
+                "rotation": 3.1415926535897927,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr7",
+              "frame": 105,
+              "value": {
+                "x": -30,
+                "y": 28,
+                "rotation": 3.641592653589793,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "lr8",
+              "frame": 120,
+              "value": {
+                "x": -30,
+                "y": 37.99999999999999,
+                "rotation": 3.1415926535897936,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "track-head",
+          "targetId": "head-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "h0",
+              "frame": 0,
+              "value": {
+                "x": 94,
+                "y": 0,
+                "rotation": 0.05,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "h1",
+              "frame": 60,
+              "value": {
+                "x": 94,
+                "y": 2,
+                "rotation": -0.05,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            },
+            {
+              "id": "h2",
+              "frame": 120,
+              "value": {
+                "x": 94,
+                "y": 0,
+                "rotation": 0.05,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "id": "mcp-root-transform",
+          "targetId": "root",
+          "property": "transform",
+          "keyframes": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 80,
+                "y": 330,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-root-transform-0"
+            },
+            {
+              "frame": 60,
+              "value": {
+                "x": 360,
+                "y": 326,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-root-transform-1"
+            },
+            {
+              "frame": 120,
+              "value": {
+                "x": 640,
+                "y": 330,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-root-transform-2"
+            }
+          ]
+        },
+        {
+          "id": "mcp-left-arm-bone-transform",
+          "targetId": "left-arm-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 48,
+                "y": -103,
+                "rotation": 2.64,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-left-arm-bone-transform-0"
+            },
+            {
+              "frame": 60,
+              "value": {
+                "x": 48,
+                "y": -101,
+                "rotation": 2.69,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-left-arm-bone-transform-1"
+            },
+            {
+              "frame": 120,
+              "value": {
+                "x": 48,
+                "y": -103,
+                "rotation": 2.64,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-left-arm-bone-transform-2"
+            }
+          ]
+        },
+        {
+          "id": "mcp-right-arm-bone-transform",
+          "targetId": "right-arm-bone",
+          "property": "transform",
+          "keyframes": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 48,
+                "y": 103,
+                "rotation": 2.64,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-0"
+            },
+            {
+              "frame": 60,
+              "value": {
+                "x": 48,
+                "y": 101,
+                "rotation": 2.69,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-1"
+            },
+            {
+              "frame": 120,
+              "value": {
+                "x": 48,
+                "y": 103,
+                "rotation": 2.64,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "smooth",
+              "id": "mcp-right-arm-bone-transform-2"
+            }
+          ]
+        }
+      ],
+      "setupPose": {
+        "root": {
+          "local": {
+            "x": 400,
+            "y": 318,
+            "rotation": -1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "left-arm-bone": {
+          "local": {
+            "x": 48,
+            "y": -103,
+            "rotation": 3.141592653589793,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "right-arm-bone": {
+          "local": {
+            "x": 48,
+            "y": 103,
+            "rotation": 3.141592653589793,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        }
+      }
+    }
+  ],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": "bike-ride"
+  },
+  "metadata": {
+    "createdBy": "character-studio-mcp",
+    "characterType": "rigid-bound vector character"
+  }
+}

@@ -1,0 +1,109 @@
+/* Scoped to the prop builder; the animation workspace keeps its existing theme. */
+.props-dialog { --prop-ink: #223248; --prop-muted: #5d6a7c; --prop-line: #dce2ea; --prop-accent: #6256c9; color-scheme: light; width: min(1400px, calc(100vw - 40px)); max-width: none; height: min(900px, calc(100dvh - 40px)); max-height: none; margin: auto; padding: 0; border: 1px solid #cfd7e1; border-radius: 18px; background: #f6f7fb; color: var(--prop-ink); font: 12px/1.5 'Inter', system-ui, sans-serif; box-shadow: 0 32px 100px #0c193960; overflow: hidden; }
+.props-dialog[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; }
+.props-dialog::backdrop { background: #19253e99; backdrop-filter: blur(5px); }
+.props-dialog button { cursor: pointer; color: inherit; transition: background-color .16s, border-color .16s; }
+.props-dialog button:disabled { cursor: default; opacity: .45; }
+.props-dialog :is(button, input):focus-visible { outline: 3px solid #8c82ea; outline-offset: 3px; }
+.props-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 26px; background: #fff; border-bottom: 1px solid var(--prop-line); }
+.props-brand { display: flex; align-items: center; gap: 14px; }
+.props-brand > span { display: grid; place-items: center; width: 50px; height: 50px; color: #fff; border-radius: 14px; background: linear-gradient(135deg, #7466d9, #5047b2); box-shadow: 0 5px 16px #6051c22b; }
+.props-brand small, .props-eyebrow { color: #6658b0; font-size: 9px; font-weight: 750; letter-spacing: .14em; }
+.props-brand h1 { margin: 2px 0; font-size: 23px; font-weight: 750; letter-spacing: -.035em; line-height: 1.2; }
+.props-brand p { margin: 0; color: var(--prop-muted); font-size: 11px; }
+.props-header-actions { display: flex; gap: 8px; }
+.props-header-actions button { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 14px; min-height: 42px; background: #fff; border: 1px solid var(--prop-line); border-radius: 8px; font-weight: 650; }
+.props-header-actions button:hover { background: #f0edff; border-color: #b0a8e6; }
+.props-header-actions button:nth-child(2) { background: #f0edff; color: #5144b1; border-color: #d9d1f6; }
+.props-header-actions .props-close { padding: 8px; width: 40px; }
+.props-body { display: grid; grid-template-columns: 230px minmax(340px, 1fr) 295px; min-height: 0; }
+.props-library, .props-inspector { overflow-y: auto; scrollbar-width: thin; scrollbar-color: #c4c9db transparent; padding: 22px 18px; }
+.props-library { border-right: 1px solid var(--prop-line); background: #f9fafc; }
+.props-section-heading { display: flex; align-items: center; gap: 9px; }
+.props-section-heading > span { font-size: 10px; color: #6857b6; background: #eae5fb; border-radius: 6px; padding: 3px 6px; font-weight: 700; }
+.props-section-heading h2 { margin: 0; font-size: 14px; font-weight: 750; letter-spacing: -.02em; }
+.props-muted { font-size: 11px; color: var(--prop-muted); margin: 8px 0 18px; }
+.props-library-grid { display: grid; gap: 10px; }
+.prop-preset { position: relative; min-width: 0; padding: 0 12px 12px; border: 1px solid var(--prop-line); border-radius: 12px; background: #fff; text-align: left; overflow: hidden; }
+.prop-preset.selected { border-color: #8b7cdd; box-shadow: 0 0 0 2px #7c69d81a; background: #f4f1ff; }
+.prop-preset:hover { border-color: #aa9de5; }
+.prop-preset img { display: block; width: 100%; height: 85px; object-fit: contain; }
+.prop-preset strong { display: block; font-size: 12px; }
+.prop-preset small { color: var(--prop-muted); font-size: 10px; }
+.prop-selected-check { position: absolute; top: 10px; right: 10px; border-radius: 50%; background: #6c5ac9; color: #fff; padding: 3px; width: 20px; height: 20px; }
+.props-library-note { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 22px; padding: 14px; background: #edf1f6; border: 1px solid #e1e6ee; border-radius: 9px; }
+.props-library-note svg { color: #7163b7; }
+.props-library-note p { margin: 0; color: var(--prop-muted); font-size: 10px; }
+.props-preview { display: flex; flex-direction: column; min-width: 0; min-height: 0; padding: 22px; background: #f5f6fa; }
+.props-preview-heading { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.props-preview-heading h2 { font-size: 19px; margin: 3px 0 0; letter-spacing: -.03em; overflow-wrap: anywhere; }
+.props-badge { display: flex; flex-shrink: 0; align-items: center; gap: 6px; border: 1px solid #dcd9ee; padding: 6px 9px; border-radius: 30px; color: #645393; background: #f1edf9; font-size: 10px; text-transform: capitalize; }
+.props-stage { position: relative; display: flex; min-height: 180px; flex: 1; margin: 16px 0 12px; border: 1px solid #d6dfe1; border-radius: 12px; overflow: hidden; background: radial-gradient(circle at 50% 35%, #fff 0, #edf2ef 70%); }
+.props-stage::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(#cad5d2 1px, transparent 1px); background-size: 22px 22px; opacity: .5; pointer-events: none; }
+.props-preview-image { position: relative; display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.props-angle-label { position: absolute; top: 14px; left: 15px; z-index: 1; font: 11px ui-monospace, monospace; color: #34574b; }
+.props-angle-label span { color: #617568; font-size: 10px; }
+.props-stage-info { position: absolute; display: flex; justify-content: space-between; bottom: 0; left: 0; right: 0; padding: 11px 15px; border-top: 1px solid #dce4e2; background: #f3f7f3e8; color: #536b60; font: 9px ui-monospace, monospace; }
+.props-view-strip { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 5px; }
+.props-view-strip button { min-width: 0; padding: 3px; background: #fff; border: 1px solid var(--prop-line); border-radius: 7px; }
+.props-view-strip button:hover, .props-view-strip button[aria-pressed="true"] { border-color: #9e8edd; background: #ede8fd; }
+.props-view-strip img { display: block; width: 100%; height: 45px; }
+.props-view-strip strong { font: 9px ui-monospace, monospace; color: #5b5886; }
+.props-playback { display: flex; align-items: center; gap: 7px; padding: 12px 0 0; flex-wrap: wrap; }
+.props-playback button { display: flex; align-items: center; justify-content: center; gap: 5px; padding: 9px 11px; min-height: 38px; border: 1px solid #d6d5e9; border-radius: 7px; background: #fff; color: #5d50ad; font-size: 11px; font-weight: 650; }
+.props-playback button:hover { background: #eae4fc; }
+.props-playback label { display: flex; align-items: center; gap: 8px; color: var(--prop-muted); font-size: 10px; }
+.props-playback label:not(.props-guides) { flex: 1; min-width: 120px; }
+.props-playback input[type="range"] { width: 100%; min-width: 70px; accent-color: var(--prop-accent); }
+.props-playback input[type="checkbox"] { accent-color: var(--prop-accent); }
+.props-preview-help { margin: 10px 0 0; color: var(--prop-muted); font-size: 10px; line-height: 1.55; }
+.props-inspector { background: #fff; border-left: 1px solid var(--prop-line); }
+.props-name-field { display: flex; flex-direction: column; gap: 6px; margin: 20px 0; font-size: 11px; font-weight: 650; }
+.props-name-field input { padding: 10px; width: 100%; border: 1px solid #d4dce8; border-radius: 6px; background: #f9fafc; color: var(--prop-ink); font-size: 12px; }
+.props-control-group { padding: 15px 0; border-top: 1px solid #e6e9f0; }
+.props-control-heading { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 11px; }
+.props-control-heading strong { display: flex; align-items: center; gap: 5px; font-size: 12px; }
+.props-control-heading small { color: #69758a; font-size: 9px; }
+.props-segmented { display: flex; gap: 6px; }
+.props-segmented button { display: flex; flex: 1; gap: 6px; justify-content: center; align-items: center; padding: 10px; border: 1px solid #dfe3ec; border-radius: 7px; background: #fff; color: #566578; }
+.props-segmented button.active { background: #f0edff; border-color: #a79ade; color: #594aad; }
+.props-color-row { display: flex; gap: 10px; }
+.props-color-row label { display: flex; flex: 1; flex-direction: column; gap: 6px; color: #5e6b7b; font-size: 10px; }
+.props-color-row input { width: 100%; height: 35px; padding: 3px; border: 1px solid #e0e4ea; border-radius: 6px; background: #fff; cursor: pointer; }
+.prop-range { display: flex; flex-direction: column; gap: 8px; margin: 12px 0 0; }
+.prop-range > span { display: flex; justify-content: space-between; gap: 8px; color: #526273; font-size: 11px; }
+.prop-range output { color: #54449c; font: 10px ui-monospace, monospace; }
+.prop-range input { width: 100%; accent-color: var(--prop-accent); }
+.props-physics-options { display: flex; gap: 5px; }
+.props-physics-options button { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 9px 4px; min-height: 64px; background: #fff; border: 1px solid #e0e4ec; border-radius: 8px; }
+.props-physics-options button.active { background: #edf6f0; border-color: #8ebb9c; color: #306c49; }
+.props-physics-options small { font-size: 9px; color: #68796e; }
+.props-scene-notice { display: flex; gap: 7px; margin: 10px 0; padding: 10px; color: #52577c; border: 1px solid #dddef0; border-radius: 7px; background: #f5f4fb; font-size: 10px; }
+.props-scene-notice svg { flex-shrink: 0; margin-top: 2px; }
+.props-message { display: flex; gap: 8px; margin-top: 12px; color: #4a6253; font-size: 11px; }
+.props-message > span { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; background: #6c9a7d; margin-top: 7px; }
+.props-error { margin-top: 12px; padding: 10px; border: 1px solid #dca0a0; border-radius: 7px; background: #fff1f1; color: #963636; font-size: 11px; }
+.props-inspector-footer { display: flex; flex-direction: column; gap: 5px; margin-top: 22px; color: #616b7f; font-size: 10px; }
+.props-inspector-footer span { display: flex; align-items: center; gap: 7px; }
+.props-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 24px; background: #fff; border-top: 1px solid var(--prop-line); }
+.props-footer > div:first-child { display: flex; align-items: center; gap: 8px; color: #557161; font-size: 11px; }
+.props-footer-dot { width: 7px; height: 7px; border-radius: 50%; background: #65a582; }
+.props-footer-actions { display: flex; gap: 8px; }
+.props-footer-actions button { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 11px 18px; border-radius: 8px; font-weight: 650; }
+.props-footer-actions .props-secondary { background: #fff; border: 1px solid #d9deea; color: #5b6678; }
+.props-footer-actions .props-primary { background: #6455c2; color: #fff; border: 1px solid #6455c2; box-shadow: 0 4px 10px #6555c12b; }
+.props-footer-actions .props-primary:hover { background: #5143ab; }
+.top-actions .props-toolkit-launch { white-space: nowrap; background: #32304b; border: 1px solid #676084; color: #e4d9fc; }
+.top-actions .props-toolkit-launch:hover { background: #494265; }
+
+@media (max-width: 1100px) { .props-body { grid-template-columns: 174px minmax(280px, 1fr) 245px; } .props-preview { padding: 16px; } .props-library, .props-inspector { padding: 16px 12px; } .props-badge { display: none; } }
+@media (max-width: 800px) {
+  .props-dialog { width: calc(100vw - 16px); height: calc(100dvh - 16px); border-radius: 12px; }
+  .props-header { padding: 14px; flex-wrap: wrap; } .props-brand h1 { font-size: 20px; }
+  .props-header-actions { width: 100%; } .props-header-actions .props-close { margin-left: auto; }
+  .props-body { grid-template-columns: 1fr; overflow-y: auto; }
+  .props-library { overflow: visible; border-right: 0; } .props-library-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .prop-preset { padding: 0 6px 8px; } .prop-preset img { height: 64px; } .prop-preset small, .props-library-note { display: none; }
+  .props-preview { min-height: 480px; overflow: visible; } .props-stage { min-height: 250px; } .props-inspector { overflow: visible; border-left: 0; }
+  .props-footer { padding: 10px; } .props-footer > div:first-child { display: none; } .props-footer-actions { margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .props-dialog button { transition: none; } }

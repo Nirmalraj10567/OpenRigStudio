@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "physics-ball-demo",
+  "name": "Physics Ball · Gravity Drop",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#0d1720"
+  },
+  "layers": [
+    {
+      "id": "background-lines",
+      "name": "Background lines",
+      "type": "vector",
+      "local": { "x": 0, "y": 0, "rotation": 0, "scaleX": 1, "scaleY": 1 },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        { "id": "line-1", "kind": "rect", "x": 80, "y": 110, "width": 640, "height": 1, "fill": "#1d3340", "opacity": 0.8 },
+        { "id": "line-2", "kind": "rect", "x": 80, "y": 220, "width": 640, "height": 1, "fill": "#1d3340", "opacity": 0.8 },
+        { "id": "line-3", "kind": "rect", "x": 80, "y": 330, "width": 640, "height": 1, "fill": "#1d3340", "opacity": 0.8 },
+        { "id": "line-4", "kind": "rect", "x": 80, "y": 440, "width": 640, "height": 1, "fill": "#1d3340", "opacity": 0.8 }
+      ]
+    },
+    {
+      "id": "ball-shadow",
+      "name": "Ball shadow",
+      "type": "vector",
+      "local": { "x": 0, "y": 0, "rotation": 0, "scaleX": 1, "scaleY": 1 },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        { "id": "shadow", "kind": "ellipse", "x": 400, "y": 438, "radiusX": 62, "radiusY": 9, "fill": "#000000", "opacity": 0.32 }
+      ]
+    },
+    {
+      "id": "ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": { "x": 400, "y": 470, "rotation": 0, "scaleX": 1, "scaleY": 1 },
+      "visible": true,
+      "locked": true,
+      "zIndex": 2,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        { "id": "ground-body", "kind": "rect", "x": -400, "y": -10, "width": 800, "height": 20, "fill": "#294656" },
+        { "id": "ground-edge", "kind": "rect", "x": -400, "y": -10, "width": 800, "height": 4, "fill": "#8ae6d0" },
+        { "id": "ground-detail", "kind": "rect", "x": -320, "y": -3, "width": 640, "height": 2, "fill": "#416a7b" }
+      ]
+    },
+    {
+      "id": "ball",
+      "name": "Physics ball",
+      "type": "vector",
+      "local": { "x": 400, "y": 120, "rotation": 0, "scaleX": 1, "scaleY": 1 },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        { "id": "ball-body", "kind": "ellipse", "x": 0, "y": 0, "radiusX": 32, "radiusY": 32, "fill": "#ff7a63", "stroke": "#ffc1a9", "strokeWidth": 3 },
+        { "id": "ball-light", "kind": "ellipse", "x": -10, "y": -11, "radiusX": 9, "radiusY": 7, "fill": "#fff4e8", "opacity": 0.78 },
+        { "id": "ball-shade", "kind": "path", "d": "M -29 10 C -15 30 13 34 28 13 C 18 29 -13 36 -29 10 Z", "fill": "#c84449", "opacity": 0.42 }
+      ]
+    }
+  ],
+  "bones": [],
+  "bindings": [],
+  "animations": [],
+  "dynamics": {
+    "enabled": true,
+    "startFrame": 0,
+    "endFrame": 180,
+    "fps": 30,
+    "substeps": 8,
+    "gravityX": 0,
+    "gravityY": 700,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 7,
+    "bones": [],
+    "meshes": [],
+    "emitters": [],
+    "bodies": [
+      {
+        "id": "ball-body-dynamic",
+        "targetId": "ball",
+        "name": "Ball · dynamic",
+        "shape": "circle",
+        "motion": "dynamic",
+        "x": 0,
+        "y": 0,
+        "radius": 32,
+        "width": 64,
+        "height": 64,
+        "rotation": 0,
+        "mass": 1,
+        "restitution": 0.68,
+        "friction": 0.18,
+        "enabled": true
+      },
+      {
+        "id": "ground-collider",
+        "name": "Ground · static collider",
+        "shape": "box",
+        "motion": "static",
+        "x": 400,
+        "y": 470,
+        "radius": 10,
+        "width": 800,
+        "height": 20,
+        "rotation": 0,
+        "mass": 1000,
+        "restitution": 0.68,
+        "friction": 0.18,
+        "enabled": true
+      }
+    ]
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": false,
+    "fps": 30,
+    "startFrame": 0,
+    "endFrame": 180,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "description": "A dynamic circle body falls under gravity, collides with a static ground box, and bounces using restitution.",
+    "physics": "deterministic fixed-step dynamics"
+  }
+}

@@ -1,0 +1,1689 @@
+{
+  "schemaVersion": 1,
+  "id": "project-mv6e858u-2",
+  "name": "Male character",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#20242d"
+  },
+  "bones": [
+    {
+      "id": "bone-mv6e858v-3",
+      "name": "Torso",
+      "length": 98.66880000000003,
+      "local": {
+        "x": 400,
+        "y": 333.05344,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": null,
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-4",
+        "bone-mv6e8590-6",
+        "bone-mv6e8590-9",
+        "bone-mv6e8590-c",
+        "bone-mv6e8590-f"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-4",
+      "name": "Neck",
+      "length": 26.311679999999967,
+      "local": {
+        "x": 98.66880000000003,
+        "y": -6.04172150478552e-15,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e858v-3",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-5"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-5",
+      "name": "Head",
+      "length": 55.546880000000016,
+      "local": {
+        "x": 26.311679999999967,
+        "y": -1.6111257346094695e-15,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-4",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv6e8590-6",
+      "name": "Left upper leg",
+      "length": 71.73784396354276,
+      "local": {
+        "x": 1.461760000000025,
+        "y": -24.624000000000024,
+        "rotation": 3.1973801621519917,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e858v-3",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-7"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-7",
+      "name": "Left lower leg",
+      "length": 72.42784557540278,
+      "local": {
+        "x": 71.73784396354276,
+        "y": 5.773159728050814e-15,
+        "rotation": -0.011591219435993505,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-6",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-8"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-8",
+      "name": "Left foot",
+      "length": 22.377396559063772,
+      "local": {
+        "x": 72.42784557540278,
+        "y": -2.220446049250313e-15,
+        "rotation": 1.2622393317265677,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-7",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv6e8590-9",
+      "name": "Left upper arm",
+      "length": 49.70175160638104,
+      "local": {
+        "x": 91.36000000000001,
+        "y": -55.199999999999996,
+        "rotation": 3.4864009421542725,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e858v-3",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-a"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-a",
+      "name": "Left lower arm",
+      "length": 46.218854862421665,
+      "local": {
+        "x": 49.70175160638104,
+        "y": 8.881784197001252e-15,
+        "rotation": -0.2581551196700498,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-9",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-b"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-b",
+      "name": "Left hand",
+      "length": 15.431650537463634,
+      "local": {
+        "x": 46.218854862421665,
+        "y": 3.552713678800501e-15,
+        "rotation": 0.017216515336630156,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-a",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv6e8590-c",
+      "name": "Right upper leg",
+      "length": 71.73784396354276,
+      "local": {
+        "x": 1.4617600000000281,
+        "y": 24.624000000000024,
+        "rotation": 3.0858051450275945,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e858v-3",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-d"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-d",
+      "name": "Right lower leg",
+      "length": 72.42784557540278,
+      "local": {
+        "x": 71.73784396354276,
+        "y": 3.1086244689504383e-15,
+        "rotation": 0.011591219435993727,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-c",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-e"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-e",
+      "name": "Right foot",
+      "length": 22.377396559063772,
+      "local": {
+        "x": 72.42784557540278,
+        "y": -5.329070518200751e-15,
+        "rotation": -1.2622393317265679,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-d",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv6e8590-f",
+      "name": "Right upper arm",
+      "length": 49.70175160638104,
+      "local": {
+        "x": 91.36000000000001,
+        "y": 55.19999999999998,
+        "rotation": 2.7967843650253137,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e858v-3",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-g"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-g",
+      "name": "Right lower arm",
+      "length": 46.218854862421665,
+      "local": {
+        "x": 49.70175160638104,
+        "y": -3.552713678800501e-15,
+        "rotation": 0.2581551196700498,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-f",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6e8590-h"
+      ]
+    },
+    {
+      "id": "bone-mv6e8590-h",
+      "name": "Right hand",
+      "length": 15.431650537463634,
+      "local": {
+        "x": 46.218854862421665,
+        "y": 2.220446049250313e-15,
+        "rotation": -0.017216515336629934,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6e8590-g",
+      "locked": false,
+      "childrenIds": []
+    }
+  ],
+  "layers": [
+    {
+      "id": "vector-mv6e8590-j",
+      "name": "Hair · back",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 1,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e8590-i",
+          "kind": "path",
+          "d": "M150 131C139 73 166 44 210 44S281 73 270 131L278 184Q210 211 142 184Z",
+          "fill": "#241c24",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85av-m",
+      "name": "Left pants · thigh",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 2,
+      "boundBoneId": "bone-mv6e8590-6",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85av-l",
+          "kind": "path",
+          "d": "M179.22 353L174.22 450",
+          "fill": "none",
+          "stroke": "#26394f",
+          "strokeWidth": 35,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85av-p",
+      "name": "Left pants · shin",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "bone-mv6e8590-7",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85av-o",
+          "kind": "path",
+          "d": "M156.72 445H191.72L185.095 550H155.345Z",
+          "fill": "#26394f",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85av-t",
+      "name": "Left shoe",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "bone-mv6e8590-8",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85av-r",
+          "kind": "path",
+          "d": "M155.22 543H185.22V548Q188.22 551 186.22 565H135.22Q133.22 551 155.22 548Z",
+          "fill": "#c38a4d",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85av-s",
+          "kind": "path",
+          "d": "M137.22 564L184.22 564",
+          "fill": "none",
+          "stroke": "#131e28",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85av-x",
+      "name": "Left upper arm",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 5,
+      "boundBoneId": "bone-mv6e8590-9",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85av-v",
+          "kind": "path",
+          "d": "M141 228L120 294",
+          "fill": "none",
+          "stroke": "#e6a47e",
+          "strokeWidth": 23,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85av-w",
+          "kind": "path",
+          "d": "M141 230L120 294",
+          "fill": "none",
+          "stroke": "#665da8",
+          "strokeWidth": 30,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-10",
+      "name": "Left forearm",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "bone-mv6e8590-a",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-z",
+          "kind": "path",
+          "d": "M120 292L115 355",
+          "fill": "none",
+          "stroke": "#665da8",
+          "strokeWidth": 26,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-13",
+      "name": "Left hand",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "bone-mv6e8590-b",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-12",
+          "kind": "ellipse",
+          "x": 113,
+          "y": 367,
+          "radiusX": 12,
+          "radiusY": 17,
+          "fill": "#e6a47e"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-16",
+      "name": "Right pants · thigh",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 8,
+      "boundBoneId": "bone-mv6e8590-c",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-15",
+          "kind": "path",
+          "d": "M240.78 353L245.78 450",
+          "fill": "none",
+          "stroke": "#26394f",
+          "strokeWidth": 35,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-19",
+      "name": "Right pants · shin",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 9,
+      "boundBoneId": "bone-mv6e8590-d",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-18",
+          "kind": "path",
+          "d": "M228.28 445H263.28L264.655 550H234.905Z",
+          "fill": "#26394f",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1d",
+      "name": "Right shoe",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 10,
+      "boundBoneId": "bone-mv6e8590-e",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1b",
+          "kind": "path",
+          "d": "M234.78 543H264.78V548Q286.78 551 284.78 565H233.78Q231.78 551 234.78 548Z",
+          "fill": "#c38a4d",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85aw-1c",
+          "kind": "path",
+          "d": "M235.78 564L282.78 564",
+          "fill": "none",
+          "stroke": "#131e28",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1h",
+      "name": "Right upper arm",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 11,
+      "boundBoneId": "bone-mv6e8590-f",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1f",
+          "kind": "path",
+          "d": "M279 228L300 294",
+          "fill": "none",
+          "stroke": "#e6a47e",
+          "strokeWidth": 23,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85aw-1g",
+          "kind": "path",
+          "d": "M279 230L300 294",
+          "fill": "none",
+          "stroke": "#665da8",
+          "strokeWidth": 30,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1k",
+      "name": "Right forearm",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 12,
+      "boundBoneId": "bone-mv6e8590-g",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1j",
+          "kind": "path",
+          "d": "M300 292L305 355",
+          "fill": "none",
+          "stroke": "#665da8",
+          "strokeWidth": 26,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1n",
+      "name": "Right hand",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 13,
+      "boundBoneId": "bone-mv6e8590-h",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1m",
+          "kind": "ellipse",
+          "x": 307,
+          "y": 367,
+          "radiusX": 12,
+          "radiusY": 17,
+          "fill": "#e6a47e"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1q",
+      "name": "Pants · waistband",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 14,
+      "boundBoneId": "bone-mv6e858v-3",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1p",
+          "kind": "path",
+          "d": "M156 338H264V381Q210 365 156 381Z",
+          "fill": "#26394f",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85aw-1t",
+      "name": "Neck",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 15,
+      "boundBoneId": "bone-mv6e8590-4",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85aw-1s",
+          "kind": "path",
+          "d": "M210 176L210 228",
+          "fill": "none",
+          "stroke": "#e6a47e",
+          "strokeWidth": 32,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-26",
+      "name": "Shirt · body",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 16,
+      "boundBoneId": "bone-mv6e858v-3",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-1v",
+          "kind": "path",
+          "d": "M141 220L194 214Q210 239 226 214L279 220Q280 264 266 309L262 356Q210 366 158 356L154 309Q140 264 141 220Z",
+          "fill": "#665da8",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-1w",
+          "kind": "path",
+          "d": "M166 350Q210 359 254 350",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-1x",
+          "kind": "path",
+          "d": "M178 230L178 345",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-1y",
+          "kind": "path",
+          "d": "M200 230L200 345",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-1z",
+          "kind": "path",
+          "d": "M222 230L222 345",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-20",
+          "kind": "path",
+          "d": "M166 244L254 244",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-21",
+          "kind": "path",
+          "d": "M166 266L254 266",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-22",
+          "kind": "path",
+          "d": "M166 288L254 288",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-23",
+          "kind": "path",
+          "d": "M166 310L254 310",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-24",
+          "kind": "path",
+          "d": "M166 332L254 332",
+          "fill": "none",
+          "stroke": "#ffffff44",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-25",
+          "kind": "path",
+          "d": "M224 267H246V290H224Z",
+          "fill": "#665da8",
+          "stroke": "#ffffff",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2d",
+      "name": "Suit · lapels & shirt",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 17,
+      "boundBoneId": "bone-mv6e858v-3",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-28",
+          "kind": "path",
+          "d": "M193 217L210 293L227 217Q210 234 193 217Z",
+          "fill": "#eee9de",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-29",
+          "kind": "path",
+          "d": "M210 231L205 240L210 278L215 240Z",
+          "fill": "#203043",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-2a",
+          "kind": "path",
+          "d": "M190 215L180 238L193 245L183 252L210 293L237 252L227 245L240 238L230 215",
+          "fill": "none",
+          "stroke": "#ffffff66",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-2b",
+          "kind": "path",
+          "d": "M210 293L210 354",
+          "fill": "none",
+          "stroke": "#17242e",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "shape-mv6e85ax-2c",
+          "kind": "ellipse",
+          "x": 217,
+          "y": 313,
+          "radiusX": 2.3,
+          "radiusY": 2.3,
+          "fill": "#eee9de"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2i",
+      "name": "Head · face",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 18,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-2f",
+          "kind": "ellipse",
+          "x": 153,
+          "y": 134,
+          "radiusX": 9,
+          "radiusY": 15,
+          "fill": "#e6a47e"
+        },
+        {
+          "id": "shape-mv6e85ax-2g",
+          "kind": "ellipse",
+          "x": 267,
+          "y": 134,
+          "radiusX": 9,
+          "radiusY": 15,
+          "fill": "#e6a47e"
+        },
+        {
+          "id": "shape-mv6e85ax-2h",
+          "kind": "path",
+          "d": "M155 111Q155 60 210 60Q265 60 265 111L259 166L233 191H187L161 166Z",
+          "fill": "#e6a47e",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2l",
+      "name": "Hair · front",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 19,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-2k",
+          "kind": "path",
+          "d": "M151 129Q137 43 210 43Q283 43 269 129L253 100Q224 91 208 74Q196 103 165 110L161 146Z",
+          "fill": "#241c24",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2q",
+      "name": "Left eye",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 20,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-2n",
+          "kind": "ellipse",
+          "x": 189,
+          "y": 135,
+          "radiusX": 6,
+          "radiusY": 8,
+          "fill": "#fff9ef"
+        },
+        {
+          "id": "shape-mv6e85ax-2o",
+          "kind": "ellipse",
+          "x": 190,
+          "y": 136,
+          "radiusX": 3.5,
+          "radiusY": 5,
+          "fill": "#24323b"
+        },
+        {
+          "id": "shape-mv6e85ax-2p",
+          "kind": "path",
+          "d": "M181 121L195 119",
+          "fill": "none",
+          "stroke": "#241c24",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2v",
+      "name": "Right eye",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 21,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-2s",
+          "kind": "ellipse",
+          "x": 231,
+          "y": 135,
+          "radiusX": 6,
+          "radiusY": 8,
+          "fill": "#fff9ef"
+        },
+        {
+          "id": "shape-mv6e85ax-2t",
+          "kind": "ellipse",
+          "x": 232,
+          "y": 136,
+          "radiusX": 3.5,
+          "radiusY": 5,
+          "fill": "#24323b"
+        },
+        {
+          "id": "shape-mv6e85ax-2u",
+          "kind": "path",
+          "d": "M225 119L239 121",
+          "fill": "none",
+          "stroke": "#241c24",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-2y",
+      "name": "Nose",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 22,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-2x",
+          "kind": "path",
+          "d": "M210 137L206 151L213 151",
+          "fill": "none",
+          "stroke": "#734d3b",
+          "strokeWidth": 1.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    },
+    {
+      "id": "vector-mv6e85ax-31",
+      "name": "Mouth",
+      "type": "vector",
+      "local": {
+        "x": 232,
+        "y": 75.05280000000002,
+        "rotation": 0,
+        "scaleX": 0.8,
+        "scaleY": 0.73088
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 23,
+      "boundBoneId": "bone-mv6e8590-5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv6e85ax-30",
+          "kind": "path",
+          "d": "M198 165Q210 175 222 165",
+          "fill": "none",
+          "stroke": "#73433f",
+          "strokeWidth": 2.5,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6e858v-1"
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-mv6e85av-k",
+      "layerId": "vector-mv6e8590-j",
+      "imageId": "vector-mv6e8590-j",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85av-n",
+      "layerId": "vector-mv6e85av-m",
+      "imageId": "vector-mv6e85av-m",
+      "boneId": "bone-mv6e8590-6",
+      "bindOffset": {
+        "x": -310.1453852584455,
+        "y": 393.28110000877587,
+        "rotation": -1.6265838353570952,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85av-q",
+      "layerId": "vector-mv6e85av-p",
+      "imageId": "vector-mv6e85av-p",
+      "boneId": "bone-mv6e8590-7",
+      "bindOffset": {
+        "x": -386.41608073863716,
+        "y": 388.82828720621325,
+        "rotation": -1.6149926159211017,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85av-u",
+      "layerId": "vector-mv6e85av-t",
+      "imageId": "vector-mv6e85av-t",
+      "boneId": "bone-mv6e8590-8",
+      "bindOffset": {
+        "x": 231.12140433617742,
+        "y": 555.254970355669,
+        "rotation": -2.8772319476476693,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85av-y",
+      "layerId": "vector-mv6e85av-x",
+      "imageId": "vector-mv6e85av-x",
+      "boneId": "bone-mv6e8590-9",
+      "bindOffset": {
+        "x": -110.91942463116366,
+        "y": 406.20147732193834,
+        "rotation": -1.915604615359376,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-11",
+      "layerId": "vector-mv6e85aw-10",
+      "imageId": "vector-mv6e85aw-10",
+      "boneId": "bone-mv6e8590-a",
+      "bindOffset": {
+        "x": -259.0007273336236,
+        "y": 351.7348798102223,
+        "rotation": -1.6574494956893262,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-14",
+      "layerId": "vector-mv6e85aw-13",
+      "imageId": "vector-mv6e85aw-13",
+      "boneId": "bone-mv6e8590-b",
+      "bindOffset": {
+        "x": -299.1189986897335,
+        "y": 356.9373105377066,
+        "rotation": -1.6746660110259564,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-17",
+      "layerId": "vector-mv6e85aw-16",
+      "imageId": "vector-mv6e85aw-16",
+      "boneId": "bone-mv6e8590-c",
+      "bindOffset": {
+        "x": -354.7522457828048,
+        "y": 405.4743243822953,
+        "rotation": -1.515008818232698,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1a",
+      "layerId": "vector-mv6e85aw-19",
+      "imageId": "vector-mv6e85aw-19",
+      "boneId": "bone-mv6e8590-d",
+      "bindOffset": {
+        "x": -421.76160261164165,
+        "y": 410.39051517741746,
+        "rotation": -1.5266000376686917,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1e",
+      "layerId": "vector-mv6e85aw-1d",
+      "imageId": "vector-mv6e85aw-1d",
+      "boneId": "bone-mv6e8590-e",
+      "bindOffset": {
+        "x": -541.0863882187102,
+        "y": -346.22118093992003,
+        "rotation": -0.2643607059421238,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1i",
+      "layerId": "vector-mv6e85aw-1h",
+      "imageId": "vector-mv6e85aw-1h",
+      "boneId": "bone-mv6e8590-f",
+      "bindOffset": {
+        "x": -381.3324295175848,
+        "y": 346.7107398642993,
+        "rotation": -1.2259880382304171,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1l",
+      "layerId": "vector-mv6e85aw-1k",
+      "imageId": "vector-mv6e85aw-1k",
+      "boneId": "bone-mv6e8590-g",
+      "bindOffset": {
+        "x": -328.23654049959987,
+        "y": 445.26349043606996,
+        "rotation": -1.484143157900467,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1o",
+      "layerId": "vector-mv6e85aw-1n",
+      "imageId": "vector-mv6e85aw-1n",
+      "boneId": "bone-mv6e8590-h",
+      "bindOffset": {
+        "x": -382.06540788248606,
+        "y": 438.7510035665213,
+        "rotation": -1.466926642563837,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1r",
+      "layerId": "vector-mv6e85aw-1q",
+      "imageId": "vector-mv6e85aw-1q",
+      "boneId": "bone-mv6e858v-3",
+      "bindOffset": {
+        "x": 333.05344,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85aw-1u",
+      "layerId": "vector-mv6e85aw-1t",
+      "imageId": "vector-mv6e85aw-1t",
+      "boneId": "bone-mv6e8590-4",
+      "bindOffset": {
+        "x": 234.38463999999996,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-27",
+      "layerId": "vector-mv6e85ax-26",
+      "imageId": "vector-mv6e85ax-26",
+      "boneId": "bone-mv6e858v-3",
+      "bindOffset": {
+        "x": 333.05344,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2e",
+      "layerId": "vector-mv6e85ax-2d",
+      "imageId": "vector-mv6e85ax-2d",
+      "boneId": "bone-mv6e858v-3",
+      "bindOffset": {
+        "x": 333.05344,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2j",
+      "layerId": "vector-mv6e85ax-2i",
+      "imageId": "vector-mv6e85ax-2i",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2m",
+      "layerId": "vector-mv6e85ax-2l",
+      "imageId": "vector-mv6e85ax-2l",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2r",
+      "layerId": "vector-mv6e85ax-2q",
+      "imageId": "vector-mv6e85ax-2q",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2w",
+      "layerId": "vector-mv6e85ax-2v",
+      "imageId": "vector-mv6e85ax-2v",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-2z",
+      "layerId": "vector-mv6e85ax-2y",
+      "imageId": "vector-mv6e85ax-2y",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6e85ax-32",
+      "layerId": "vector-mv6e85ax-31",
+      "imageId": "vector-mv6e85ax-31",
+      "boneId": "bone-mv6e8590-5",
+      "bindOffset": {
+        "x": 208.07296,
+        "y": -400,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [],
+  "smartActions": [],
+  "actionLibrary": [],
+  "controllers": [],
+  "controllerInstances": [],
+  "lipSyncTracks": [],
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "perspective": 0,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "projection": "perspective"
+  },
+  "cameras": [],
+  "characterViews": [],
+  "facialProfiles": [],
+  "headCreators": [],
+  "constraints": [],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "cameraProduction": {
+    "stageMode": false,
+    "liveControl": {
+      "enabled": false,
+      "source": "pointer",
+      "sensitivity": 1,
+      "smoothing": 0.8
+    },
+    "shake": {
+      "enabled": false,
+      "amplitude": 0,
+      "frequency": 12,
+      "rotation": 0,
+      "seed": 1
+    },
+    "bookmarks": [],
+    "transitionPresets": [
+      {
+        "id": "cut",
+        "name": "Hard cut",
+        "duration": 0,
+        "easing": "step",
+        "kind": "cut"
+      },
+      {
+        "id": "dissolve",
+        "name": "Dissolve 12f",
+        "duration": 12,
+        "easing": "smooth",
+        "kind": "dissolve"
+      },
+      {
+        "id": "push",
+        "name": "Push 18f",
+        "duration": 18,
+        "easing": "ease-in-out",
+        "kind": "push"
+      },
+      {
+        "id": "whip",
+        "name": "Whip 8f",
+        "duration": 8,
+        "easing": "overshoot",
+        "kind": "whip"
+      },
+      {
+        "id": "zoom",
+        "name": "Zoom 12f",
+        "duration": 12,
+        "easing": "ease-in-out",
+        "kind": "zoom"
+      }
+    ],
+    "cameraRigs": [],
+    "defaultTransitionPresetId": "cut"
+  },
+  "groups": [
+    {
+      "id": "group-mv6e858v-1",
+      "name": "Male character",
+      "parentGroupId": null,
+      "childIds": [
+        "vector-mv6e85ax-31",
+        "vector-mv6e85ax-2y",
+        "vector-mv6e85ax-2v",
+        "vector-mv6e85ax-2q",
+        "vector-mv6e85ax-2l",
+        "vector-mv6e85ax-2i",
+        "vector-mv6e85ax-2d",
+        "vector-mv6e85ax-26",
+        "vector-mv6e85aw-1t",
+        "vector-mv6e85aw-1q",
+        "vector-mv6e85aw-1n",
+        "vector-mv6e85aw-1k",
+        "vector-mv6e85aw-1h",
+        "vector-mv6e85aw-1d",
+        "vector-mv6e85aw-19",
+        "vector-mv6e85aw-16",
+        "vector-mv6e85aw-13",
+        "vector-mv6e85aw-10",
+        "vector-mv6e85av-x",
+        "vector-mv6e85av-t",
+        "vector-mv6e85av-p",
+        "vector-mv6e85av-m",
+        "vector-mv6e8590-j"
+      ],
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "zIndex": 0,
+      "mode": "group",
+      "blendMode": "source-over",
+      "maskMode": "clip"
+    }
+  ],
+  "smartActionFolders": [],
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "exportType": "character-studio-project",
+    "exportHint": "Open this JSON in Animation Studio",
+    "characterDesign": "{\"gender\":\"male\",\"skin\":\"#e6a47e\",\"head\":\"angular\",\"hair\":\"bob\",\"hairColor\":\"#241c24\",\"neck\":\"classic\",\"shirt\":\"jacket\",\"shirtColor\":\"#665da8\",\"shirtPattern\":\"plaid\",\"shirtDetail\":\"pocket\",\"pants\":\"straight\",\"pantsColor\":\"#26394f\",\"shoes\":\"loafers\",\"shoesColor\":\"#c38a4d\",\"height\":52,\"build\":50}"
+  }
+}

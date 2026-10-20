@@ -1,0 +1,1755 @@
+{
+  "schemaVersion": 1,
+  "id": "project-mv2e94cb-g1",
+  "name": "Pip · trail courier",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#202020"
+  },
+  "bones": [
+    {
+      "id": "bone-mv2e94cb-g2",
+      "name": "Torso · anchor",
+      "length": 105,
+      "local": {
+        "x": 400,
+        "y": 290,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": null,
+      "locked": true,
+      "childrenIds": [
+        "bone-mv2e94cb-g3",
+        "bone-mv2e94cb-g4",
+        "bone-mv2e94cc-g7",
+        "bone-mv2e94cc-ga",
+        "bone-mv2e94cc-gd"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cb-g3",
+      "name": "Head",
+      "length": 76,
+      "local": {
+        "x": 105,
+        "y": -6.429395695523604e-15,
+        "rotation": -0.030236035226940627,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g2",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv2e94cb-g4",
+      "name": "Left upper arm",
+      "length": 63.52952069707436,
+      "local": {
+        "x": 83,
+        "y": -49.00000000000001,
+        "rotation": 3.633401829578492,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g2",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cb-g5"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cb-g5",
+      "name": "Left lower arm",
+      "length": 55.072679252057455,
+      "local": {
+        "x": 63.52952069707436,
+        "y": -3.552713678800501e-15,
+        "rotation": 0.020580284322039066,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g4",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-g6"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-g6",
+      "name": "Left hand",
+      "length": 25.495097567963924,
+      "local": {
+        "x": 55.072679252057455,
+        "y": 0,
+        "rotation": -0.06628391136733391,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g5",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv2e94cc-g7",
+      "name": "Right upper arm",
+      "length": 58.82176467941097,
+      "local": {
+        "x": 83,
+        "y": 48.99999999999999,
+        "rotation": 0.8016775178141359,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g2",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-g8"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-g8",
+      "name": "Right lower arm",
+      "length": 54.70831746635972,
+      "local": {
+        "x": 58.821764679410975,
+        "y": -7.105427357601002e-15,
+        "rotation": -6.283185307179585,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-g7",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-g9"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-g9",
+      "name": "Right hand",
+      "length": 24.698178070456937,
+      "local": {
+        "x": 54.708317466359716,
+        "y": 3.552713678800501e-15,
+        "rotation": -0.017022781900779327,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-g8",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv2e94cc-ga",
+      "name": "Left upper leg",
+      "length": 69.63476143421474,
+      "local": {
+        "x": 5.999999999999998,
+        "y": -22,
+        "rotation": 3.3587039683246984,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g2",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-gb"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-gb",
+      "name": "Left lower leg",
+      "length": 71.70076708097342,
+      "local": {
+        "x": 69.63476143421474,
+        "y": -3.552713678800501e-15,
+        "rotation": -0.35703598530902303,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-ga",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-gc"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-gc",
+      "name": "Left foot",
+      "length": 33.24154027718932,
+      "local": {
+        "x": 71.7007670809734,
+        "y": 3.552713678800501e-15,
+        "rotation": 1.4365535462493555,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-gb",
+      "locked": false,
+      "childrenIds": []
+    },
+    {
+      "id": "bone-mv2e94cc-gd",
+      "name": "Right upper leg",
+      "length": 69.63476143421474,
+      "local": {
+        "x": 6.000000000000002,
+        "y": 22,
+        "rotation": 2.9244813388548883,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cb-g2",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-ge"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-ge",
+      "name": "Right lower leg",
+      "length": 71.34423592694787,
+      "local": {
+        "x": 69.63476143421474,
+        "y": -1.7763568394002505e-14,
+        "rotation": -0.3229088282405207,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-gd",
+      "locked": false,
+      "childrenIds": [
+        "bone-mv2e94cc-gf"
+      ]
+    },
+    {
+      "id": "bone-mv2e94cc-gf",
+      "name": "Right foot",
+      "length": 33.24154027718932,
+      "local": {
+        "x": 71.34423592694787,
+        "y": -4.440892098500626e-15,
+        "rotation": -1.6423846492400354,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv2e94cc-ge",
+      "locked": false,
+      "childrenIds": []
+    }
+  ],
+  "layers": [
+    {
+      "id": "vector-mv2e94cc-gk",
+      "name": "Left thigh · trousers",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 0,
+      "boundBoneId": "bone-mv2e94cc-ga",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cc-gg",
+          "kind": "path",
+          "d": "M 0 -17 L 69.63476143421474 -17 Q 86.63476143421474 -17 86.63476143421474 0 Q 86.63476143421474 17 69.63476143421474 17 L 0 17 Q -17 17 -17 0 Q -17 -17 0 -17 Z",
+          "fill": "#263747",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cc-gh",
+          "kind": "path",
+          "d": "M 7 -12 L 62.63476143421474 -12",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cc-gi",
+          "kind": "ellipse",
+          "x": 69.63476143421474,
+          "y": 0,
+          "radiusX": 13,
+          "radiusY": 13,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cc-gj",
+          "kind": "ellipse",
+          "x": 69.63476143421474,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cd-gq",
+      "name": "Right thigh · trousers",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 1,
+      "boundBoneId": "bone-mv2e94cc-gd",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cd-gm",
+          "kind": "path",
+          "d": "M 0 -17 L 69.63476143421474 -17 Q 86.63476143421474 -17 86.63476143421474 0 Q 86.63476143421474 17 69.63476143421474 17 L 0 17 Q -17 17 -17 0 Q -17 -17 0 -17 Z",
+          "fill": "#263747",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-gn",
+          "kind": "path",
+          "d": "M 7 -12 L 62.63476143421474 -12",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-go",
+          "kind": "ellipse",
+          "x": 69.63476143421474,
+          "y": 0,
+          "radiusX": 13,
+          "radiusY": 13,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cd-gp",
+          "kind": "ellipse",
+          "x": 69.63476143421474,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cd-gw",
+      "name": "Left shin · gaiter",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 2,
+      "boundBoneId": "bone-mv2e94cc-gb",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cd-gs",
+          "kind": "path",
+          "d": "M 0 -13 L 71.70076708097342 -13 Q 84.70076708097342 -13 84.70076708097342 0 Q 84.70076708097342 13 71.70076708097342 13 L 0 13 Q -13 13 -13 0 Q -13 -13 0 -13 Z",
+          "fill": "#33978f",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-gt",
+          "kind": "path",
+          "d": "M 7 -8 L 64.70076708097342 -8",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-gu",
+          "kind": "ellipse",
+          "x": 71.70076708097342,
+          "y": 0,
+          "radiusX": 9,
+          "radiusY": 9,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cd-gv",
+          "kind": "ellipse",
+          "x": 71.70076708097342,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cd-h2",
+      "name": "Right shin · gaiter",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "bone-mv2e94cc-ge",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cd-gy",
+          "kind": "path",
+          "d": "M 0 -13 L 71.34423592694787 -13 Q 84.34423592694787 -13 84.34423592694787 0 Q 84.34423592694787 13 71.34423592694787 13 L 0 13 Q -13 13 -13 0 Q -13 -13 0 -13 Z",
+          "fill": "#33978f",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-gz",
+          "kind": "path",
+          "d": "M 7 -8 L 64.34423592694787 -8",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-h0",
+          "kind": "ellipse",
+          "x": 71.34423592694787,
+          "y": 0,
+          "radiusX": 9,
+          "radiusY": 9,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cd-h1",
+          "kind": "ellipse",
+          "x": 71.34423592694787,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cd-h7",
+      "name": "Left boot",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "bone-mv2e94cc-gc",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cd-h4",
+          "kind": "path",
+          "d": "M 0 -14 L 33.24154027718932 -14 Q 47.24154027718932 -14 47.24154027718932 0 Q 47.24154027718932 14 33.24154027718932 14 L 0 14 Q -14 14 -14 0 Q -14 -14 0 -14 Z",
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-h5",
+          "kind": "path",
+          "d": "M -6 8 L 35 8",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "shape-mv2e94cd-h6",
+          "kind": "ellipse",
+          "x": 4,
+          "y": -4,
+          "radiusX": 4,
+          "radiusY": 4,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cd-hc",
+      "name": "Right boot",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 5,
+      "boundBoneId": "bone-mv2e94cc-gf",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cd-h9",
+          "kind": "path",
+          "d": "M 0 -14 L 33.24154027718932 -14 Q 47.24154027718932 -14 47.24154027718932 0 Q 47.24154027718932 14 33.24154027718932 14 L 0 14 Q -14 14 -14 0 Q -14 -14 0 -14 Z",
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cd-ha",
+          "kind": "path",
+          "d": "M -6 8 L 35 8",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 4
+        },
+        {
+          "id": "shape-mv2e94cd-hb",
+          "kind": "ellipse",
+          "x": 4,
+          "y": -4,
+          "radiusX": 4,
+          "radiusY": 4,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94ce-hi",
+      "name": "Left sleeve",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "bone-mv2e94cb-g4",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94ce-he",
+          "kind": "path",
+          "d": "M 0 -15 L 63.52952069707436 -15 Q 78.52952069707436 -15 78.52952069707436 0 Q 78.52952069707436 15 63.52952069707436 15 L 0 15 Q -15 15 -15 0 Q -15 -15 0 -15 Z",
+          "fill": "#33978f",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ce-hf",
+          "kind": "path",
+          "d": "M 7 -10 L 56.52952069707436 -10",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ce-hg",
+          "kind": "ellipse",
+          "x": 63.52952069707436,
+          "y": 0,
+          "radiusX": 11,
+          "radiusY": 11,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ce-hh",
+          "kind": "ellipse",
+          "x": 63.52952069707436,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cg-ho",
+      "name": "Right sleeve",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "bone-mv2e94cc-g7",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cg-hk",
+          "kind": "path",
+          "d": "M 0 -15 L 58.82176467941097 -15 Q 73.82176467941096 -15 73.82176467941096 0 Q 73.82176467941096 15 58.82176467941097 15 L 0 15 Q -15 15 -15 0 Q -15 -15 0 -15 Z",
+          "fill": "#33978f",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hl",
+          "kind": "path",
+          "d": "M 7 -10 L 51.82176467941097 -10",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hm",
+          "kind": "ellipse",
+          "x": 58.82176467941097,
+          "y": 0,
+          "radiusX": 11,
+          "radiusY": 11,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cg-hn",
+          "kind": "ellipse",
+          "x": 58.82176467941097,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cg-hu",
+      "name": "Left forearm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 8,
+      "boundBoneId": "bone-mv2e94cb-g5",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cg-hq",
+          "kind": "path",
+          "d": "M 0 -12 L 55.072679252057455 -12 Q 67.07267925205745 -12 67.07267925205745 0 Q 67.07267925205745 12 55.072679252057455 12 L 0 12 Q -12 12 -12 0 Q -12 -12 0 -12 Z",
+          "fill": "#64cfbf",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hr",
+          "kind": "path",
+          "d": "M 7 -7 L 48.072679252057455 -7",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hs",
+          "kind": "ellipse",
+          "x": 55.072679252057455,
+          "y": 0,
+          "radiusX": 8,
+          "radiusY": 8,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cg-ht",
+          "kind": "ellipse",
+          "x": 55.072679252057455,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cg-i0",
+      "name": "Right forearm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 9,
+      "boundBoneId": "bone-mv2e94cc-g8",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cg-hw",
+          "kind": "path",
+          "d": "M 0 -12 L 54.70831746635972 -12 Q 66.70831746635972 -12 66.70831746635972 0 Q 66.70831746635972 12 54.70831746635972 12 L 0 12 Q -12 12 -12 0 Q -12 -12 0 -12 Z",
+          "fill": "#64cfbf",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hx",
+          "kind": "path",
+          "d": "M 7 -7 L 47.70831746635972 -7",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-hy",
+          "kind": "ellipse",
+          "x": 54.70831746635972,
+          "y": 0,
+          "radiusX": 8,
+          "radiusY": 8,
+          "fill": "#263747",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94cg-hz",
+          "kind": "ellipse",
+          "x": 54.70831746635972,
+          "y": 0,
+          "radiusX": 3,
+          "radiusY": 3,
+          "fill": "#ffbd71",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cg-i5",
+      "name": "Left glove",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 10,
+      "boundBoneId": "bone-mv2e94cc-g6",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cg-i2",
+          "kind": "path",
+          "d": "M 0 -13 L 20 -13 Q 33 -13 33 0 Q 33 13 20 13 L 0 13 Q -13 13 -13 0 Q -13 -13 0 -13 Z",
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-i3",
+          "kind": "ellipse",
+          "x": 8,
+          "y": -11,
+          "radiusX": 9,
+          "radiusY": 7,
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-i4",
+          "kind": "path",
+          "d": "M 18 -5 L 24 -5 M 19 1 L 26 1",
+          "fill": "none",
+          "stroke": "#d08453",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94cg-ia",
+      "name": "Right glove",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 11,
+      "boundBoneId": "bone-mv2e94cc-g9",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94cg-i7",
+          "kind": "path",
+          "d": "M 0 -13 L 20 -13 Q 33 -13 33 0 Q 33 13 20 13 L 0 13 Q -13 13 -13 0 Q -13 -13 0 -13 Z",
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-i8",
+          "kind": "ellipse",
+          "x": 8,
+          "y": -11,
+          "radiusX": 9,
+          "radiusY": 7,
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94cg-i9",
+          "kind": "path",
+          "d": "M 18 -5 L 24 -5 M 19 1 L 26 1",
+          "fill": "none",
+          "stroke": "#d08453",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94ch-ik",
+      "name": "Jacket · chest and satchel",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 12,
+      "boundBoneId": "bone-mv2e94cb-g2",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94ch-ic",
+          "kind": "path",
+          "d": "M -28 -105 Q -53 -102 -52 -78 L -42 -9 Q -39 7 0 9 Q 39 7 42 -9 L 52 -78 Q 53 -102 28 -105 Z",
+          "fill": "#64cfbf",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-id",
+          "kind": "path",
+          "d": "M 0 -91 L 0 1",
+          "fill": "none",
+          "stroke": "#33978f",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-ie",
+          "kind": "path",
+          "d": "M -35 -14 Q 0 -5 35 -14 L 33 6 Q 0 15 -33 6 Z",
+          "fill": "#263747",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-if",
+          "kind": "path",
+          "d": "M -32 -90 L -22 -97 L 34 -21 L 24 -14 Z",
+          "fill": "#e5a164",
+          "stroke": "#263747",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-ig",
+          "kind": "path",
+          "d": "M 7 -53 L 34 -53 L 35 -28 Q 21 -19 7 -28 Z",
+          "fill": "#ffedd0",
+          "stroke": "#263747",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-ih",
+          "kind": "ellipse",
+          "x": 21,
+          "y": -41,
+          "radiusX": 5,
+          "radiusY": 5,
+          "fill": "#f37b72",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-ii",
+          "kind": "path",
+          "d": "M -42 -99 Q 0 -116 42 -99 L 36 -84 Q 0 -96 -36 -84 Z",
+          "fill": "#f37b72",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-ij",
+          "kind": "path",
+          "d": "M 20 -91 L 35 -83 L 43 -58 L 27 -66 Z",
+          "fill": "#f37b72",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        }
+      ]
+    },
+    {
+      "id": "vector-mv2e94ch-iy",
+      "name": "Helmet · face",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 13,
+      "boundBoneId": "bone-mv2e94cb-g3",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "shape-mv2e94ch-im",
+          "kind": "ellipse",
+          "x": -43,
+          "y": -40,
+          "radiusX": 9,
+          "radiusY": 17,
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-in",
+          "kind": "ellipse",
+          "x": 43,
+          "y": -40,
+          "radiusX": 9,
+          "radiusY": 17,
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-io",
+          "kind": "path",
+          "d": "M -43 -54 Q -45 -88 0 -89 Q 45 -88 43 -54 L 42 -26 Q 39 -5 0 -4 Q -39 -5 -42 -26 Z",
+          "fill": "#ffbd71",
+          "stroke": "#263747",
+          "strokeWidth": 3
+        },
+        {
+          "id": "shape-mv2e94ch-ip",
+          "kind": "path",
+          "d": "M -33 -55 Q 0 -65 33 -55 L 32 -28 Q 0 -17 -32 -28 Z",
+          "fill": "#263747",
+          "stroke": "#263747",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-iq",
+          "kind": "ellipse",
+          "x": -15,
+          "y": -42,
+          "radiusX": 5,
+          "radiusY": 8,
+          "fill": "#a7f3df",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-ir",
+          "kind": "ellipse",
+          "x": 15,
+          "y": -42,
+          "radiusX": 5,
+          "radiusY": 8,
+          "fill": "#a7f3df",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-is",
+          "kind": "path",
+          "d": "M -7 -28 Q 0 -23 7 -28",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-it",
+          "kind": "path",
+          "d": "M -35 -66 Q 0 -87 35 -66",
+          "fill": "none",
+          "stroke": "#ffedd0",
+          "strokeWidth": 5
+        },
+        {
+          "id": "shape-mv2e94ch-iu",
+          "kind": "path",
+          "d": "M -44 -59 Q 0 -72 44 -59",
+          "fill": "none",
+          "stroke": "#d08453",
+          "strokeWidth": 5
+        },
+        {
+          "id": "shape-mv2e94ch-iv",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -79,
+          "radiusX": 6,
+          "radiusY": 6,
+          "fill": "#64cfbf",
+          "stroke": "#263747",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-iw",
+          "kind": "ellipse",
+          "x": -27,
+          "y": -17,
+          "radiusX": 6,
+          "radiusY": 3,
+          "fill": "#f37b72",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "shape-mv2e94ch-ix",
+          "kind": "ellipse",
+          "x": 27,
+          "y": -17,
+          "radiusX": 6,
+          "radiusY": 3,
+          "fill": "#f37b72",
+          "stroke": "none",
+          "strokeWidth": 2
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-mv2e94cd-gl",
+      "layerId": "vector-mv2e94cc-gk",
+      "imageId": "vector-mv2e94cc-gk",
+      "boneId": "bone-mv2e94cc-ga",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cd-gr",
+      "layerId": "vector-mv2e94cd-gq",
+      "imageId": "vector-mv2e94cd-gq",
+      "boneId": "bone-mv2e94cc-gd",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cd-gx",
+      "layerId": "vector-mv2e94cd-gw",
+      "imageId": "vector-mv2e94cd-gw",
+      "boneId": "bone-mv2e94cc-gb",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cd-h3",
+      "layerId": "vector-mv2e94cd-h2",
+      "imageId": "vector-mv2e94cd-h2",
+      "boneId": "bone-mv2e94cc-ge",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cd-h8",
+      "layerId": "vector-mv2e94cd-h7",
+      "imageId": "vector-mv2e94cd-h7",
+      "boneId": "bone-mv2e94cc-gc",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94ce-hd",
+      "layerId": "vector-mv2e94cd-hc",
+      "imageId": "vector-mv2e94cd-hc",
+      "boneId": "bone-mv2e94cc-gf",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94ce-hj",
+      "layerId": "vector-mv2e94ce-hi",
+      "imageId": "vector-mv2e94ce-hi",
+      "boneId": "bone-mv2e94cb-g4",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cg-hp",
+      "layerId": "vector-mv2e94cg-ho",
+      "imageId": "vector-mv2e94cg-ho",
+      "boneId": "bone-mv2e94cc-g7",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cg-hv",
+      "layerId": "vector-mv2e94cg-hu",
+      "imageId": "vector-mv2e94cg-hu",
+      "boneId": "bone-mv2e94cb-g5",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cg-i1",
+      "layerId": "vector-mv2e94cg-i0",
+      "imageId": "vector-mv2e94cg-i0",
+      "boneId": "bone-mv2e94cc-g8",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94cg-i6",
+      "layerId": "vector-mv2e94cg-i5",
+      "imageId": "vector-mv2e94cg-i5",
+      "boneId": "bone-mv2e94cc-g6",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94ch-ib",
+      "layerId": "vector-mv2e94cg-ia",
+      "imageId": "vector-mv2e94cg-ia",
+      "boneId": "bone-mv2e94cc-g9",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94ch-il",
+      "layerId": "vector-mv2e94ch-ik",
+      "imageId": "vector-mv2e94ch-ik",
+      "boneId": "bone-mv2e94cb-g2",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv2e94ch-iz",
+      "layerId": "vector-mv2e94ch-iy",
+      "imageId": "vector-mv2e94ch-iy",
+      "boneId": "bone-mv2e94cb-g3",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [
+    {
+      "id": "animation-mv2e94ch-j0",
+      "name": "Pip · poses",
+      "fps": 24,
+      "startFrame": 0,
+      "endFrame": 120,
+      "tracks": [
+        {
+          "id": "track-mv2e94ch-j1",
+          "targetId": "bone-mv2e94cb-g2",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-j2",
+              "frame": 0,
+              "value": {
+                "x": 400,
+                "y": 290,
+                "rotation": -1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-j3",
+          "targetId": "bone-mv2e94cb-g3",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-j4",
+              "frame": 0,
+              "value": {
+                "x": 105,
+                "y": -6.429395695523604e-15,
+                "rotation": -0.030236035226940627,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-j5",
+          "targetId": "bone-mv2e94cb-g4",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-j6",
+              "frame": 0,
+              "value": {
+                "x": 83,
+                "y": -49.00000000000001,
+                "rotation": 3.633401829578492,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-j7",
+          "targetId": "bone-mv2e94cb-g5",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-j8",
+              "frame": 0,
+              "value": {
+                "x": 63.52952069707436,
+                "y": -3.552713678800501e-15,
+                "rotation": 0.020580284322039066,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-j9",
+          "targetId": "bone-mv2e94cc-g6",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-ja",
+              "frame": 0,
+              "value": {
+                "x": 55.072679252057455,
+                "y": 0,
+                "rotation": -0.06628391136733391,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jb",
+          "targetId": "bone-mv2e94cc-g7",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jc",
+              "frame": 0,
+              "value": {
+                "x": 83,
+                "y": 48.99999999999999,
+                "rotation": 0.8016775178141359,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jd",
+          "targetId": "bone-mv2e94cc-g8",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-je",
+              "frame": 0,
+              "value": {
+                "x": 58.821764679410975,
+                "y": -7.105427357601002e-15,
+                "rotation": -6.283185307179585,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jf",
+          "targetId": "bone-mv2e94cc-g9",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jg",
+              "frame": 0,
+              "value": {
+                "x": 54.708317466359716,
+                "y": 3.552713678800501e-15,
+                "rotation": -0.017022781900779327,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jh",
+          "targetId": "bone-mv2e94cc-ga",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-ji",
+              "frame": 0,
+              "value": {
+                "x": 5.999999999999998,
+                "y": -22,
+                "rotation": 3.3587039683246984,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jj",
+          "targetId": "bone-mv2e94cc-gb",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jk",
+              "frame": 0,
+              "value": {
+                "x": 69.63476143421474,
+                "y": -3.552713678800501e-15,
+                "rotation": -0.35703598530902303,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jl",
+          "targetId": "bone-mv2e94cc-gc",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jm",
+              "frame": 0,
+              "value": {
+                "x": 71.7007670809734,
+                "y": 3.552713678800501e-15,
+                "rotation": 1.4365535462493555,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jn",
+          "targetId": "bone-mv2e94cc-gd",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jo",
+              "frame": 0,
+              "value": {
+                "x": 6.000000000000002,
+                "y": 22,
+                "rotation": 2.9244813388548883,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jp",
+          "targetId": "bone-mv2e94cc-ge",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-jq",
+              "frame": 0,
+              "value": {
+                "x": 69.63476143421474,
+                "y": -1.7763568394002505e-14,
+                "rotation": -0.3229088282405207,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "track-mv2e94ch-jr",
+          "targetId": "bone-mv2e94cc-gf",
+          "property": "transform",
+          "keyframes": [
+            {
+              "id": "key-mv2e94ch-js",
+              "frame": 0,
+              "value": {
+                "x": 71.34423592694787,
+                "y": -4.440892098500626e-15,
+                "rotation": -1.6423846492400354,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "easing": "linear"
+            }
+          ]
+        }
+      ],
+      "setupPose": {
+        "bone-mv2e94cc-g7": {
+          "local": {
+            "x": 83,
+            "y": 48.99999999999999,
+            "rotation": 0.8016775178141359,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "bone-mv2e94cc-g8": {
+          "local": {
+            "x": 58.821764679410975,
+            "y": -7.105427357601002e-15,
+            "rotation": -6.283185307179585,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "bone-mv2e94cb-g3": {
+          "local": {
+            "x": 105,
+            "y": -6.429395695523604e-15,
+            "rotation": -0.030236035226940627,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "bone-mv2e94cc-ge": {
+          "local": {
+            "x": 69.63476143421474,
+            "y": -1.7763568394002505e-14,
+            "rotation": -0.3229088282405207,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        "bone-mv2e94cc-gf": {
+          "local": {
+            "x": 71.34423592694787,
+            "y": -4.440892098500626e-15,
+            "rotation": -1.6423846492400354,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        }
+      }
+    }
+  ],
+  "smartActions": [],
+  "actionLibrary": [],
+  "controllers": [],
+  "controllerInstances": [],
+  "lipSyncTracks": [],
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "perspective": 0,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "projection": "perspective"
+  },
+  "cameras": [],
+  "characterViews": [],
+  "facialProfiles": [],
+  "headCreators": [],
+  "constraints": [],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "cameraProduction": {
+    "stageMode": false,
+    "liveControl": {
+      "enabled": false,
+      "source": "pointer",
+      "sensitivity": 1,
+      "smoothing": 0.8
+    },
+    "shake": {
+      "enabled": false,
+      "amplitude": 0,
+      "frequency": 12,
+      "rotation": 0,
+      "seed": 1
+    },
+    "bookmarks": [],
+    "transitionPresets": [
+      {
+        "id": "cut",
+        "name": "Hard cut",
+        "duration": 0,
+        "easing": "step",
+        "kind": "cut"
+      },
+      {
+        "id": "dissolve",
+        "name": "Dissolve 12f",
+        "duration": 12,
+        "easing": "smooth",
+        "kind": "dissolve"
+      },
+      {
+        "id": "push",
+        "name": "Push 18f",
+        "duration": 18,
+        "easing": "ease-in-out",
+        "kind": "push"
+      },
+      {
+        "id": "whip",
+        "name": "Whip 8f",
+        "duration": 8,
+        "easing": "overshoot",
+        "kind": "whip"
+      },
+      {
+        "id": "zoom",
+        "name": "Zoom 12f",
+        "duration": 12,
+        "easing": "ease-in-out",
+        "kind": "zoom"
+      }
+    ],
+    "cameraRigs": [],
+    "defaultTransitionPresetId": "cut"
+  },
+  "groups": [],
+  "smartActionFolders": [],
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": "animation-mv2e94ch-j0"
+  },
+  "metadata": {
+    "example": "Pip — an original articulated vector trail courier",
+    "description": "Separate rigid artwork for every joint. Pose lower arms/legs with two-joint IK; rotate hands, feet and head with FK. Torso is locked to anchor the limbs."
+  }
+}

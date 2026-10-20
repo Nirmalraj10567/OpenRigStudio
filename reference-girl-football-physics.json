@@ -1,0 +1,667 @@
+{
+  "ball": {
+    "id": "body-mv3d4mwi-py",
+    "targetId": "vector-mv3d4mv2-ps",
+    "name": "Football · kicked dynamic body",
+    "shape": "circle",
+    "motion": "dynamic",
+    "x": 0,
+    "y": 0,
+    "radius": 11,
+    "width": 22,
+    "height": 22,
+    "rotation": 0,
+    "mass": 0.45,
+    "restitution": 0.62,
+    "friction": 0.28,
+    "windScale": 0.04,
+    "initialVelocity": {
+      "x": 110,
+      "y": -235
+    },
+    "launchFrame": 24,
+    "enabled": true
+  },
+  "verification": {
+    "ballHeldBeforeKick": true,
+    "ballLaunched": true,
+    "ballBounced": true,
+    "ballStayedAboveGroundAfterContact": true,
+    "dressMoved": true,
+    "hairMovedInWind": true,
+    "chestJiggleMoved": true,
+    "allFinite": true
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "ball": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 0,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 0
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 0
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "ball": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 15.057097631335004,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 6.935733305457858
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 5.822265580973182
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.020129926816246525,
+            "y": 0.6638325075997322
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.1278692137577039,
+            "y": 0.5813595117754516
+          }
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "ball": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 451.5,
+        "y": 457.75,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 21.05968399890683,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 3.8551138618970513
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 2.8324302610287453
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.10412694929943456,
+            "y": -1.135159778247396
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": 0.08329234715509558,
+            "y": -1.0172194207784242
+          }
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "ball": {
+        "x": 456.09439035362533,
+        "y": 448.27986069784293,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 456.09439035362533,
+        "y": 448.27986069784293,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 13.248669751612649,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 5.514887485970297
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 4.6998264086007095
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.038596191762268715,
+            "y": 0.031002871195388693
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.042805345181538,
+            "y": 0.06204336898097775
+          }
+        }
+      ]
+    },
+    {
+      "frame": 32,
+      "ball": {
+        "x": 493.62620096878175,
+        "y": 391.85003145018464,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 493.62620096878175,
+        "y": 391.85003145018464,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 15.000000000000032,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 8.679343347667546
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 6.934152770608603
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.041347339330248194,
+            "y": 0.26022083854049516
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.06924929172714726,
+            "y": 0.22100628945691145
+          }
+        }
+      ]
+    },
+    {
+      "frame": 48,
+      "ball": {
+        "x": 573.6791022490769,
+        "y": 382.38699134273224,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 573.6791022490769,
+        "y": 382.38699134273224,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 30.21217538692594,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 8.216897147160687
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 6.329697317775345
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.0443622862764478,
+            "y": 0.1348606539935755
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.056260426667407874,
+            "y": 0.11849581017632733
+          }
+        }
+      ]
+    },
+    {
+      "frame": 54,
+      "ball": {
+        "x": 605.198539319125,
+        "y": 414.3055257987305,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 605.198539319125,
+        "y": 414.3055257987305,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 9.840472846080312,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 5.961193076892232
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 4.559324620757443
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.047555085755060844,
+            "y": -0.03410155811803097
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.03678970434676572,
+            "y": -0.03409795878088904
+          }
+        }
+      ]
+    },
+    {
+      "frame": 58,
+      "ball": {
+        "x": 626.5111824848233,
+        "y": 446.27801880795954,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 626.5111824848233,
+        "y": 446.27801880795954,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 7.350424530576765,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 4.717980585801195
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 3.6489257957951775
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.04506553940626432,
+            "y": -0.010857708760501872
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.039080974304186354,
+            "y": -0.006196006803400067
+          }
+        }
+      ]
+    },
+    {
+      "frame": 62,
+      "ball": {
+        "x": 641.9933476349498,
+        "y": 463.5131790418519,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 641.9933476349498,
+        "y": 463.5131790418519,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 1.854492434347694,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 4.092939784244052
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 3.2473415201737588
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.043201782398096356,
+            "y": 0.01943753355329818
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.041642030954758984,
+            "y": 0.019835341773344874
+          }
+        }
+      ]
+    },
+    {
+      "frame": 66,
+      "ball": {
+        "x": 648.6301297909575,
+        "y": 455.7738956327754,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 648.6301297909575,
+        "y": 455.7738956327754,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 2.877340942024291,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 4.253873158001605
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 3.460377067561004
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.04371322388488324,
+            "y": 0.01683176024133264
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.041271989094360605,
+            "y": 0.014274129772308087
+          }
+        }
+      ]
+    },
+    {
+      "frame": 70,
+      "ball": {
+        "x": 655.4925595512384,
+        "y": 456.58445308272536,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 655.4925595512384,
+        "y": 456.58445308272536,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 5.989936783776699,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 5.153970865915515
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 4.229520825583084
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.04533016277639277,
+            "y": 0.012689184753615202
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.04184336629355983,
+            "y": 0.0112110052596746
+          }
+        }
+      ]
+    },
+    {
+      "frame": 72,
+      "ball": {
+        "x": 659.0253709911226,
+        "y": 460.2018646776849,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 659.0253709911226,
+        "y": 460.2018646776849,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 7.182061052494313,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 5.80899180358116
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 4.7605118930968136
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.04627126992764161,
+            "y": 0.014378793378708999
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.04273737947621825,
+            "y": 0.013538178438265725
+          }
+        }
+      ]
+    },
+    {
+      "frame": 80,
+      "ball": {
+        "x": 667.5593050164473,
+        "y": 468.57961178058247,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 667.5593050164473,
+        "y": 468.57961178058247,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 11.999808322320302,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 8.693689180353829
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 6.981489190351618
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.050003152484054424,
+            "y": 0.026171855172758995
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.04654884206218597,
+            "y": 0.02444938859890815
+          }
+        }
+      ]
+    },
+    {
+      "frame": 96,
+      "ball": {
+        "x": 668.461361481598,
+        "y": 469,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 668.461361481598,
+        "y": 469,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 14.999999999999973,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 8.05080031749065
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 6.195655111411972
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.048524174229865484,
+            "y": 0.02215006183245798
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.04498721344242469,
+            "y": 0.020395245307111943
+          }
+        }
+      ]
+    },
+    {
+      "frame": 120,
+      "ball": {
+        "x": 668.5621047069009,
+        "y": 469,
+        "rotation": 0
+      },
+      "ballWorld": {
+        "x": 668.5621047069009,
+        "y": 469,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "skirtTravel": 10.042881484853723,
+      "hair": [
+        {
+          "layerId": "vector-mv3d4mlq-3y",
+          "maxTravel": 5.961736564302851
+        },
+        {
+          "layerId": "vector-mv3d4mm1-4o",
+          "maxTravel": 4.883013880851202
+        }
+      ],
+      "chest": [
+        {
+          "id": "bone-mv3d4mln-9",
+          "offset": {
+            "x": -0.04640286479854581,
+            "y": 0.01703296625252886
+          }
+        },
+        {
+          "id": "bone-mv3d4mln-a",
+          "offset": {
+            "x": -0.04316274622918144,
+            "y": 0.015994977963190493
+          }
+        }
+      ]
+    }
+  ]
+}

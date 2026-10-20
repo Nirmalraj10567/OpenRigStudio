@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="app" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111a22"/><stop offset="1" stop-color="#1b2932"/></linearGradient>
+    <linearGradient id="plot" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#17272e"/><stop offset="1" stop-color="#10181f"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#000" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#0b1116"/>
+  <rect x="22" y="22" width="1556" height="956" rx="18" fill="url(#app)" stroke="#2e4852" stroke-width="2"/>
+  <rect x="22" y="22" width="1556" height="64" rx="18" fill="#121d25"/>
+  <circle cx="56" cy="54" r="8" fill="#f06f63"/><circle cx="82" cy="54" r="8" fill="#d9b460"/><circle cx="108" cy="54" r="8" fill="#6bc6ac"/>
+  <text x="145" y="60" fill="#e3f0ee" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="600">Character Studio</text>
+  <text x="390" y="60" fill="#8eabb1" font-family="Inter,Arial,sans-serif" font-size="15">Professional Graph Mode</text>
+  <rect x="1327" y="39" width="213" height="31" rx="8" fill="#244d4b" stroke="#64cbb8"/><circle cx="1346" cy="54" r="5" fill="#8be5d2"/><text x="1360" y="60" fill="#c4f7ea" font-family="Inter,Arial,sans-serif" font-size="13">CURVES LIVE</text>
+
+  <!-- Left animation channels -->
+  <rect x="42" y="106" width="300" height="735" rx="12" fill="#111b22" stroke="#2c444d"/>
+  <text x="66" y="141" fill="#e0efed" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600">Animation channels</text>
+  <text x="66" y="165" fill="#759198" font-family="Inter,Arial,sans-serif" font-size="11">Head_Turn · selected object</text>
+  <line x1="62" y1="182" x2="322" y2="182" stroke="#2d4148"/>
+  <g font-family="Inter,Arial,sans-serif" font-size="12">
+    <rect x="56" y="199" width="272" height="38" rx="6" fill="#243e40" stroke="#71ccbc"/><circle cx="74" cy="218" r="5" fill="#f1a36f"/><text x="91" y="223" fill="#d3f1ea">Head_Turn</text><text x="262" y="223" fill="#83dacc">POSE</text>
+    <rect x="72" y="250" width="256" height="34" rx="5" fill="#1c2b34"/><circle cx="90" cy="267" r="4" fill="#f1a36f"/><text x="106" y="272" fill="#c2d5d7">X position</text><text x="268" y="272" fill="#f1a36f">X</text>
+    <rect x="72" y="292" width="256" height="34" rx="5" fill="#1c2b34"/><circle cx="90" cy="309" r="4" fill="#72b7ff"/><text x="106" y="314" fill="#c2d5d7">Y position</text><text x="268" y="314" fill="#72b7ff">Y</text>
+    <rect x="72" y="334" width="256" height="34" rx="5" fill="#253148"/><circle cx="90" cy="351" r="4" fill="#d99bff"/><text x="106" y="356" fill="#e3e6ff">Rotation</text><text x="252" y="356" fill="#d99bff">ANGLE</text>
+    <rect x="72" y="376" width="256" height="34" rx="5" fill="#1c2b34"/><circle cx="90" cy="393" r="4" fill="#e8c66e"/><text x="106" y="398" fill="#c2d5d7">Scale X</text><text x="263" y="398" fill="#e8c66e">SX</text>
+    <rect x="72" y="418" width="256" height="34" rx="5" fill="#1c2b34"/><circle cx="90" cy="435" r="4" fill="#9edb78"/><text x="106" y="440" fill="#c2d5d7">Scale Y</text><text x="263" y="440" fill="#9edb78">SY</text>
+    <text x="66" y="493" fill="#7e9da2" font-size="10">OTHER NUMERIC CHANNELS</text>
+    <text x="90" y="527" fill="#a6c1c3">Opacity</text><text x="273" y="527" fill="#70c8be">0–1</text>
+    <text x="90" y="559" fill="#a6c1c3">Mesh points</text><text x="261" y="559" fill="#70c8be">MESH</text>
+    <text x="90" y="591" fill="#a6c1c3">Camera zoom</text><text x="261" y="591" fill="#70c8be">LENS</text>
+  </g>
+  <rect x="62" y="648" width="260" height="86" rx="7" fill="#182b31" stroke="#416d6c"/>
+  <text x="80" y="674" fill="#88d9ca" font-family="Inter,Arial,sans-serif" font-size="11">GRAPH FILTER</text>
+  <text x="80" y="697" fill="#c1d5d5" font-family="Inter,Arial,sans-serif" font-size="12">Selected keys</text><rect x="80" y="709" width="164" height="6" rx="3" fill="#315158"/><rect x="80" y="709" width="104" height="6" rx="3" fill="#77cdbd"/>
+  <text x="80" y="759" fill="#7f9b9f" font-family="Inter,Arial,sans-serif" font-size="10">3 curves filtered · 12 keys</text>
+
+  <!-- main graph -->
+  <rect x="362" y="106" width="815" height="735" rx="12" fill="#10191f" stroke="#2c444d"/>
+  <text x="390" y="141" fill="#e0efed" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600">Value graph</text>
+  <text x="390" y="163" fill="#7e9da2" font-family="Inter,Arial,sans-serif" font-size="11">Head_Turn · Rotation · frame 18 / 120</text>
+  <rect x="808" y="125" width="342" height="31" rx="5" fill="#1b2a31" stroke="#3e5b64"/>
+  <text x="827" y="145" fill="#9eb8bc" font-family="Inter,Arial,sans-serif" font-size="11">Graph channel</text><text x="938" y="145" fill="#e2c0ff" font-family="Inter,Arial,sans-serif" font-size="12">Rotation</text><path d="M1129 137l7 7 7-7" fill="none" stroke="#8ca9ac"/>
+  <rect x="388" y="187" width="758" height="550" rx="6" fill="url(#plot)"/>
+  <g stroke="#2b4048" stroke-width="1">
+    <line x1="430" y1="220" x2="1120" y2="220"/><line x1="430" y1="309" x2="1120" y2="309"/><line x1="430" y1="398" x2="1120" y2="398"/><line x1="430" y1="487" x2="1120" y2="487"/><line x1="430" y1="576" x2="1120" y2="576"/><line x1="430" y1="665" x2="1120" y2="665"/>
+    <line x1="430" y1="220" x2="430" y2="665"/><line x1="545" y1="220" x2="545" y2="665"/><line x1="660" y1="220" x2="660" y2="665"/><line x1="775" y1="220" x2="775" y2="665"/><line x1="890" y1="220" x2="890" y2="665"/><line x1="1005" y1="220" x2="1005" y2="665"/><line x1="1120" y1="220" x2="1120" y2="665"/>
+  </g>
+  <g fill="#78969e" font-family="DM Mono,monospace" font-size="10"><text x="395" y="224">180°</text><text x="398" y="313">90°</text><text x="401" y="402">0°</text><text x="394" y="491">−90°</text><text x="390" y="580">−180°</text><text x="426" y="686">0</text><text x="538" y="686">20</text><text x="654" y="686">40</text><text x="769" y="686">60</text><text x="884" y="686">80</text><text x="995" y="686">100</text><text x="1108" y="686">120</text></g>
+  <!-- smooth bezier curve -->
+  <path d="M430 610 C490 608 502 558 545 540 C610 514 636 473 660 437 C710 361 730 347 775 356 C850 370 855 289 890 272 C937 248 962 345 1005 382 C1050 420 1084 410 1120 397" fill="none" stroke="#d99bff" stroke-width="4"/>
+  <path d="M430 610 C490 608 502 558 545 540" fill="none" stroke="#fff0b7" stroke-width="7" opacity=".22"/>
+  <!-- handles and keys -->
+  <g stroke="#aabcc2" stroke-width="2" stroke-dasharray="5 4" fill="none"><line x1="660" y1="437" x2="612" y2="479"/><line x1="660" y1="437" x2="730" y2="351"/><line x1="890" y1="272" x2="842" y2="300"/><line x1="890" y1="272" x2="929" y2="342"/></g>
+  <g fill="#aabcc2" stroke="#d7f0eb" stroke-width="2"><circle cx="612" cy="479" r="6"/><circle cx="730" cy="351" r="6"/><circle cx="842" cy="300" r="6"/><circle cx="929" cy="342" r="6"/></g>
+  <g fill="#d99bff" stroke="#fff0b7" stroke-width="3"><circle cx="430" cy="610" r="7"/><circle cx="545" cy="540" r="7"/><circle cx="660" cy="437" r="9"/><circle cx="775" cy="356" r="7"/><circle cx="890" cy="272" r="9"/><circle cx="1005" cy="382" r="7"/><circle cx="1120" cy="397" r="7"/></g>
+  <line x1="775" y1="205" x2="775" y2="700" stroke="#f16b75" stroke-width="2"/><path d="M768 207h14l-7 10z" fill="#f16b75"/><text x="788" y="226" fill="#f7a1a8" font-family="Inter,Arial,sans-serif" font-size="11">current frame 60</text>
+  <rect x="410" y="705" width="270" height="25" rx="5" fill="#26394a"/><text x="425" y="722" fill="#b9d6e7" font-family="Inter,Arial,sans-serif" font-size="10">Bezier handles · tangent locked</text>
+  <rect x="692" y="705" width="190" height="25" rx="5" fill="#314738"/><text x="707" y="722" fill="#cdebc2" font-family="Inter,Arial,sans-serif" font-size="10">Velocity 48.0°/sec</text>
+  <rect x="895" y="705" width="210" height="25" rx="5" fill="#413849"/><text x="910" y="722" fill="#e5ccf7" font-family="Inter,Arial,sans-serif" font-size="10">Overshoot · auto ease</text>
+
+  <!-- inspector -->
+  <rect x="1197" y="106" width="353" height="735" rx="12" fill="#18262b" stroke="#2c444d"/>
+  <text x="1223" y="141" fill="#e0efed" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600">Curve inspector</text>
+  <line x1="1220" y1="161" x2="1526" y2="161" stroke="#365057"/>
+  <text x="1223" y="195" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">SELECTED KEY</text>
+  <rect x="1222" y="210" width="302" height="45" rx="6" fill="#273a44" stroke="#d99bff"/>
+  <text x="1240" y="230" fill="#d99bff" font-family="Inter,Arial,sans-serif" font-size="13">Frame 60</text><text x="1240" y="247" fill="#bed0d3" font-family="Inter,Arial,sans-serif" font-size="11">Rotation 32.4°</text>
+  <text x="1223" y="287" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">CURVE PRESET</text>
+  <g font-family="Inter,Arial,sans-serif" font-size="11"><rect x="1222" y="301" width="137" height="32" rx="5" fill="#413849" stroke="#d99bff"/><text x="1240" y="322" fill="#f0dafe">Bezier handles</text><rect x="1370" y="301" width="154" height="32" rx="5" fill="#22363d" stroke="#3d5c62"/><text x="1391" y="322" fill="#b4cbcf">Bounce · Elastic</text></g>
+  <text x="1223" y="368" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">TANGENT CONTROL</text>
+  <rect x="1222" y="383" width="302" height="34" rx="5" fill="#20343b"/><text x="1240" y="405" fill="#c5dedc">🔒 Tangents locked</text><text x="1450" y="405" fill="#7bd5c3">AUTO</text>
+  <text x="1223" y="452" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">VELOCITY</text>
+  <rect x="1222" y="466" width="128" height="34" rx="5" fill="#142229" stroke="#3c5860"/><text x="1240" y="488" fill="#d8eeee">48.0</text><text x="1297" y="488" fill="#78999e">°/sec</text><rect x="1360" y="466" width="164" height="34" rx="5" fill="#31574e" stroke="#6dc9b4"/><text x="1381" y="488" fill="#d1f7eb">Apply velocity</text>
+  <text x="1223" y="536" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">CURVE CLIPBOARD</text>
+  <rect x="1222" y="551" width="144" height="35" rx="5" fill="#2b3d47" stroke="#5a7883"/><text x="1245" y="573" fill="#c6e0e6">Copy curve</text><rect x="1381" y="551" width="143" height="35" rx="5" fill="#2b3d47" stroke="#5a7883"/><text x="1405" y="573" fill="#c6e0e6">Paste curve</text>
+  <text x="1223" y="622" fill="#8fa9ae" font-family="Inter,Arial,sans-serif" font-size="10">MOTION FILTER</text>
+  <rect x="1222" y="638" width="302" height="7" rx="3" fill="#304b52"/><rect x="1222" y="638" width="156" height="7" rx="3" fill="#76cbbb"/><circle cx="1378" cy="641.5" r="7" fill="#d2f7ea"/>
+  <rect x="1222" y="666" width="302" height="35" rx="5" fill="#31574e" stroke="#6dc9b4"/><text x="1320" y="688" fill="#d1f7eb">Filter curve</text>
+  <text x="1223" y="748" fill="#7f9da2" font-family="Inter,Arial,sans-serif" font-size="10">Separate channels remain editable.</text><text x="1223" y="768" fill="#7f9da2" font-family="Inter,Arial,sans-serif" font-size="10">Curve data persists with project JSON.</text>
+
+  <!-- bottom timeline -->
+  <rect x="362" y="858" width="1188" height="91" rx="12" fill="#111b22" stroke="#2c444d"/>
+  <text x="389" y="886" fill="#d8e8e6" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="600">Timeline</text>
+  <rect x="480" y="870" width="110" height="25" rx="5" fill="#31574e" stroke="#6dc9b4"/><text x="511" y="887" fill="#d1f7eb" font-family="Inter,Arial,sans-serif" font-size="11">GRAPH</text>
+  <line x1="620" y1="883" x2="1521" y2="883" stroke="#405760"/>
+  <g fill="#ffc66c" stroke="#ffe5a8" stroke-width="2"><path d="M658 883l7-7 7 7-7 7Z"/><path d="M775 883l7-7 7 7-7 7Z"/><path d="M890 883l7-7 7 7-7 7Z"/><path d="M1005 883l7-7 7 7-7 7Z"/><path d="M1120 883l7-7 7 7-7 7Z"/></g>
+  <text x="1240" y="888" fill="#8fa9ae" font-family="DM Mono,monospace" font-size="10">142 TESTS PASSING</text>
+  <text x="42" y="921" fill="#6f8a91" font-family="Inter,Arial,sans-serif" font-size="11">Moho-style Graph Mode · Bezier tangents · value and velocity precision · curve clipboard</text>
+</svg>

@@ -1,0 +1,1102 @@
+{
+  "schemaVersion": 1,
+  "id": "project-anime-girl-30-off-shoulder-dress",
+  "name": "Anime Girl 30 - Off-Shoulder Dress",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#1a2332"
+  },
+  "layers": [
+    {
+      "id": "character-ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ground",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 82,
+          "fill": "#1b2f3a"
+        },
+        {
+          "id": "ground-edge",
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 4,
+          "fill": "#e8b4c0"
+        }
+      ]
+    },
+    {
+      "id": "character-shadow",
+      "name": "Shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "shadow",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 438,
+          "radiusX": 110,
+          "radiusY": 14,
+          "fill": "#000000",
+          "opacity": 0.28
+        }
+      ]
+    },
+    {
+      "id": "character-left-leg",
+      "name": "Left leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 2,
+      "boundBoneId": "left-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-leg",
+          "kind": "rect",
+          "x": -13,
+          "y": 0,
+          "width": 26,
+          "height": 78,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "left-leg-shadow",
+          "kind": "rect",
+          "x": -13,
+          "y": 0,
+          "width": 7,
+          "height": 78,
+          "fill": "#e8b8a0",
+          "opacity": 0.35
+        },
+        {
+          "id": "left-shoe",
+          "kind": "ellipse",
+          "x": -6,
+          "y": 77,
+          "radiusX": 30,
+          "radiusY": 11,
+          "fill": "#5a1a2e"
+        },
+        {
+          "id": "left-heel",
+          "kind": "rect",
+          "x": 14,
+          "y": 72,
+          "width": 4,
+          "height": 14,
+          "fill": "#5a1a2e"
+        },
+        {
+          "id": "left-shoe-highlight",
+          "kind": "ellipse",
+          "x": -6,
+          "y": 75,
+          "radiusX": 18,
+          "radiusY": 4,
+          "fill": "#c47a8a",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "id": "character-right-leg",
+      "name": "Right leg",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "right-leg-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-leg",
+          "kind": "rect",
+          "x": -13,
+          "y": 0,
+          "width": 26,
+          "height": 78,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "right-leg-shadow",
+          "kind": "rect",
+          "x": 6,
+          "y": 0,
+          "width": 7,
+          "height": 78,
+          "fill": "#e8b8a0",
+          "opacity": 0.35
+        },
+        {
+          "id": "right-shoe",
+          "kind": "ellipse",
+          "x": 6,
+          "y": 77,
+          "radiusX": 30,
+          "radiusY": 11,
+          "fill": "#5a1a2e"
+        },
+        {
+          "id": "right-heel",
+          "kind": "rect",
+          "x": 20,
+          "y": 72,
+          "width": 4,
+          "height": 14,
+          "fill": "#5a1a2e"
+        },
+        {
+          "id": "right-shoe-highlight",
+          "kind": "ellipse",
+          "x": 6,
+          "y": 75,
+          "radiusX": 18,
+          "radiusY": 4,
+          "fill": "#c47a8a",
+          "opacity": 0.5
+        }
+      ]
+    },
+    {
+      "id": "character-dress",
+      "name": "Off-shoulder Dress",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "root",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "skirt",
+          "kind": "path",
+          "d": "M -58 28 L 58 28 L 74 118 L -74 118 Z",
+          "fill": "#8e2f4a"
+        },
+        {
+          "id": "bodice",
+          "kind": "rect",
+          "x": -62,
+          "y": -42,
+          "width": 124,
+          "height": 72,
+          "fill": "#8e2f4a"
+        },
+        {
+          "id": "ruffle-top",
+          "kind": "path",
+          "d": "M -70 -42 Q -35 -52 0 -42 Q 35 -52 70 -42 L 62 -28 Q 35 -36 0 -28 Q -35 -36 -62 -28 Z",
+          "fill": "#a03a5a"
+        },
+        {
+          "id": "neckline",
+          "kind": "path",
+          "d": "M -62 -28 Q -20 -8 0 -18 Q 20 -8 62 -28 L 58 -22 Q 20 -2 0 -12 Q -20 -2 -58 -22 Z",
+          "fill": "#5a1a2e",
+          "opacity": 0.9
+        },
+        {
+          "id": "waist",
+          "kind": "rect",
+          "x": -54,
+          "y": 18,
+          "width": 108,
+          "height": 6,
+          "fill": "#5a1a2e"
+        },
+        {
+          "id": "waist-highlight",
+          "kind": "rect",
+          "x": -18,
+          "y": 18,
+          "width": 22,
+          "height": 6,
+          "fill": "#c98a9a"
+        },
+        {
+          "id": "pleat",
+          "kind": "path",
+          "d": "M 0 28 L 0 118",
+          "fill": "none",
+          "stroke": "#5a1a2e",
+          "strokeWidth": 2,
+          "opacity": 0.5
+        },
+        {
+          "id": "pleat-left",
+          "kind": "path",
+          "d": "M -28 28 L -36 118",
+          "fill": "none",
+          "stroke": "#5a1a2e",
+          "strokeWidth": 1.5,
+          "opacity": 0.28
+        },
+        {
+          "id": "pleat-right",
+          "kind": "path",
+          "d": "M 28 28 L 36 118",
+          "fill": "none",
+          "stroke": "#5a1a2e",
+          "strokeWidth": 1.5,
+          "opacity": 0.28
+        },
+        {
+          "id": "collar-bone",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -38,
+          "radiusX": 38,
+          "radiusY": 6,
+          "fill": "#f7d5c2",
+          "opacity": 0.95
+        }
+      ]
+    },
+    {
+      "id": "character-left-arm",
+      "name": "Left arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 5,
+      "boundBoneId": "left-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-arm",
+          "kind": "rect",
+          "x": -12,
+          "y": 0,
+          "width": 24,
+          "height": 112,
+          "fill": "#f7d5c2",
+          "stroke": "#e8b8a0",
+          "strokeWidth": 2
+        },
+        {
+          "id": "left-arm-shadow",
+          "kind": "rect",
+          "x": -12,
+          "y": 0,
+          "width": 6,
+          "height": 112,
+          "fill": "#e8b8a0",
+          "opacity": 0.25
+        },
+        {
+          "id": "left-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 114,
+          "radiusX": 18,
+          "radiusY": 14,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "left-nail",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 7,
+          "radiusY": 3,
+          "fill": "#c47a8a",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "id": "character-right-arm",
+      "name": "Right arm",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "right-arm-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "right-arm",
+          "kind": "rect",
+          "x": -12,
+          "y": 0,
+          "width": 24,
+          "height": 112,
+          "fill": "#f7d5c2",
+          "stroke": "#e8b8a0",
+          "strokeWidth": 2
+        },
+        {
+          "id": "right-arm-shadow",
+          "kind": "rect",
+          "x": 6,
+          "y": 0,
+          "width": 6,
+          "height": 112,
+          "fill": "#e8b8a0",
+          "opacity": 0.25
+        },
+        {
+          "id": "right-hand",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 114,
+          "radiusX": 18,
+          "radiusY": 14,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "right-nail",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 120,
+          "radiusX": 7,
+          "radiusY": 3,
+          "fill": "#c47a8a",
+          "opacity": 0.9
+        }
+      ]
+    },
+    {
+      "id": "character-hair-back",
+      "name": "Hair back",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 7,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "hair-back-main",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -48,
+          "radiusX": 102,
+          "radiusY": 92,
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "hair-back-length",
+          "kind": "path",
+          "d": "M -88 -30 Q -98 10 -78 52 Q -60 78 -32 88 Q -58 62 -62 18 Z",
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "hair-back-length-r",
+          "kind": "path",
+          "d": "M 88 -30 Q 98 10 78 52 Q 60 78 32 88 Q 58 62 62 18 Z",
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "hair-back-highlight",
+          "kind": "ellipse",
+          "x": -28,
+          "y": -62,
+          "radiusX": 32,
+          "radiusY": 18,
+          "fill": "#5a3a28",
+          "opacity": 0.9
+        },
+        {
+          "id": "hair-back-shine",
+          "kind": "path",
+          "d": "M -42 -72 Q -22 -88 8 -78",
+          "fill": "none",
+          "stroke": "#7a5a44",
+          "strokeWidth": 4,
+          "opacity": 0.35
+        }
+      ]
+    },
+    {
+      "id": "character-head",
+      "name": "Head",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 8,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "head",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -56,
+          "radiusX": 78,
+          "radiusY": 72,
+          "fill": "#f7d5c2",
+          "stroke": "#e8b8a0",
+          "strokeWidth": 3
+        },
+        {
+          "id": "neck",
+          "kind": "rect",
+          "x": -18,
+          "y": -18,
+          "width": 36,
+          "height": 22,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "neck-shadow",
+          "kind": "ellipse",
+          "x": 0,
+          "y": -10,
+          "radiusX": 16,
+          "radiusY": 5,
+          "fill": "#e8b8a0",
+          "opacity": 0.35
+        },
+        {
+          "id": "ear-left",
+          "kind": "ellipse",
+          "x": -76,
+          "y": -52,
+          "radiusX": 10,
+          "radiusY": 16,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "ear-right",
+          "kind": "ellipse",
+          "x": 76,
+          "y": -52,
+          "radiusX": 10,
+          "radiusY": 16,
+          "fill": "#f7d5c2"
+        },
+        {
+          "id": "earring-left",
+          "kind": "ellipse",
+          "x": -76,
+          "y": -38,
+          "radiusX": 5,
+          "radiusY": 5,
+          "fill": "#e8c87a",
+          "stroke": "#c9a85a",
+          "strokeWidth": 1
+        },
+        {
+          "id": "earring-right",
+          "kind": "ellipse",
+          "x": 76,
+          "y": -38,
+          "radiusX": 5,
+          "radiusY": 5,
+          "fill": "#e8c87a",
+          "stroke": "#c9a85a",
+          "strokeWidth": 1
+        }
+      ]
+    },
+    {
+      "id": "character-hair-front",
+      "name": "Hair front",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 9,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "bangs",
+          "kind": "path",
+          "d": "M -78 -78 Q -42 -108 0 -102 Q 42 -108 78 -78 Q 42 -68 0 -72 Q -42 -68 -78 -78 Z",
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "bangs-side-l",
+          "kind": "path",
+          "d": "M -78 -78 Q -86 -58 -72 -38 Q -68 -52 -62 -62 Z",
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "bangs-side-r",
+          "kind": "path",
+          "d": "M 78 -78 Q 86 -58 72 -38 Q 68 -52 62 -62 Z",
+          "fill": "#2b1e16"
+        },
+        {
+          "id": "bangs-highlight",
+          "kind": "path",
+          "d": "M -32 -96 Q -12 -102 12 -98",
+          "fill": "none",
+          "stroke": "#5a3a28",
+          "strokeWidth": 5,
+          "opacity": 0.8
+        },
+        {
+          "id": "part",
+          "kind": "path",
+          "d": "M 0 -102 Q 2 -88 0 -72",
+          "fill": "none",
+          "stroke": "#7a5a44",
+          "strokeWidth": 1.2,
+          "opacity": 0.4
+        }
+      ]
+    },
+    {
+      "id": "character-face",
+      "name": "Face",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 10,
+      "boundBoneId": "head-bone",
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "left-eye",
+          "kind": "ellipse",
+          "x": -30,
+          "y": -62,
+          "radiusX": 20,
+          "radiusY": 24,
+          "fill": "#fff8f5",
+          "stroke": "#2b1e16",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "right-eye",
+          "kind": "ellipse",
+          "x": 30,
+          "y": -62,
+          "radiusX": 20,
+          "radiusY": 24,
+          "fill": "#fff8f5",
+          "stroke": "#2b1e16",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "left-iris",
+          "kind": "ellipse",
+          "x": -30,
+          "y": -58,
+          "radiusX": 13,
+          "radiusY": 16,
+          "fill": "#6d4a2a"
+        },
+        {
+          "id": "right-iris",
+          "kind": "ellipse",
+          "x": 30,
+          "y": -58,
+          "radiusX": 13,
+          "radiusY": 16,
+          "fill": "#6d4a2a"
+        },
+        {
+          "id": "left-pupil",
+          "kind": "ellipse",
+          "x": -30,
+          "y": -58,
+          "radiusX": 7,
+          "radiusY": 10,
+          "fill": "#1a0f0a"
+        },
+        {
+          "id": "right-pupil",
+          "kind": "ellipse",
+          "x": 30,
+          "y": -58,
+          "radiusX": 7,
+          "radiusY": 10,
+          "fill": "#1a0f0a"
+        },
+        {
+          "id": "left-highlight",
+          "kind": "ellipse",
+          "x": -27,
+          "y": -64,
+          "radiusX": 4,
+          "radiusY": 6,
+          "fill": "#ffffff",
+          "opacity": 0.95
+        },
+        {
+          "id": "right-highlight",
+          "kind": "ellipse",
+          "x": 33,
+          "y": -64,
+          "radiusX": 4,
+          "radiusY": 6,
+          "fill": "#ffffff",
+          "opacity": 0.95
+        },
+        {
+          "id": "left-highlight-small",
+          "kind": "ellipse",
+          "x": -26,
+          "y": -52,
+          "radiusX": 2.2,
+          "radiusY": 2.2,
+          "fill": "#ffffff",
+          "opacity": 0.9
+        },
+        {
+          "id": "right-highlight-small",
+          "kind": "ellipse",
+          "x": 34,
+          "y": -52,
+          "radiusX": 2.2,
+          "radiusY": 2.2,
+          "fill": "#ffffff",
+          "opacity": 0.9
+        },
+        {
+          "id": "left-lash",
+          "kind": "path",
+          "d": "M -50 -72 Q -30 -82 -10 -72 Q -30 -78 -50 -72",
+          "fill": "#1a0f0a"
+        },
+        {
+          "id": "right-lash",
+          "kind": "path",
+          "d": "M 10 -72 Q 30 -82 50 -72 Q 30 -78 10 -72",
+          "fill": "#1a0f0a"
+        },
+        {
+          "id": "left-lower-lash",
+          "kind": "path",
+          "d": "M -48 -44 Q -30 -38 -12 -44",
+          "fill": "none",
+          "stroke": "#2b1e16",
+          "strokeWidth": 1.2,
+          "opacity": 0.7
+        },
+        {
+          "id": "right-lower-lash",
+          "kind": "path",
+          "d": "M 12 -44 Q 30 -38 48 -44",
+          "fill": "none",
+          "stroke": "#2b1e16",
+          "strokeWidth": 1.2,
+          "opacity": 0.7
+        },
+        {
+          "id": "left-brow",
+          "kind": "path",
+          "d": "M -50 -84 Q -30 -90 -12 -84",
+          "fill": "none",
+          "stroke": "#2b1e16",
+          "strokeWidth": 4,
+          "opacity": 0.95
+        },
+        {
+          "id": "right-brow",
+          "kind": "path",
+          "d": "M 12 -84 Q 30 -90 50 -84",
+          "fill": "none",
+          "stroke": "#2b1e16",
+          "strokeWidth": 4,
+          "opacity": 0.95
+        },
+        {
+          "id": "nose",
+          "kind": "path",
+          "d": "M 0 -48 L -3 -32 Q 0 -30 3 -32",
+          "fill": "none",
+          "stroke": "#c49a8a",
+          "strokeWidth": 1.4,
+          "opacity": 0.9
+        },
+        {
+          "id": "blush-left",
+          "kind": "ellipse",
+          "x": -52,
+          "y": -42,
+          "radiusX": 16,
+          "radiusY": 7,
+          "fill": "#e8a0a8",
+          "opacity": 0.42
+        },
+        {
+          "id": "blush-right",
+          "kind": "ellipse",
+          "x": 52,
+          "y": -42,
+          "radiusX": 16,
+          "radiusY": 7,
+          "fill": "#e8a0a8",
+          "opacity": 0.42
+        },
+        {
+          "id": "upper-lip",
+          "kind": "path",
+          "d": "M -14 -18 Q 0 -22 14 -18 Q 0 -14 -14 -18",
+          "fill": "#a63a4a"
+        },
+        {
+          "id": "lower-lip",
+          "kind": "path",
+          "d": "M -14 -18 Q 0 -6 14 -18 Q 0 -10 -14 -18",
+          "fill": "#c94a5e"
+        },
+        {
+          "id": "lip-highlight",
+          "kind": "ellipse",
+          "x": 4,
+          "y": -14,
+          "radiusX": 5,
+          "radiusY": 2,
+          "fill": "#e8a0a8",
+          "opacity": 0.85
+        },
+        {
+          "id": "beauty-mark",
+          "kind": "ellipse",
+          "x": 28,
+          "y": -32,
+          "radiusX": 1.6,
+          "radiusY": 1.6,
+          "fill": "#2b1e16",
+          "opacity": 0.85
+        }
+      ]
+    }
+  ],
+  "bones": [
+    {
+      "id": "root",
+      "name": "Root",
+      "length": 84,
+      "parentId": null,
+      "local": {
+        "x": 400,
+        "y": 318,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "head-bone",
+      "name": "Head",
+      "length": 72,
+      "parentId": "root",
+      "local": {
+        "x": 94,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-arm-bone",
+      "name": "Left Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": -103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-arm-bone",
+      "name": "Right Arm",
+      "length": 120,
+      "parentId": "root",
+      "local": {
+        "x": 48,
+        "y": 103,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "left-leg-bone",
+      "name": "Left Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": -38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "right-leg-bone",
+      "name": "Right Leg",
+      "length": 77,
+      "parentId": "root",
+      "local": {
+        "x": -30,
+        "y": 38,
+        "rotation": 3.141592653589793,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-character-left-leg",
+      "layerId": "character-left-leg",
+      "imageId": "character-left-leg",
+      "boneId": "left-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-leg",
+      "layerId": "character-right-leg",
+      "imageId": "character-right-leg",
+      "boneId": "right-leg-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-dress",
+      "layerId": "character-dress",
+      "imageId": "character-dress",
+      "boneId": "root",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-left-arm",
+      "layerId": "character-left-arm",
+      "imageId": "character-left-arm",
+      "boneId": "left-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-right-arm",
+      "layerId": "character-right-arm",
+      "imageId": "character-right-arm",
+      "boneId": "right-arm-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-hair-back",
+      "layerId": "character-hair-back",
+      "imageId": "character-hair-back",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-head",
+      "layerId": "character-head",
+      "imageId": "character-head",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-hair-front",
+      "layerId": "character-hair-front",
+      "imageId": "character-hair-front",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-character-face",
+      "layerId": "character-face",
+      "imageId": "character-face",
+      "boneId": "head-bone",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [],
+  "dynamics": {
+    "enabled": false,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 1,
+    "bones": [],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "createdBy": "character-studio-mcp",
+    "characterType": "anime-mature-off-shoulder-dress"
+  }
+}

@@ -1,0 +1,2526 @@
+{
+  "schemaVersion": 1,
+  "id": "project-mv6odah8-bqw",
+  "name": "Windy oak",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#dfe9dc"
+  },
+  "bones": [
+    {
+      "id": "bone-mv6odah9-bra",
+      "name": "Windy oak · root",
+      "length": 164,
+      "local": {
+        "x": 400,
+        "y": 430,
+        "rotation": -1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": null,
+      "locked": false,
+      "childrenIds": [
+        "bone-mv6odah9-brb"
+      ]
+    },
+    {
+      "id": "bone-mv6odah9-brb",
+      "name": "Windy oak · canopy spring",
+      "length": 82,
+      "local": {
+        "x": 164,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "bone-mv6odah9-bra",
+      "locked": false,
+      "childrenIds": []
+    }
+  ],
+  "layers": [
+    {
+      "id": "vector-mv6odah9-brc",
+      "name": "Windy oak · Ground · rooted shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 2,
+      "boundBoneId": "bone-mv6odah9-bra",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "prop-shape-mv6odah8-bqx",
+          "kind": "ellipse",
+          "x": 5,
+          "y": 7,
+          "radiusX": 76,
+          "radiusY": 12,
+          "fill": "#00000022"
+        }
+      ],
+      "parentGroupId": "group-mv6odah8-19"
+    },
+    {
+      "id": "vector-mv6odah9-bre",
+      "name": "Windy oak · Trunk · rooted body",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": "bone-mv6odah9-bra",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "prop-shape-mv6odah8-bqy",
+          "kind": "path",
+          "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+          "fill": "#81543d",
+          "stroke": "#513c35",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "prop-shape-mv6odah8-bqz",
+          "kind": "path",
+          "d": "M0 -8Q18.9 -55.760000000000005 10 -127.92",
+          "fill": "none",
+          "stroke": "#d9b86c",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br0",
+          "kind": "path",
+          "d": "M-5.4 -45.92L37.8 -73.8",
+          "fill": "none",
+          "stroke": "#d9b86c",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6odah8-19"
+    },
+    {
+      "id": "vector-mv6odah9-brg",
+      "name": "Windy oak · Branches · side and rear structure",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 4,
+      "boundBoneId": "bone-mv6odah9-brb",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "prop-shape-mv6odah8-br1",
+          "kind": "path",
+          "d": "M0 24L-64.9 -22",
+          "fill": "none",
+          "stroke": "#81543d",
+          "strokeWidth": 8,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br2",
+          "kind": "path",
+          "d": "M0 30L73.16 -34",
+          "fill": "none",
+          "stroke": "#81543d",
+          "strokeWidth": 8,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br3",
+          "kind": "path",
+          "d": "M3 8L88.5 18",
+          "fill": "none",
+          "stroke": "#81543d",
+          "strokeWidth": 6,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6odah8-19"
+    },
+    {
+      "id": "vector-mv6odah9-bri",
+      "name": "Windy oak · Oak canopy · silhouette",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 5,
+      "boundBoneId": "bone-mv6odah9-brb",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "prop-shape-mv6odah8-br4",
+          "kind": "path",
+          "d": "M-118 30Q-129.8 -12 -80.24000000000001 -42Q-77.88000000000001 -92 -21.24 -80Q21.24 -118 59 -72Q125.08000000000001 -76 108.56 -18Q127.44000000000001 18 54.28 40Q0 66 -118 30Z",
+          "fill": "#4f9a62",
+          "stroke": "#3a6744",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br5",
+          "kind": "ellipse",
+          "x": -56.64,
+          "y": -48,
+          "radiusX": 44.84,
+          "radiusY": 39,
+          "fill": "#4f9a62"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br6",
+          "kind": "ellipse",
+          "x": 40.120000000000005,
+          "y": -58,
+          "radiusX": 49.559999999999995,
+          "radiusY": 48,
+          "fill": "#4f9a62"
+        }
+      ],
+      "parentGroupId": "group-mv6odah8-19"
+    },
+    {
+      "id": "vector-mv6odah9-brk",
+      "name": "Windy oak · Canopy · highlights and needles",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 1.5707963267948966,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 6,
+      "boundBoneId": "bone-mv6odah9-brb",
+      "opacity": 1,
+      "depth": 0,
+      "parallax": 1,
+      "shapes": [
+        {
+          "id": "prop-shape-mv6odah8-br7",
+          "kind": "ellipse",
+          "x": -49.559999999999995,
+          "y": -62,
+          "radiusX": 13,
+          "radiusY": 9,
+          "fill": "#d9b86c"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br8",
+          "kind": "ellipse",
+          "x": 41.3,
+          "y": -33,
+          "radiusX": 9,
+          "radiusY": 7,
+          "fill": "#d9b86c"
+        },
+        {
+          "id": "prop-shape-mv6odah8-br9",
+          "kind": "path",
+          "d": "M-77.88000000000001 17L68.44 17",
+          "fill": "none",
+          "stroke": "#ffffff33",
+          "strokeWidth": 2,
+          "lineCap": "round",
+          "lineJoin": "round"
+        }
+      ],
+      "parentGroupId": "group-mv6odah8-19"
+    }
+  ],
+  "bindings": [
+    {
+      "id": "binding-mv6odah9-brd",
+      "layerId": "vector-mv6odah9-brc",
+      "imageId": "vector-mv6odah9-brc",
+      "boneId": "bone-mv6odah9-bra",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6odah9-brf",
+      "layerId": "vector-mv6odah9-bre",
+      "imageId": "vector-mv6odah9-bre",
+      "boneId": "bone-mv6odah9-bra",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6odah9-brh",
+      "layerId": "vector-mv6odah9-brg",
+      "imageId": "vector-mv6odah9-brg",
+      "boneId": "bone-mv6odah9-brb",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6odah9-brj",
+      "layerId": "vector-mv6odah9-bri",
+      "imageId": "vector-mv6odah9-bri",
+      "boneId": "bone-mv6odah9-brb",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    },
+    {
+      "id": "binding-mv6odah9-brl",
+      "layerId": "vector-mv6odah9-brk",
+      "imageId": "vector-mv6odah9-brk",
+      "boneId": "bone-mv6odah9-brb",
+      "bindOffset": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      }
+    }
+  ],
+  "animations": [],
+  "smartActions": [],
+  "actionLibrary": [],
+  "controllers": [],
+  "controllerInstances": [],
+  "lipSyncTracks": [],
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "perspective": 0,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "projection": "perspective"
+  },
+  "cameras": [],
+  "characterViews": [
+    {
+      "id": "character-mv6odah9-brm",
+      "name": "Windy oak · prepared views",
+      "enabled": true,
+      "angle": 45,
+      "wrap": true,
+      "interpolate": true,
+      "targetIds": [
+        "vector-mv6odah9-brc",
+        "vector-mv6odah9-bre",
+        "vector-mv6odah9-brg",
+        "vector-mv6odah9-bri",
+        "vector-mv6odah9-brk"
+      ],
+      "baseline": {
+        "vector-mv6odah9-brc": {
+          "local": {
+            "x": 0,
+            "y": 0,
+            "rotation": 1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "zIndex": 2,
+          "artwork": {
+            "type": "vector",
+            "shapes": [
+              {
+                "id": "prop-shape-mv6odah9-bro",
+                "kind": "ellipse",
+                "x": 5,
+                "y": 7,
+                "radiusX": 76,
+                "radiusY": 12,
+                "fill": "#00000022"
+              }
+            ]
+          }
+        },
+        "vector-mv6odah9-bre": {
+          "local": {
+            "x": 0,
+            "y": 0,
+            "rotation": 1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "zIndex": 3,
+          "artwork": {
+            "type": "vector",
+            "shapes": [
+              {
+                "id": "prop-shape-mv6odah9-brp",
+                "kind": "path",
+                "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                "fill": "#81543d",
+                "stroke": "#513c35",
+                "strokeWidth": 2,
+                "lineCap": "round",
+                "lineJoin": "round"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brq",
+                "kind": "path",
+                "d": "M0 -8Q18.9 -55.760000000000005 10 -127.92",
+                "fill": "none",
+                "stroke": "#d9b86c",
+                "strokeWidth": 3,
+                "lineCap": "round",
+                "lineJoin": "round"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brr",
+                "kind": "path",
+                "d": "M-5.4 -45.92L37.8 -73.8",
+                "fill": "none",
+                "stroke": "#d9b86c",
+                "strokeWidth": 2,
+                "lineCap": "round",
+                "lineJoin": "round"
+              }
+            ]
+          }
+        },
+        "vector-mv6odah9-brg": {
+          "local": {
+            "x": 0,
+            "y": 0,
+            "rotation": 1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "zIndex": 4,
+          "artwork": {
+            "type": "vector",
+            "shapes": [
+              {
+                "id": "prop-shape-mv6odah9-brs",
+                "kind": "path",
+                "d": "M0 24L-64.9 -22",
+                "fill": "none",
+                "stroke": "#81543d",
+                "strokeWidth": 8,
+                "lineCap": "round",
+                "lineJoin": "round"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brt",
+                "kind": "path",
+                "d": "M0 30L73.16 -34",
+                "fill": "none",
+                "stroke": "#81543d",
+                "strokeWidth": 8,
+                "lineCap": "round",
+                "lineJoin": "round"
+              },
+              {
+                "id": "prop-shape-mv6odah9-bru",
+                "kind": "path",
+                "d": "M3 8L88.5 18",
+                "fill": "none",
+                "stroke": "#81543d",
+                "strokeWidth": 6,
+                "lineCap": "round",
+                "lineJoin": "round"
+              }
+            ]
+          }
+        },
+        "vector-mv6odah9-bri": {
+          "local": {
+            "x": 0,
+            "y": 0,
+            "rotation": 1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "zIndex": 5,
+          "artwork": {
+            "type": "vector",
+            "shapes": [
+              {
+                "id": "prop-shape-mv6odah9-brv",
+                "kind": "path",
+                "d": "M-118 30Q-129.8 -12 -80.24000000000001 -42Q-77.88000000000001 -92 -21.24 -80Q21.24 -118 59 -72Q125.08000000000001 -76 108.56 -18Q127.44000000000001 18 54.28 40Q0 66 -118 30Z",
+                "fill": "#4f9a62",
+                "stroke": "#3a6744",
+                "strokeWidth": 3,
+                "lineCap": "round",
+                "lineJoin": "round"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brw",
+                "kind": "ellipse",
+                "x": -56.64,
+                "y": -48,
+                "radiusX": 44.84,
+                "radiusY": 39,
+                "fill": "#4f9a62"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brx",
+                "kind": "ellipse",
+                "x": 40.120000000000005,
+                "y": -58,
+                "radiusX": 49.559999999999995,
+                "radiusY": 48,
+                "fill": "#4f9a62"
+              }
+            ]
+          }
+        },
+        "vector-mv6odah9-brk": {
+          "local": {
+            "x": 0,
+            "y": 0,
+            "rotation": 1.5707963267948966,
+            "scaleX": 1,
+            "scaleY": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "zIndex": 6,
+          "artwork": {
+            "type": "vector",
+            "shapes": [
+              {
+                "id": "prop-shape-mv6odah9-bry",
+                "kind": "ellipse",
+                "x": -49.559999999999995,
+                "y": -62,
+                "radiusX": 13,
+                "radiusY": 9,
+                "fill": "#d9b86c"
+              },
+              {
+                "id": "prop-shape-mv6odah9-brz",
+                "kind": "ellipse",
+                "x": 41.3,
+                "y": -33,
+                "radiusX": 9,
+                "radiusY": 7,
+                "fill": "#d9b86c"
+              },
+              {
+                "id": "prop-shape-mv6odah9-bs0",
+                "kind": "path",
+                "d": "M-77.88000000000001 17L68.44 17",
+                "fill": "none",
+                "stroke": "#ffffff33",
+                "strokeWidth": 2,
+                "lineCap": "round",
+                "lineJoin": "round"
+              }
+            ]
+          }
+        }
+      },
+      "views": [
+        {
+          "id": "view-mv6odah9-bse",
+          "name": "Back",
+          "angle": -180,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bsu",
+                    "kind": "ellipse",
+                    "x": -5,
+                    "y": 7,
+                    "radiusX": 76,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bsv",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsw",
+                    "kind": "path",
+                    "d": "M0 -8Q-18.9 -55.760000000000005 -10.000000000000002 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsx",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L-37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsy",
+                    "kind": "path",
+                    "d": "M-6.75 -41Q-34 -68.88 -24 -114.8",
+                    "fill": "none",
+                    "stroke": "#5d4035",
+                    "strokeWidth": 4,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bsz",
+                    "kind": "path",
+                    "d": "M0 24L-64.9 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt0",
+                    "kind": "path",
+                    "d": "M0 30L61.36 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt1",
+                    "kind": "path",
+                    "d": "M-3 8L-88.5 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bt2",
+                    "kind": "path",
+                    "d": "M-118 30Q-129.8 -12 -80.24000000000001 -42Q-77.88000000000001 -92 -21.240000000000002 -80Q21.24 -118 59 -72Q125.08000000000001 -76 108.56 -18Q127.44000000000001 18 54.28 40Q0 66 -118 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt3",
+                    "kind": "ellipse",
+                    "x": -56.64,
+                    "y": -48,
+                    "radiusX": 44.84,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt4",
+                    "kind": "ellipse",
+                    "x": 40.120000000000005,
+                    "y": -58,
+                    "radiusX": 49.559999999999995,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt5",
+                    "kind": "ellipse",
+                    "x": 17.7,
+                    "y": -26,
+                    "radiusX": 33.040000000000006,
+                    "radiusY": 22,
+                    "fill": "#3d8050"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bt6",
+                    "kind": "ellipse",
+                    "x": -49.559999999999995,
+                    "y": -62,
+                    "radiusX": 13,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt7",
+                    "kind": "ellipse",
+                    "x": 41.3,
+                    "y": -33,
+                    "radiusX": 9,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bt8",
+                    "kind": "path",
+                    "d": "M-77.88000000000001 17L68.44 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-bt9",
+          "name": "Back side · left",
+          "angle": -135,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-btp",
+                    "kind": "ellipse",
+                    "x": -5,
+                    "y": 7,
+                    "radiusX": 72.66101730552664,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-btq",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-btr",
+                    "kind": "path",
+                    "d": "M0 -8Q-18.9 -55.760000000000005 -18.48528137423857 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bts",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L-37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-btt",
+                    "kind": "path",
+                    "d": "M-6.75 -41Q-34 -68.88 -24 -114.8",
+                    "fill": "none",
+                    "stroke": "#5d4035",
+                    "strokeWidth": 4,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-btu",
+                    "kind": "path",
+                    "d": "M0 24L-66.57489929101557 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-btv",
+                    "kind": "path",
+                    "d": "M0 30L54.53066739557049 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-btw",
+                    "kind": "path",
+                    "d": "M-3 8L-78.65000105130358 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-btx",
+                    "kind": "path",
+                    "d": "M-117.59459012976264 30Q-115.35333487524527 -12 -84.03725634787311 -42Q-69.21200092514715 -92 -31.603922313670715 -80Q18.87600025231286 -118 39.70541197284453 -72Q111.15866815250907 -76 83.74941256157454 -18Q113.25600151387717 18 35.51074525010834 40Q0 66 -117.59459012976264 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bty",
+                    "kind": "ellipse",
+                    "x": -63.06392273419215,
+                    "y": -48,
+                    "radiusX": 39.84933386599381,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-btz",
+                    "kind": "ellipse",
+                    "x": 22.926745081899767,
+                    "y": -58,
+                    "radiusX": 44.04400058873001,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bu0",
+                    "kind": "ellipse",
+                    "x": 15.730000210260716,
+                    "y": -26,
+                    "radiusX": 29.362667059153342,
+                    "radiusY": 22,
+                    "fill": "#3d8050"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bu1",
+                    "kind": "ellipse",
+                    "x": -49.97615515765863,
+                    "y": -62,
+                    "radiusX": 11.553107499061543,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bu2",
+                    "kind": "ellipse",
+                    "x": 30.771179255013042,
+                    "y": -33,
+                    "radiusX": 7.998305191657992,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bu3",
+                    "kind": "path",
+                    "d": "M-69.21200092514715 17L60.82266747967477 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-bu4",
+          "name": "Side · left",
+          "angle": -90,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bui",
+                    "kind": "ellipse",
+                    "x": -5,
+                    "y": 7,
+                    "radiusX": 64.6,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-buj",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-buk",
+                    "kind": "path",
+                    "d": "M0 -8Q-18.9 -55.760000000000005 -22 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bul",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L-37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bum",
+                    "kind": "path",
+                    "d": "M0 24L-49.0172 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bun",
+                    "kind": "path",
+                    "d": "M0 30L38.0432 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-buo",
+                    "kind": "path",
+                    "d": "M-3 8L-54.87 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bup",
+                    "kind": "path",
+                    "d": "M-91.16 30Q-80.476 -12 -67.7488 -42Q-48.2856 -92 -31.168799999999997 -80Q13.1688 -118 18.58 -72Q77.5496 -76 49.307199999999995 -18Q79.0128 18 15.653599999999997 40Q0 66 -91.16 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-buq",
+                    "kind": "ellipse",
+                    "x": -53.1168,
+                    "y": -48,
+                    "radiusX": 27.8008,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bur",
+                    "kind": "ellipse",
+                    "x": 6.874400000000001,
+                    "y": -58,
+                    "radiusX": 30.727199999999996,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bus",
+                    "kind": "ellipse",
+                    "x": -36.58,
+                    "y": -62,
+                    "radiusX": 8.06,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-but",
+                    "kind": "ellipse",
+                    "x": 19.753199999999996,
+                    "y": -33,
+                    "radiusX": 5.58,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-buu",
+                    "kind": "path",
+                    "d": "M-48.2856 17L42.43279999999999 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-buv",
+          "name": "Front side · left",
+          "angle": -45,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bv9",
+                    "kind": "ellipse",
+                    "x": -5,
+                    "y": 7,
+                    "radiusX": 72.66101730552664,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bva",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvb",
+                    "kind": "path",
+                    "d": "M0 -8Q-18.9 -55.760000000000005 -18.485281374238568 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvc",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L-37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bvd",
+                    "kind": "path",
+                    "d": "M0 24L-66.57489929101558 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bve",
+                    "kind": "path",
+                    "d": "M0 30L54.5306673955705 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvf",
+                    "kind": "path",
+                    "d": "M-3 8L-78.65000105130359 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bvg",
+                    "kind": "path",
+                    "d": "M-117.59459012976265 30Q-115.35333487524528 -12 -84.03725634787313 -42Q-69.21200092514717 -92 -31.60392231367072 -80Q18.876000252312863 -118 39.705411972844544 -72Q111.15866815250908 -76 83.74941256157456 -18Q113.25600151387718 18 35.51074525010836 40Q0 66 -117.59459012976265 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvh",
+                    "kind": "ellipse",
+                    "x": -63.06392273419215,
+                    "y": -48,
+                    "radiusX": 39.84933386599382,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvi",
+                    "kind": "ellipse",
+                    "x": 22.926745081899778,
+                    "y": -58,
+                    "radiusX": 44.04400058873001,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bvj",
+                    "kind": "ellipse",
+                    "x": -49.97615515765863,
+                    "y": -62,
+                    "radiusX": 11.553107499061545,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvk",
+                    "kind": "ellipse",
+                    "x": 30.771179255013045,
+                    "y": -33,
+                    "radiusX": 7.998305191657993,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bvl",
+                    "kind": "path",
+                    "d": "M-69.21200092514717 17L60.82266747967478 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-brn",
+          "name": "Front",
+          "angle": 0,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bs1",
+                    "kind": "ellipse",
+                    "x": 5,
+                    "y": 7,
+                    "radiusX": 76,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bs2",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bs3",
+                    "kind": "path",
+                    "d": "M0 -8Q18.9 -55.760000000000005 10 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bs4",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bs5",
+                    "kind": "path",
+                    "d": "M0 24L-64.9 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bs6",
+                    "kind": "path",
+                    "d": "M0 30L73.16 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bs7",
+                    "kind": "path",
+                    "d": "M3 8L88.5 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bs8",
+                    "kind": "path",
+                    "d": "M-118 30Q-129.8 -12 -80.24000000000001 -42Q-77.88000000000001 -92 -21.24 -80Q21.24 -118 59 -72Q125.08000000000001 -76 108.56 -18Q127.44000000000001 18 54.28 40Q0 66 -118 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bs9",
+                    "kind": "ellipse",
+                    "x": -56.64,
+                    "y": -48,
+                    "radiusX": 44.84,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsa",
+                    "kind": "ellipse",
+                    "x": 40.120000000000005,
+                    "y": -58,
+                    "radiusX": 49.559999999999995,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bsb",
+                    "kind": "ellipse",
+                    "x": -49.559999999999995,
+                    "y": -62,
+                    "radiusX": 13,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsc",
+                    "kind": "ellipse",
+                    "x": 41.3,
+                    "y": -33,
+                    "radiusX": 9,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bsd",
+                    "kind": "path",
+                    "d": "M-77.88000000000001 17L68.44 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-bvm",
+          "name": "Front side · right",
+          "angle": 45,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bw0",
+                    "kind": "ellipse",
+                    "x": 5,
+                    "y": 7,
+                    "radiusX": 72.66101730552664,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bw1",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw2",
+                    "kind": "path",
+                    "d": "M0 -8Q18.9 -55.760000000000005 18.485281374238568 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw3",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bw4",
+                    "kind": "path",
+                    "d": "M0 24L-66.57489929101558 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw5",
+                    "kind": "path",
+                    "d": "M0 30L65.01733420241096 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw6",
+                    "kind": "path",
+                    "d": "M3 8L78.65000105130359 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bw7",
+                    "kind": "path",
+                    "d": "M-92.13874600704693 30Q-115.35333487524528 -12 -58.58141222515741 -42Q-69.21200092514717 -92 -6.148078190955008 -80Q18.876000252312863 -118 65.16125609556025 -72Q111.15866815250908 -76 109.20525668429028 -18Q113.25600151387718 18 60.96658937282406 40Q0 66 -92.13874600704693 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw8",
+                    "kind": "ellipse",
+                    "x": -37.608078611476444,
+                    "y": -48,
+                    "radiusX": 39.84933386599382,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bw9",
+                    "kind": "ellipse",
+                    "x": 48.382589204615485,
+                    "y": -58,
+                    "radiusX": 44.04400058873001,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bwa",
+                    "kind": "ellipse",
+                    "x": -38.11184601980139,
+                    "y": -62,
+                    "radiusX": 11.553107499061545,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwb",
+                    "kind": "ellipse",
+                    "x": 42.6354883928703,
+                    "y": -33,
+                    "radiusX": 7.998305191657993,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwc",
+                    "kind": "path",
+                    "d": "M-69.21200092514717 17L60.82266747967478 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-bwd",
+          "name": "Side · right",
+          "angle": 90,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bwr",
+                    "kind": "ellipse",
+                    "x": 5,
+                    "y": 7,
+                    "radiusX": 64.6,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bws",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwt",
+                    "kind": "path",
+                    "d": "M0 -8Q18.9 -55.760000000000005 22 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwu",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bwv",
+                    "kind": "path",
+                    "d": "M0 24L-49.0172 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bww",
+                    "kind": "path",
+                    "d": "M0 30L45.359199999999994 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwx",
+                    "kind": "path",
+                    "d": "M3 8L54.87 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bwy",
+                    "kind": "path",
+                    "d": "M-55.16 30Q-80.476 -12 -31.748800000000003 -42Q-48.2856 -92 4.831200000000001 -80Q13.1688 -118 54.58 -72Q77.5496 -76 85.3072 -18Q79.0128 18 51.6536 40Q0 66 -55.16 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bwz",
+                    "kind": "ellipse",
+                    "x": -17.116799999999998,
+                    "y": -48,
+                    "radiusX": 27.8008,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bx0",
+                    "kind": "ellipse",
+                    "x": 42.8744,
+                    "y": -58,
+                    "radiusX": 30.727199999999996,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bx1",
+                    "kind": "ellipse",
+                    "x": -24.874399999999998,
+                    "y": -62,
+                    "radiusX": 8.06,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bx2",
+                    "kind": "ellipse",
+                    "x": 31.458799999999997,
+                    "y": -33,
+                    "radiusX": 5.58,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bx3",
+                    "kind": "path",
+                    "d": "M-48.2856 17L42.43279999999999 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "view-mv6odah9-bx4",
+          "name": "Back side · right",
+          "angle": 135,
+          "targets": {
+            "vector-mv6odah9-brc": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 2,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bxk",
+                    "kind": "ellipse",
+                    "x": 5,
+                    "y": 7,
+                    "radiusX": 72.66101730552664,
+                    "radiusY": 12,
+                    "fill": "#00000022"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bre": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 3,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odah9-bxl",
+                    "kind": "path",
+                    "d": "M-13.5 0Q-19.439999999999998 -59.04 -7.5600000000000005 -164L9.180000000000001 -164Q19.439999999999998 -55.760000000000005 13.5 0Z",
+                    "fill": "#81543d",
+                    "stroke": "#513c35",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bxm",
+                    "kind": "path",
+                    "d": "M0 -8Q18.9 -55.760000000000005 18.48528137423857 -127.92",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bxn",
+                    "kind": "path",
+                    "d": "M-5.4 -45.92L37.8 -73.8",
+                    "fill": "none",
+                    "stroke": "#d9b86c",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odah9-bxo",
+                    "kind": "path",
+                    "d": "M-6.75 -41Q34 -68.88 24 -114.8",
+                    "fill": "none",
+                    "stroke": "#5d4035",
+                    "strokeWidth": 4,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brg": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 4,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odaha-bxp",
+                    "kind": "path",
+                    "d": "M0 24L-66.57489929101557 -22",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxq",
+                    "kind": "path",
+                    "d": "M0 30L65.01733420241096 -34",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 8,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxr",
+                    "kind": "path",
+                    "d": "M3 8L78.65000105130358 18",
+                    "fill": "none",
+                    "stroke": "#81543d",
+                    "strokeWidth": 6,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-bri": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 5,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odaha-bxs",
+                    "kind": "path",
+                    "d": "M-92.13874600704692 30Q-115.35333487524527 -12 -58.58141222515739 -42Q-69.21200092514715 -92 -6.148078190955003 -80Q18.87600025231286 -118 65.16125609556025 -72Q111.15866815250907 -76 109.20525668429026 -18Q113.25600151387717 18 60.96658937282406 40Q0 66 -92.13874600704692 30Z",
+                    "fill": "#4f9a62",
+                    "stroke": "#3a6744",
+                    "strokeWidth": 3,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxt",
+                    "kind": "ellipse",
+                    "x": -37.60807861147643,
+                    "y": -48,
+                    "radiusX": 39.84933386599381,
+                    "radiusY": 39,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxu",
+                    "kind": "ellipse",
+                    "x": 48.382589204615485,
+                    "y": -58,
+                    "radiusX": 44.04400058873001,
+                    "radiusY": 48,
+                    "fill": "#4f9a62"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxv",
+                    "kind": "ellipse",
+                    "x": -15.730000210260716,
+                    "y": -26,
+                    "radiusX": 29.362667059153342,
+                    "radiusY": 22,
+                    "fill": "#3d8050"
+                  }
+                ]
+              }
+            },
+            "vector-mv6odah9-brk": {
+              "local": {
+                "x": 0,
+                "y": 0,
+                "rotation": 1.5707963267948966,
+                "scaleX": 1,
+                "scaleY": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "zIndex": 6,
+              "artwork": {
+                "type": "vector",
+                "shapes": [
+                  {
+                    "id": "prop-shape-mv6odaha-bxw",
+                    "kind": "ellipse",
+                    "x": -38.111846019801376,
+                    "y": -62,
+                    "radiusX": 11.553107499061543,
+                    "radiusY": 9,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxx",
+                    "kind": "ellipse",
+                    "x": 42.63548839287029,
+                    "y": -33,
+                    "radiusX": 7.998305191657992,
+                    "radiusY": 7,
+                    "fill": "#d9b86c"
+                  },
+                  {
+                    "id": "prop-shape-mv6odaha-bxy",
+                    "kind": "path",
+                    "d": "M-69.21200092514715 17L60.82266747967477 17",
+                    "fill": "none",
+                    "stroke": "#ffffff33",
+                    "strokeWidth": 2,
+                    "lineCap": "round",
+                    "lineJoin": "round"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "facialProfiles": [],
+  "headCreators": [],
+  "constraints": [],
+  "dynamics": {
+    "enabled": true,
+    "startFrame": 0,
+    "endFrame": 120,
+    "fps": 24,
+    "substeps": 4,
+    "gravityX": 0,
+    "gravityY": 420,
+    "windX": 80,
+    "windY": 0,
+    "windNoise": 9.6,
+    "seed": 1,
+    "bones": [
+      {
+        "id": "dynamic-mv6odaha-19",
+        "boneId": "bone-mv6odah9-brb",
+        "enabled": true,
+        "mode": "hair",
+        "stiffness": 38,
+        "damping": 7,
+        "mass": 1,
+        "gravityScale": 0,
+        "windScale": 1,
+        "influence": 1,
+        "overlap": 0.2
+      }
+    ],
+    "bodies": [],
+    "meshes": [],
+    "emitters": []
+  },
+  "cameraProduction": {
+    "stageMode": false,
+    "liveControl": {
+      "enabled": false,
+      "source": "pointer",
+      "sensitivity": 1,
+      "smoothing": 0.8
+    },
+    "shake": {
+      "enabled": false,
+      "amplitude": 0,
+      "frequency": 12,
+      "rotation": 0,
+      "seed": 1
+    },
+    "bookmarks": [],
+    "transitionPresets": [
+      {
+        "id": "cut",
+        "name": "Hard cut",
+        "duration": 0,
+        "easing": "step",
+        "kind": "cut"
+      },
+      {
+        "id": "dissolve",
+        "name": "Dissolve 12f",
+        "duration": 12,
+        "easing": "smooth",
+        "kind": "dissolve"
+      },
+      {
+        "id": "push",
+        "name": "Push 18f",
+        "duration": 18,
+        "easing": "ease-in-out",
+        "kind": "push"
+      },
+      {
+        "id": "whip",
+        "name": "Whip 8f",
+        "duration": 8,
+        "easing": "overshoot",
+        "kind": "whip"
+      },
+      {
+        "id": "zoom",
+        "name": "Zoom 12f",
+        "duration": 12,
+        "easing": "ease-in-out",
+        "kind": "zoom"
+      }
+    ],
+    "cameraRigs": [],
+    "defaultTransitionPresetId": "cut"
+  },
+  "groups": [
+    {
+      "id": "group-mv6odah8-19",
+      "name": "Windy oak",
+      "parentGroupId": null,
+      "childIds": [
+        "vector-mv6odah9-brc",
+        "vector-mv6odah9-bre",
+        "vector-mv6odah9-brg",
+        "vector-mv6odah9-bri",
+        "vector-mv6odah9-brk"
+      ],
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "opacity": 1,
+      "zIndex": 1,
+      "mode": "group",
+      "blendMode": "source-over",
+      "maskMode": "clip"
+    }
+  ],
+  "smartActionFolders": [],
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": true,
+    "fps": 24,
+    "startFrame": 0,
+    "endFrame": 120,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "propDesigns": "{\"group-mv6odah8-19\":{\"kind\":\"tree\",\"style\":\"oak\",\"name\":\"Windy oak\",\"primaryColor\":\"#4f9a62\",\"secondaryColor\":\"#81543d\",\"detailColor\":\"#d9b86c\",\"size\":1,\"angle\":45,\"physics\":\"wind\",\"windStrength\":80,\"stiffness\":38,\"damping\":7}}",
+    "propDesign.group-mv6odah8-19": "{\"kind\":\"tree\",\"style\":\"oak\",\"name\":\"Windy oak\",\"primaryColor\":\"#4f9a62\",\"secondaryColor\":\"#81543d\",\"detailColor\":\"#d9b86c\",\"size\":1,\"angle\":45,\"physics\":\"wind\",\"windStrength\":80,\"stiffness\":38,\"damping\":7}",
+    "exportType": "prop-studio-project",
+    "propDesign": "{\"kind\":\"tree\",\"style\":\"oak\",\"name\":\"Windy oak\",\"primaryColor\":\"#4f9a62\",\"secondaryColor\":\"#81543d\",\"detailColor\":\"#d9b86c\",\"size\":1,\"angle\":45,\"physics\":\"wind\",\"windStrength\":80,\"stiffness\":38,\"damping\":7}"
+  }
+}
