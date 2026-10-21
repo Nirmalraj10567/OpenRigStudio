@@ -18,7 +18,7 @@ async function run(fn) {
 
 const needPath = (input) => asString(input.path, 'path');
 
-const SELECTS = ['counts', 'bones', 'layers', 'bindings', 'clips', 'tracks', 'timeline', 'canvas', 'dynamics'];
+const SELECTS = ['counts', 'bones', 'layers', 'bindings', 'clips', 'tracks', 'timeline', 'canvas', 'dynamics', 'characterViews'];
 
 function projectRows(project, select, fields, clipRef) {
   const pick = (row) => {
@@ -56,6 +56,12 @@ function projectRows(project, select, fields, clipRef) {
       const d = project.dynamics || {};
       return [{ enabled: d.enabled === true, gravity: [d.gravityX || 0, d.gravityY || 0], fps: d.fps, bodies: (d.bodies || []).length, meshes: (d.meshes || []).length, emitters: (d.emitters || []).length }];
     }
+    case 'characterViews':
+      return (project.characterViews || []).map((set) => pick({
+        id: set.id, name: set.name, angle: set.angle, views: (set.views || []).map((view) => ({ id: view.id, name: view.name, angle: view.angle })),
+        targets: (set.targetIds || []).length,
+        master: set.master ? { height: set.master.height, landmarks: Object.keys(set.master.landmarks || {}).length, limbLengths: Object.keys(set.master.limbLengths || {}).length, clothingSlots: Object.keys(set.master.clothing || {}).length } : null,
+      }));
     default:
       throw fail('Unknown select: ' + select, 'Allowed: ' + SELECTS.join(', '));
   }

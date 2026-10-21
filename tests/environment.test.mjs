@@ -17,6 +17,7 @@ const {
   paintTerrainTile,
   projectToSVG,
   sampleEnvironment,
+  addVillageScene,
 } = compiled.exports;
 
 test('environment defaults are bounded and legacy rigs remain character-only', () => {
@@ -74,4 +75,35 @@ test('environment data survives native JSON round-trip and samples deterministic
   const svg = projectToSVG(reopened);
   assert.match(svg, /environment-.*-sky/);
   assert.match(svg, /linearGradient/);
+});
+
+test('willow village creates independent editable props with native transforms', () => {
+  const rig = new Rig({ name: 'Willow village' });
+  const scene = addVillageScene(rig);
+  assert.equal(scene.items.length, 10);
+  assert.equal(new Set(scene.items.map(item => item.id)).size, scene.items.length);
+  assert.ok(scene.items.some(item => item.kind === 'house'));
+  assert.ok(scene.items.some(item => item.kind === 'tree'));
+  scene.items.forEach(item => {
+    const layer = rig.layers.get(item.id);
+    assert.ok(layer);
+    assert.equal(layer.type, 'vector');
+    assert.ok(layer.shapes.length > 0);
+    assert.deepEqual(layer.transform3d?.position, { x: 0, y: 0, z: 0 });
+  });
+  const hall = scene.items.find(item => item.name === 'Village hall');
+  assert.ok(hall);
+  const layer = rig.layers.get(hall.id);
+  const original = { x: layer.local.x, y: layer.local.y };
+  assert.equal(rig.moveWorld(hall.id, { x: original.x + 24, y: original.y - 12 }), true);
+  layer.local.scaleX = 1.35;
+  layer.local.scaleY = 1.35;
+  rig.update();
+  assert.equal(layer.local.x, original.x + 24);
+  assert.equal(layer.local.y, original.y - 12);
+  assert.equal(layer.local.scaleX, 1.35);
+  assert.equal(layer.local.scaleY, 1.35);
+  const reopened = Rig.fromJSON(rig.toJSON());
+  assert.equal(reopened.layers.get(hall.id)?.local.scaleX, 1.35);
+  assert.equal(reopened.layers.get(hall.id)?.transform3d?.scale.z, 1);
 });

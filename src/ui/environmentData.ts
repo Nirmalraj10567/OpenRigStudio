@@ -126,6 +126,17 @@ export const ENVIRONMENT_ASSETS: EnvironmentAssetDefinition[] = [
     colors: ['#202837', '#4e6071', '#cf9d67'],
   },
   {
+    id: 'environment-willow-village',
+    name: 'Willow village',
+    subtitle: '10-piece editable starter scene',
+    description: 'A warm village block with cottages, trees, a road, well, fence, and welcome sign. Every prop stays independently selectable.',
+    kind: 'set',
+    layerKind: 'props',
+    biome: 'Village valley',
+    accent: '#d8ae78',
+    colors: ['#203b4b', '#527457', '#d8ae78'],
+  },
+  {
     id: 'environment-hillside-tile',
     name: 'Hillside tile',
     subtitle: 'Terrain tile + elevation',

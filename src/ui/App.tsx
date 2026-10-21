@@ -97,6 +97,7 @@ import type { CharacterDesign } from '../engine/characterStudio';
 import { prepareCharacterStudioImport } from '../engine/characterImport';
 import { addDesignedProp, createPropRig } from '../engine/propsToolkit';
 import type { PropDesign } from '../engine/propsToolkit';
+import { addVillageScene } from '../engine/villageScene';
 import type { AlignmentCommand, AlignmentTarget } from '../engine/alignment';
 import { JoystickControlWorkspace } from './JoystickControlWorkspace';
 import { MotionTrackingPanel } from './MotionTrackingPanel';
@@ -2397,36 +2398,34 @@ function App() {
     return base;
   }
 
-  function addEnvironmentAsset(asset: EnvironmentAssetDefinition) {
-    if (smartEdit || motionPreviewActive) { setStatus('Finish the current edit before adding an environment asset'); return; }
+  function addEnvironmentAsset(asset: EnvironmentAssetDefinition): string[] {
+    if (smartEdit || motionPreviewActive) { setStatus('Finish the current edit before adding an environment asset'); return []; }
+    const currentRig = useProject.getState().rig;
+    if (asset.id === 'environment-willow-village' && currentRig.environment?.assetIds.includes(asset.id)) {
+      const existingIds = currentRig.environment.layers.filter(layer => currentRig.layers.has(layer.id)).map(layer => layer.id);
+      if (existingIds.length) {
+        select(existingIds[Math.min(4, existingIds.length - 1)]);
+        activateWorkspace('environment');
+        setStatus('Willow village is already in the scene · select any prop to keep editing');
+      }
+      return existingIds;
+    }
     pause();
-    let id = '';
+    let ids: string[] = [];
     updateProject(project => {
-      id = project.addVectorLayer(`${asset.name} backdrop`, environmentFallbackShapes(asset));
+      if (asset.id === 'environment-willow-village') {
+        ids = addVillageScene(project).items.map(item => item.id);
+        return;
+      }
+      const id = project.addVectorLayer(`${asset.name} backdrop`, environmentFallbackShapes(asset));
+      ids = [id];
       const layer = project.layers.get(id);
       if (layer) layer.zIndex = Math.min(-100, ...[...project.layers.values()].map(candidate => candidate.id === id ? -100 : candidate.zIndex));
-      const environment = project.ensureEnvironment(project.name || asset.name);
-      project.setEnvironment({
-        settings: { biome: asset.biome, name: environment.settings.name === 'Untitled Environment' ? asset.name : environment.settings.name },
-        assetIds: [...new Set([...environment.assetIds, asset.id])],
-        layers: [
-          {
-            id: `environment-asset-${asset.id}`,
-            name: asset.name,
-            kind: asset.layerKind,
-            visible: true,
-            locked: false,
-            opacity: 1,
-            count: 1,
-            accent: asset.accent,
-          },
-          ...environment.layers.filter(item => item.id !== `environment-asset-${asset.id}`),
-        ],
-      });
     });
-    if (id) select(id);
+    if (ids.length) select(asset.id === 'environment-willow-village' ? ids[Math.min(4, ids.length - 1)] : ids[0]);
     activateWorkspace('environment');
-    setStatus(id ? `${asset.name} added · shared stage backdrop is editable` : `Could not add ${asset.name}`);
+    setStatus(ids.length ? asset.id === 'environment-willow-village' ? 'Willow village added · 10 editable props are ready to select, move, and rescale' : `${asset.name} added · shared stage backdrop is editable` : `Could not add ${asset.name}`);
+    return ids;
   }
 
   function applyCharacterDesign(design: CharacterDesign) {

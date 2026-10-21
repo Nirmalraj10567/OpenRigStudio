@@ -720,6 +720,19 @@ export interface CameraProductionSettings {
 export type ViewArtwork =
   | { type: 'image'; src: string; width: number; height: number; color: string }
   | { type: 'vector'; shapes: VectorShape[] };
+export interface CharacterMasterModel {
+  /** Shared authored height in stage pixels, measured from the setup pose. */
+  height: number;
+  /** Named setup landmarks shared by every prepared angle. */
+  landmarks: Record<string, Point2D>;
+  /** Bone lengths are invariant across front, profile and back artwork. */
+  limbLengths: Record<string, number>;
+  /** Clothing slots keep outfit ownership stable while artwork changes per view. */
+  clothing: Record<string, string>;
+  /** Common shoe envelope used by the view checker and walk preview. */
+  shoeDimensions: { width: number; height: number };
+  sourceAngle: number;
+}
 export interface CharacterViewTarget extends SmartTargetState {
   visible?: boolean;
   zIndex?: number;
@@ -743,6 +756,8 @@ export interface CharacterViewSet {
   targetIds: string[];
   baseline: Record<string, CharacterViewTarget>;
   views: CharacterView[];
+  /** Optional shared model metadata; legacy view sets remain valid without it. */
+  master?: CharacterMasterModel;
 }
 
 /** A drawable world-space path that can drive one scene object through time. */

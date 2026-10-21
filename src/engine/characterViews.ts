@@ -2,7 +2,7 @@ import { sampleTrack, upsertKeyframe } from './animation';
 import { createId } from './Rig';
 import type { Rig } from './Rig';
 import { identity, lerpAngle } from './math';
-import type { CharacterView, CharacterViewSet, CharacterViewTarget, SerializableValue, ViewArtwork, VectorShape } from './model';
+import type { CharacterMasterModel, CharacterView, CharacterViewSet, CharacterViewTarget, SerializableValue, ViewArtwork, VectorShape } from './model';
 
 export const REFERENCE_VIEWS = [
   { angle: -180, name: 'Back' }, { angle: -135, name: 'Back Side' },
@@ -44,6 +44,23 @@ function normalizeTarget(value: unknown): CharacterViewTarget | null {
     ...(typeof value.length === 'number' ? { length: Math.max(0, finite(value.length, 0)) } : {}), ...(artwork ? { artwork } : {}), ...(mesh ? { mesh } : {}) };
 }
 
+function normalizeMaster(value: unknown): CharacterMasterModel | undefined {
+  if (!record(value)) return undefined;
+  const landmarks = record(value.landmarks) ? Object.fromEntries(Object.entries(value.landmarks).flatMap(([key, point]) => {
+    if (!record(point)) return [];
+    const x = finite(point.x, NaN), y = finite(point.y, NaN);
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return [];
+    return [[key.slice(0, 80), { x, y }]];
+  })) : {};
+  const limbLengths = record(value.limbLengths) ? Object.fromEntries(Object.entries(value.limbLengths).flatMap(([key, length]) => typeof length === 'number' && Number.isFinite(length) && length >= 0 ? [[key.slice(0, 100), length]] : [])) : {};
+  const clothing = record(value.clothing) ? Object.fromEntries(Object.entries(value.clothing).flatMap(([key, slot]) => typeof slot === 'string' && slot.trim() ? [[key.slice(0, 100), slot.slice(0, 100)]] : [])) : {};
+  const shoe = record(value.shoeDimensions) ? value.shoeDimensions : {};
+  const width = finite(shoe.width, 0), height = finite(shoe.height, 0);
+  const heightValue = finite(value.height, 0);
+  if (!Number.isFinite(heightValue) || heightValue <= 0) return undefined;
+  return { height: Math.min(10000, heightValue), landmarks, limbLengths, clothing, shoeDimensions: { width: Math.max(0, width), height: Math.max(0, height) }, sourceAngle: wrapViewAngle(finite(value.sourceAngle, 0)) };
+}
+
 export function normalizeCharacterViews(value: unknown, validIds: Set<string>): CharacterViewSet[] {
   if (!Array.isArray(value)) return [];
   const ids = new Set<string>(), assigned = new Set<string>();
@@ -66,8 +83,63 @@ export function normalizeCharacterViews(value: unknown, validIds: Set<string>): 
     if (!views.length) return [];
     ids.add(raw.id); targets.forEach(id => assigned.add(id));
     return [{ id: raw.id, name: typeof raw.name === 'string' && raw.name.trim() ? raw.name.slice(0, 80) : 'Character', enabled: raw.enabled !== false,
-      angle: Math.max(-3600, Math.min(3600, finite(raw.angle, 0))), wrap: raw.wrap !== false, interpolate: raw.interpolate !== false, targetIds: targets, baseline, views }];
+      angle: Math.max(-3600, Math.min(3600, finite(raw.angle, 0))), wrap: raw.wrap !== false, interpolate: raw.interpolate !== false, targetIds: targets, baseline, views,
+      ...(normalizeMaster(raw.master) ? { master: normalizeMaster(raw.master) } : {}) }];
   });
+}
+
+/** Capture the setup pose as one shared model for every prepared view. */
+export function captureCharacterMasterModel(rig: Pick<Rig, 'bones' | 'layers' | 'update' | 'getBoneEnd'>, targetIds: string[], sourceAngle = 0): CharacterMasterModel {
+  const bones = [...rig.bones.values()].filter(bone => targetIds.includes(bone.id));
+  const points = bones.flatMap(bone => {
+    const end = rig.getBoneEnd(bone.id);
+    return end ? [{ x: bone.world.x, y: bone.world.y }, end] : [{ x: bone.world.x, y: bone.world.y }];
+  });
+  const minY = points.length ? Math.min(...points.map(point => point.y)) : 0;
+  const maxY = points.length ? Math.max(...points.map(point => point.y)) : 1;
+  const landmarks: Record<string, { x: number; y: number }> = {};
+  bones.forEach(bone => {
+    const key = bone.name.toLowerCase().replace(/[^a-z0-9]+(.)/g, (_match, letter) => String(letter).toUpperCase()).replace(/[^a-zA-Z0-9]/g, '').slice(0, 80);
+    if (key) landmarks[key] = { x: bone.world.x, y: bone.world.y };
+  });
+  const clothing: Record<string, string> = {};
+  const shoes = [...rig.layers.values()].filter(layer => targetIds.includes(layer.id) && /shoe|boot|foot/i.test(layer.name));
+  [...rig.layers.values()].filter(layer => targetIds.includes(layer.id)).forEach(layer => {
+    const name = layer.name.toLowerCase();
+    const slot = /shirt|jacket|hoodie|blouse|sleeve|torso|chest/.test(name) ? 'top'
+      : /pant|trouser|short|skirt|leg/.test(name) ? 'bottom'
+        : /shoe|boot|foot/.test(name) ? 'shoes' : /hair|head|face|eye|mouth/.test(name) ? 'head' : null;
+    if (slot && clothing[slot] === undefined) clothing[slot] = layer.name;
+  });
+  return {
+    height: Math.max(1, maxY - minY),
+    landmarks,
+    limbLengths: Object.fromEntries(bones.map(bone => [bone.id, Math.max(0, bone.length)])),
+    clothing,
+    shoeDimensions: { width: shoes.length ? shoes.length * 20 : 0, height: shoes.length ? 20 : 0 },
+    sourceAngle: wrapViewAngle(sourceAngle),
+  };
+}
+
+/** Arrange near/far limbs for a prepared view without changing authored layers. */
+export function arrangeCharacterViewLayerOrder(rig: Rig, setId: string, viewId: string): number {
+  const set = rig.characterViews.find(item => item.id === setId), view = set?.views.find(item => item.id === viewId);
+  if (!set || !view) return 0;
+  const nearSide = Math.sin(view.angle * Math.PI / 180) < 0 ? 'left' : 'right';
+  let changed = 0;
+  set.targetIds.forEach(id => {
+    const layer = rig.layers.get(id), target = view.targets[id];
+    if (!layer || !target) return;
+    const name = layer.name.toLowerCase();
+    const side = /left/.test(name) ? 'left' : /right/.test(name) ? 'right' : null;
+    const limb = /arm|hand|leg|shoe|foot|forearm|thigh|shin|sleeve|gaiter|glove|boot/.test(name);
+    if (!limb || !side) return;
+    const base = set.baseline[id]?.zIndex ?? layer.zIndex;
+    const next = base + (side === nearSide ? 24 : -24);
+    if (target.zIndex !== next) { target.zIndex = next; changed += 1; }
+  });
+  if (changed) rig.update();
+  return changed;
 }
 
 export function characterViewAngle(rig: Rig, id: string): number {
@@ -139,6 +211,7 @@ export function addCharacterViewSet(rig: Rig, name: string, ids: string[]): stri
   if (!targetIds.length) return null;
   const id = createId('character');
   rig.characterViews.push({ id, name: name.trim() || 'Character', enabled: true, angle: 0, wrap: true, interpolate: true, targetIds, baseline,
+    master: captureCharacterMasterModel(rig, targetIds, 0),
     views: [{ id: createId('view'), name: 'Front', angle: 0, targets: clone(baseline) }] });
   rig.update(); return id;
 }
@@ -151,7 +224,9 @@ export function addCharacterView(rig: Rig, setId: string, angle: number, name: s
   const source = set.views.find(view => view.id === sourceId) ?? sampleCharacterView(set, characterViewAngle(rig, setId))?.nearest;
   const id = createId('view');
   set.views.push({ id, name: name.trim() || `${normalized}°`, angle: normalized, targets: clone(source?.targets ?? set.baseline) });
-  set.views.sort((a, b) => a.angle - b.angle); rig.update(); return id;
+  set.views.sort((a, b) => a.angle - b.angle);
+  arrangeCharacterViewLayerOrder(rig, set.id, id);
+  rig.update(); return id;
 }
 
 export function removeCharacterViewSet(rig: Rig, id: string): void {

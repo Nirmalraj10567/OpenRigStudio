@@ -7,7 +7,7 @@ const { outputFiles } = await build({ stdin: { contents: "export * from './src/e
 const compiled = { exports: {} };
 new Function('module', 'exports', 'require', outputFiles[0].text)(compiled, compiled.exports, createRequire(import.meta.url));
 const { Rig, useProject, addCharacterViewSet, addCharacterView, setCharacterViewAngle, characterViewAngle, sampleCharacterView, updateCharacterViewTarget,
-  normalizeCharacterViews, addCharacterViewParts, removeCharacterViewPart, removeCharacterViewSet, createHumanViewDemo, createFrogViewDemo, createFrogSmartTurnDemo, projectToSVG, addCamera, setCameraCut, makeMesh } = compiled.exports;
+  normalizeCharacterViews, addCharacterViewParts, removeCharacterViewPart, removeCharacterViewSet, captureCharacterMasterModel, arrangeCharacterViewLayerOrder, inspectCharacterViews, createWalkCycle, createHumanViewDemo, createFrogViewDemo, createFrogSmartTurnDemo, projectToSVG, addCamera, setCameraCut, makeMesh } = compiled.exports;
 const close = (a, b) => assert.ok(Math.abs(a - b) < 1e-6, `${a} != ${b}`);
 const active = rig => rig.animations.find(clip => clip.id === rig.timeline.activeAnimationId);
 function fixture() {
@@ -177,4 +177,41 @@ test('existing frog character can be driven through a full turn by one Smart Bon
   frog.applyAnimation(frog.timeline.activeAnimationId, 120); close(characterViewAngle(frog, set.id), -360); assert.ok(Math.abs(driver.local.rotation - Math.PI * 2) < 1e-6);
   const restored = Rig.fromJSON(frog.toJSON()); restored.applyAnimation(restored.timeline.activeAnimationId, 60);
   close(characterViewAngle(restored, restored.characterViews[0].id), -180); assert.ok(restored.smartActions[0].viewSetIds?.length);
+});
+
+test('prepared views capture a shared master model and can auto-arrange near/far layers', () => {
+  const rig = createHumanViewDemo(), set = rig.characterViews[0];
+  assert.ok(set.master);
+  assert.ok(set.master.height > 0);
+  assert.ok(Object.keys(set.master.limbLengths).length >= 10);
+  assert.ok(Object.keys(set.master.clothing).length >= 1);
+  const view = set.views.find(item => item.angle === -45);
+  assert.ok(view);
+  const before = JSON.stringify(view.targets);
+  const changed = arrangeCharacterViewLayerOrder(rig, set.id, view.id);
+  assert.ok(changed >= 0);
+  assert.equal(typeof JSON.stringify(view.targets), 'string');
+  assert.equal(before.length > 0, true);
+  const report = inspectCharacterViews(rig, set.id);
+  assert.equal(report.checkedViews, set.views.length);
+  assert.equal(Array.isArray(report.issues), true);
+  assert.equal(report.master.present, true);
+});
+
+test('full walk cycle drives two-segment limbs, hands, feet and planted pivots', () => {
+  const rig = createHumanViewDemo();
+  const result = createWalkCycle(rig, { duration: 24, makeActive: true });
+  assert.ok(result);
+  assert.equal(result.duration, 24);
+  assert.ok(result.targetIds.length >= 10);
+  const clip = rig.animations.find(item => item.id === result.clipId);
+  assert.ok(clip);
+  for (const name of ['Left upper leg', 'Left lower leg', 'Left foot', 'Left upper arm', 'Left lower arm', 'Left hand', 'Right upper leg', 'Right lower leg', 'Right foot']) {
+    const bone = [...rig.bones.values()].find(item => item.name === name);
+    assert.ok(bone, name);
+    assert.ok(clip.tracks.some(track => track.targetId === bone.id && track.property === 'transform'), name);
+  }
+  const foot = [...rig.bones.values()].find(item => item.name === 'Left foot');
+  const footTrack = clip.tracks.find(track => track.targetId === foot.id);
+  assert.deepEqual(footTrack.keyframes.map(key => [key.value.x, key.value.y]), footTrack.keyframes.map(() => [foot.local.x, foot.local.y]));
 });

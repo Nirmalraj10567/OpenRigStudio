@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "id": "physics-ball-demo",
+  "name": "Physics Ball · Gravity Drop",
+  "canvas": {
+    "width": 800,
+    "height": 520,
+    "background": "#0d1720"
+  },
+  "layers": [
+    {
+      "id": "background-lines",
+      "name": "Background lines",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 0,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "line-1",
+          "kind": "rect",
+          "x": 80,
+          "y": 110,
+          "width": 640,
+          "height": 1,
+          "fill": "#1d3340",
+          "opacity": 0.8
+        },
+        {
+          "id": "line-2",
+          "kind": "rect",
+          "x": 80,
+          "y": 220,
+          "width": 640,
+          "height": 1,
+          "fill": "#1d3340",
+          "opacity": 0.8
+        },
+        {
+          "id": "line-3",
+          "kind": "rect",
+          "x": 80,
+          "y": 330,
+          "width": 640,
+          "height": 1,
+          "fill": "#1d3340",
+          "opacity": 0.8
+        },
+        {
+          "id": "line-4",
+          "kind": "rect",
+          "x": 80,
+          "y": 440,
+          "width": 640,
+          "height": 1,
+          "fill": "#1d3340",
+          "opacity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "ball-shadow",
+      "name": "Ball shadow",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 1,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "shadow",
+          "kind": "ellipse",
+          "x": 400,
+          "y": 438,
+          "radiusX": 62,
+          "radiusY": 9,
+          "fill": "#000000",
+          "opacity": 0.32
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "name": "Ground",
+      "type": "vector",
+      "local": {
+        "x": 400,
+        "y": 470,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": true,
+      "zIndex": 2,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ground-body",
+          "kind": "rect",
+          "x": -400,
+          "y": -10,
+          "width": 800,
+          "height": 20,
+          "fill": "#294656"
+        },
+        {
+          "id": "ground-edge",
+          "kind": "rect",
+          "x": -400,
+          "y": -10,
+          "width": 800,
+          "height": 4,
+          "fill": "#8ae6d0"
+        },
+        {
+          "id": "ground-detail",
+          "kind": "rect",
+          "x": -320,
+          "y": -3,
+          "width": 640,
+          "height": 2,
+          "fill": "#416a7b"
+        }
+      ]
+    },
+    {
+      "id": "ball",
+      "name": "Physics ball",
+      "type": "vector",
+      "local": {
+        "x": 400,
+        "y": 120,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 3,
+      "boundBoneId": null,
+      "opacity": 1,
+      "shapes": [
+        {
+          "id": "ball-body",
+          "kind": "ellipse",
+          "x": 0,
+          "y": 0,
+          "radiusX": 32,
+          "radiusY": 32,
+          "fill": "#ff7a63",
+          "stroke": "#ffc1a9",
+          "strokeWidth": 3
+        },
+        {
+          "id": "ball-light",
+          "kind": "ellipse",
+          "x": -10,
+          "y": -11,
+          "radiusX": 9,
+          "radiusY": 7,
+          "fill": "#fff4e8",
+          "opacity": 0.78
+        },
+        {
+          "id": "ball-shade",
+          "kind": "path",
+          "d": "M -29 10 C -15 30 13 34 28 13 C 18 29 -13 36 -29 10 Z",
+          "fill": "#c84449",
+          "opacity": 0.42
+        }
+      ]
+    },
+    {
+      "id": "melting-table",
+      "name": "Tabletop",
+      "type": "vector",
+      "local": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "shapes": [
+        {
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 82,
+          "fill": "#4a2f45",
+          "id": "melting-table-shape-0"
+        },
+        {
+          "kind": "rect",
+          "x": 0,
+          "y": 438,
+          "width": 800,
+          "height": 8,
+          "fill": "#f4a261",
+          "id": "melting-table-shape-1"
+        },
+        {
+          "kind": "rect",
+          "x": 48,
+          "y": 456,
+          "width": 704,
+          "height": 3,
+          "fill": "#754b58",
+          "opacity": 0.8,
+          "id": "melting-table-shape-2"
+        }
+      ],
+      "zIndex": 2.5,
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": null
+    },
+    {
+      "id": "ice-cream-cone",
+      "name": "Waffle cone",
+      "type": "vector",
+      "local": {
+        "x": 400,
+        "y": 425,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "shapes": [
+        {
+          "kind": "polygon",
+          "points": [
+            {
+              "x": -48,
+              "y": -110
+            },
+            {
+              "x": 48,
+              "y": -110
+            },
+            {
+              "x": 0,
+              "y": 34
+            }
+          ],
+          "fill": "#d8894b",
+          "stroke": "#6e3d35",
+          "strokeWidth": 4,
+          "id": "ice-cream-cone-shape-0"
+        },
+        {
+          "kind": "path",
+          "d": "M -37 -94 L 34 6 M -3 -108 L 30 -29 M 37 -93 L -29 8 M 5 -27 L -5 -10 M -20 -56 L -29 -45",
+          "fill": "none",
+          "stroke": "#f6c16b",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "id": "ice-cream-cone-shape-1"
+        },
+        {
+          "kind": "path",
+          "d": "M -45 -107 Q 0 -124 45 -107",
+          "fill": "none",
+          "stroke": "#ffdc87",
+          "strokeWidth": 6,
+          "lineCap": "round",
+          "id": "ice-cream-cone-shape-2"
+        }
+      ],
+      "zIndex": 6,
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": null
+    },
+    {
+      "id": "melt-scoop",
+      "name": "Melting strawberry scoop",
+      "type": "vector",
+      "local": {
+        "x": 400,
+        "y": 292,
+        "rotation": 0,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "shapes": [
+        {
+          "kind": "ellipse",
+          "x": 0,
+          "y": 0,
+          "radiusX": 78,
+          "radiusY": 62,
+          "fill": "#ff8fa3",
+          "stroke": "#6e3855",
+          "strokeWidth": 4,
+          "id": "melt-scoop-shape-0"
+        },
+        {
+          "kind": "path",
+          "d": "M -70 19 C -48 36 -27 34 -10 29 C 7 24 17 34 30 31 C 47 28 61 18 70 11 C 63 43 45 57 27 54 C 13 51 9 78 -4 81 C -20 83 -13 47 -30 46 C -48 46 -62 36 -70 19 Z",
+          "fill": "#ff8fa3",
+          "stroke": "#6e3855",
+          "strokeWidth": 3,
+          "id": "melt-scoop-shape-1"
+        },
+        {
+          "kind": "ellipse",
+          "x": -28,
+          "y": -22,
+          "radiusX": 18,
+          "radiusY": 11,
+          "fill": "#ffd9df",
+          "opacity": 0.8,
+          "id": "melt-scoop-shape-2"
+        },
+        {
+          "kind": "path",
+          "d": "M -48 -5 L -35 3 M -18 -42 L -9 -32 M 12 -45 L 19 -34 M 45 -17 L 54 -7",
+          "fill": "none",
+          "stroke": "#fff0a6",
+          "strokeWidth": 5,
+          "lineCap": "round",
+          "id": "melt-scoop-shape-3"
+        },
+        {
+          "kind": "ellipse",
+          "x": -48,
+          "y": -1,
+          "radiusX": 5,
+          "radiusY": 3,
+          "fill": "#f7d56e",
+          "id": "melt-scoop-shape-4"
+        },
+        {
+          "kind": "ellipse",
+          "x": 20,
+          "y": -30,
+          "radiusX": 5,
+          "radiusY": 3,
+          "fill": "#f7d56e",
+          "id": "melt-scoop-shape-5"
+        }
+      ],
+      "zIndex": 7,
+      "opacity": 1,
+      "visible": true,
+      "locked": false,
+      "boundBoneId": null
+    }
+  ],
+  "bones": [],
+  "bindings": [],
+  "animations": [],
+  "dynamics": {
+    "enabled": true,
+    "startFrame": 0,
+    "endFrame": 240,
+    "fps": 30,
+    "substeps": 8,
+    "gravityX": 0,
+    "gravityY": 520,
+    "windX": 0,
+    "windY": 0,
+    "windNoise": 0,
+    "seed": 7,
+    "bones": [],
+    "meshes": [],
+    "emitters": [],
+    "bodies": [
+      {
+        "id": "ball-body-dynamic",
+        "targetId": "ball",
+        "name": "Ball · dynamic",
+        "shape": "circle",
+        "motion": "dynamic",
+        "x": 0,
+        "y": 0,
+        "radius": 32,
+        "width": 64,
+        "height": 64,
+        "rotation": 0,
+        "mass": 1,
+        "restitution": 0.08,
+        "friction": 0.72,
+        "enabled": true
+      },
+      {
+        "id": "ground-collider",
+        "name": "Ground · static collider",
+        "shape": "box",
+        "motion": "static",
+        "x": 400,
+        "y": 470,
+        "radius": 10,
+        "width": 800,
+        "height": 20,
+        "rotation": 0,
+        "mass": 1000,
+        "restitution": 0.08,
+        "friction": 0.72,
+        "enabled": true
+      }
+    ]
+  },
+  "stage2d": {
+    "enabled": false,
+    "cameraX": 0,
+    "cameraY": 0,
+    "zoom": 1,
+    "yaw": 0,
+    "pitch": 0,
+    "roll": 0,
+    "perspective": 0,
+    "projection": "perspective"
+  },
+  "cameraView": "preview",
+  "timeline": {
+    "currentFrame": 0,
+    "currentTime": 0,
+    "isPlaying": false,
+    "loop": false,
+    "fps": 30,
+    "startFrame": 0,
+    "endFrame": 240,
+    "activeAnimationId": null
+  },
+  "metadata": {
+    "description": "A dynamic circle body falls under gravity, collides with a static ground box, and bounces using restitution.",
+    "physics": "deterministic fixed-step dynamics"
+  }
+}

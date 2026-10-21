@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
-import { Bone, ChevronRight, Image as ImageIcon, KeyRound, Plus, RotateCcw, Trash2, Upload, X } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { AlertTriangle, Bone, CheckCircle2, ChevronRight, Footprints, Image as ImageIcon, KeyRound, Play, Plus, RotateCcw, ScanLine, Trash2, Upload, X } from 'lucide-react';
 import { useProject } from '../state/projectStore';
-import { addCharacterView, addCharacterViewParts, characterViewAngle, FULL_TURN_VIEWS, REFERENCE_VIEWS, removeCharacterViewPart, sampleCharacterView, updateCharacterViewTarget, wrapViewAngle } from '../engine/characterViews';
+import { addCharacterView, addCharacterViewParts, arrangeCharacterViewLayerOrder, captureCharacterMasterModel, characterViewAngle, FULL_TURN_VIEWS, REFERENCE_VIEWS, removeCharacterViewPart, sampleCharacterView, updateCharacterViewTarget, wrapViewAngle } from '../engine/characterViews';
+import { inspectCharacterViews } from '../engine/characterQuality';
+import { createWalkCycle } from '../engine/walkAnimation';
 import { createFrogSmartTurnDemo, createFrogViewDemo, createHumanViewDemo } from '../engine/characterViewDemo';
 import { createReferenceGirlDemo } from '../engine/referenceGirlDemo';
 import { createReferenceGirlFootballScene } from '../engine/referenceGirlFootballScene';
@@ -33,6 +35,8 @@ export function CharacterViewsPanel({ onStatus }: { onStatus: (message: string) 
   const [newAngle, setNewAngle] = useState(-45);
   const [newName, setNewName] = useState('Front Side');
   const [sheet, setSheet] = useState<Sheet | null>(null);
+  const [quality, setQuality] = useState<ReturnType<typeof inspectCharacterViews> | null>(null);
+  const [previewFrame, setPreviewFrame] = useState(0);
   const fileInput = useRef<HTMLInputElement>(null);
   const set = rig.characterViews.find(item => item.id === selectedCharacterId) ?? rig.characterViews[0];
   const angle = set ? characterViewAngle(rig, set.id) : 0;
@@ -46,6 +50,22 @@ export function CharacterViewsPanel({ onStatus }: { onStatus: (message: string) 
   const validTargets = targets.filter(id => available.some(item => item.id === id));
   const blocked = Boolean(smartEdit);
   useEffect(() => { setViewId(''); setPartId(''); }, [set?.id]);
+  useEffect(() => { setQuality(null); setPreviewFrame(rig.timeline.currentFrame); }, [set?.id, rig.timeline.currentFrame]);
+
+  const livePreview = useMemo(() => {
+    if (!set) return [];
+    const project = rig.toProject();
+    const angles = [0, -45, -90, -180];
+    return angles.map(angleValue => {
+      const previewRig = new Rig(project);
+      previewRig.setTimeline({ currentFrame: Math.max(0, Math.min(previewFrame, previewRig.timeline.endFrame)) });
+      if (previewRig.timeline.activeAnimationId) previewRig.applyAnimation(previewRig.timeline.activeAnimationId, previewRig.timeline.currentFrame);
+      previewRig.characterAngleOverrides.set(set.id, { frame: previewRig.timeline.currentFrame, angle: angleValue });
+      previewRig.update();
+      const view = set.views.find(item => item.angle === angleValue) ?? sampleCharacterView(set, angleValue)?.nearest;
+      return { angle: angleValue, name: view?.name ?? `${angleValue}°`, src: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(projectToSVG(previewRig))}` };
+    });
+  }, [rig, set, previewFrame, version]);
 
   const chooseView = (id: string) => { setViewId(id); };
   const preview = () => {
@@ -90,6 +110,32 @@ export function CharacterViewsPanel({ onStatus }: { onStatus: (message: string) 
     });
     setSheet({ name: set.name, views });
   };
+  const captureMaster = () => {
+    if (!set || blocked) return;
+    updateProject(project => {
+      const current = project.characterViews.find(item => item.id === set.id);
+      if (current) current.master = captureCharacterMasterModel(project, current.targetIds, 0);
+    });
+    onStatus('Shared master captured · height, landmarks, limb lengths, clothing and shoes now anchor every view');
+  };
+  const arrangeLayers = () => {
+    if (!set || blocked) return;
+    let changed = 0;
+    updateProject(project => set.views.forEach(viewItem => { changed += arrangeCharacterViewLayerOrder(project, set.id, viewItem.id); }));
+    onStatus(changed ? `Automatic near/far layer order updated for ${changed} view targets` : 'View layer order already matches the near/far arrangement');
+  };
+  const checkViews = () => {
+    if (!set) return;
+    const report = inspectCharacterViews(rig, set.id);
+    setQuality(report);
+    onStatus(report.summary.passed ? `Visual joint check passed · ${report.checkedViews} views checked` : `Visual joint check found ${report.summary.errors} errors and ${report.summary.warnings} warnings`);
+  };
+  const addWalk = () => {
+    const holder: { value: ReturnType<typeof createWalkCycle> } = { value: null };
+    updateProject(project => { holder.value = createWalkCycle(project, { name: `${set?.name ?? 'Character'} · full walk`, makeActive: true }); });
+    const result = holder.value;
+    onStatus(result ? `Full walk cycle created · ${result.targetIds.length} limb tracks with planted feet and ankle rotation` : 'Walk cycle needs a full two-segment humanoid rig');
+  };
   const importArtwork = async (file?: File) => {
     if (!file || !set || !view || !part || !layer || blocked) return;
     if (!file.type.startsWith('image/')) { onStatus('Choose a PNG, JPEG, WebP, or SVG image for this view'); return; }
@@ -121,10 +167,27 @@ export function CharacterViewsPanel({ onStatus }: { onStatus: (message: string) 
         <div className="view-angle-presets">{[...set.views].sort((a, b) => a.angle <= 0 && b.angle <= 0 ? b.angle - a.angle : a.angle > 0 && b.angle > 0 ? a.angle - b.angle : a.angle <= 0 ? -1 : 1).map(item => <button key={item.id} aria-pressed={Math.abs(wrapViewAngle(angle - item.angle)) < .001} onClick={() => { setCharacterAngle(set.id, item.angle); setViewId(item.id); }}><span>{item.name}</span><strong>{item.angle}°</strong></button>)}</div>
         <div className="camera-shot-actions"><button className="secondary-button" onClick={() => keyCharacterAngle(set.id)}><KeyRound size={13} /> Key angle</button><button className="secondary-button" onClick={() => setCharacterAngle(set.id, 0)}><RotateCcw size={13} /> Front 0°</button></div>
         <div className="view-options"><label className="check-label"><input type="checkbox" checked={set.interpolate} onChange={event => updateProject(project => { project.characterViews.find(item => item.id === set.id)!.interpolate = event.target.checked; })} /> Blend alignment</label><label className="check-label"><input type="checkbox" checked={set.wrap} onChange={event => updateProject(project => { project.characterViews.find(item => item.id === set.id)!.wrap = event.target.checked; })} /> Wrap 360°</label></div>
-      </fieldset>
+     </fieldset>
       <p className="scope-note">Angle is independent of the camera. Auto-key records turns after frame zero; artwork switches to the nearest prepared view while compatible alignments blend.</p>
-    </section>}
-    {set && view && <section className="views-section view-authoring">
+     </section>}
+     {set && <section className="views-section character-quality-section" aria-label="Character consistency tools">
+       <div className="section-title"><span><ScanLine size={14} /> Shared model & visual checks</span><span className={`stage-badge ${set.master ? 'active' : ''}`}>{set.master ? 'MASTER READY' : 'SETUP ONLY'}</span></div>
+       <p className="scope-note">Keep height, facial landmarks, limb lengths, clothing, shoes, joints and near/far ordering consistent across every angle.</p>
+       <div className="camera-shot-actions">
+         <button className="secondary-button" disabled={blocked} onClick={captureMaster}><ScanLine size={13} /> {set.master ? 'Recapture master' : 'Capture shared master'}</button>
+         <button className="secondary-button" disabled={blocked} onClick={arrangeLayers}><Footprints size={13} /> Auto layer order</button>
+         <button className="secondary-button" onClick={checkViews}><ScanLine size={13} /> Run visual joint check</button>
+         <button className="secondary-button" disabled={blocked} onClick={addWalk}><Play size={13} /> Create full walk</button>
+       </div>
+       {set.master && <div className="master-model-metrics"><span><strong>{Math.round(set.master.height)}px</strong><small>shared height</small></span><span><strong>{Object.keys(set.master.landmarks).length}</strong><small>landmarks</small></span><span><strong>{Object.keys(set.master.limbLengths).length}</strong><small>limb lengths</small></span><span><strong>{Object.keys(set.master.clothing).length}</strong><small>clothing slots</small></span></div>}
+       {quality && <div className={`character-quality-report ${quality.summary.passed ? 'passed' : 'needs-review'}`} role="status"><div><span>{quality.summary.passed ? <CheckCircle2 size={14} /> : <AlertTriangle size={14} />} {quality.summary.passed ? 'Visual checks passed' : 'Visual review needed'}</span><small>{quality.checkedViews} views · {quality.summary.errors} errors · {quality.summary.warnings} warnings</small></div>{quality.issues.length > 0 && <ul>{quality.issues.slice(0, 4).map((issue, index) => <li key={`${issue.viewId}-${issue.targetId ?? index}`}>{issue.viewName}: {issue.message}</li>)}</ul>}</div>}
+     </section>}
+     {set && <section className="views-section live-character-preview" aria-label="Live character preview">
+       <div className="section-title"><span><Play size={14} /> Live side-by-side preview</span><span className="stage-badge active">FRAME {Math.round(previewFrame)}</span></div>
+       <div className="live-preview-grid">{livePreview.map(card => <figure key={card.angle}><img src={card.src} alt={`${card.name} live preview at frame ${Math.round(previewFrame)}`} /><figcaption><strong>{card.name}</strong><span>{card.angle}°</span></figcaption></figure>)}</div>
+       <label className="camera-range live-preview-scrubber"><span>Timeline scrubber <output>{Math.round(previewFrame)} / {rig.timeline.endFrame}</output></span><input aria-label="Live preview timeline" type="range" min={rig.timeline.startFrame} max={rig.timeline.endFrame} step={1} value={previewFrame} onChange={event => setPreviewFrame(Number(event.target.value))} /></label>
+     </section>}
+     {set && view && <section className="views-section view-authoring">
       <details open={!set.views.length || set.views.length === 1}><summary>Author angle artwork <ChevronRight size={13} /></summary>
         <fieldset className="stage-fields" disabled={blocked}>
           <label className="camera-field">View to edit<select aria-label="View to edit" value={view.id} onChange={event => chooseView(event.target.value)}>{set.views.map(item => <option key={item.id} value={item.id}>{item.name} · {item.angle}°</option>)}</select></label>

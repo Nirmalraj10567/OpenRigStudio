@@ -143,11 +143,33 @@ try {
     await clickWorkspace(page, 'Animation', '.joystick-workspace');
   });
   await step(page, 'Workspace tab: Environment restore', () => clickWorkspace(page, 'Environment', '.environment-workspace'));
+  await step(page, 'Willow village props are selectable and transformable', async () => {
+    await clickButton(page, 'Willow village');
+    await assertVisible(page, '.environment-transform-panel', 'village prop editor');
+    const selection = page.getByLabel('Select village prop', { exact: true });
+    const options = await selection.locator('option').evaluateAll(items => items.map(item => item.value).filter(Boolean));
+    assert.equal(options.length, 10, 'village did not create ten selectable props');
+    await selection.selectOption(options[4]);
+    await waitForIdle(page, 160);
+    const twoD = page.locator('.environment-transform-grid input');
+    assert.equal(await twoD.count(), 4, '2D transform fields are incomplete');
+    await twoD.nth(0).fill('440');
+    await twoD.nth(3).fill('1.25');
+    assert.equal(await twoD.nth(0).inputValue(), '440');
+    assert.equal(await twoD.nth(3).inputValue(), '1.25');
+    const xyz = page.locator('.environment-transform-axis-grid input');
+    assert.equal(await xyz.count(), 9, 'XYZ transform fields are incomplete');
+    await xyz.nth(2).fill('36');
+    assert.equal(await xyz.nth(2).inputValue(), '36');
+    await assertVisible(page, '.environment-layer-row.selected', 'selected village layer row');
+  });
 
   // Open the built-in rigged example so mapping, mesh, pose, and animation
   // controls all have real data to work with. The initial project is empty, so
-  // this action does not require accepting a destructive confirmation.
+  // this action normally does not require accepting a destructive confirmation;
+  // the village smoke test above intentionally populated the scene first.
   await step(page, 'Load rigged example', async () => {
+    acceptNextDialog = true;
     await clickButton(page, 'Rigged example');
     await assertVisible(page, '.bone-mapping-board', 'bone mapping board');
     assert.ok((await page.locator('.layer-row').count()) > 0, 'rigged example did not create scene rows');

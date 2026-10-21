@@ -13,6 +13,9 @@ export function nativeEngine() {
       'export { Rig, createId } from ' + "'./src/engine/Rig';",
       'export { identity, compose, localToWorldPoint, worldToLocalPoint } from ' + "'./src/engine/math';",
       'export { upsertKeyframe, removeKeyframe, findTrack, sampleTrack } from ' + "'./src/engine/animation';",
+      'export { addCharacterView, arrangeCharacterViewLayerOrder, captureCharacterMasterModel, setCharacterViewAngle, updateCharacterViewTarget } from ' + "'./src/engine/characterViews';",
+      'export { inspectCharacterViews } from ' + "'./src/engine/characterQuality';",
+      'export { createWalkCycle } from ' + "'./src/engine/walkAnimation';",
       'export { projectToSVG } from ' + "'./src/engine/export';",
       'export { serializeProject } from ' + "'./src/engine/serialization';",
     ].join('\n');
